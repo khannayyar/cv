@@ -1196,3 +1196,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+/* Show portfolio images at their full height without cropping */
+.portfolio-wrap img {
+  width: 100%;
+  height: auto;         /* Use natural image height */
+  object-fit: contain;  /* Show entire image, add blank space if needed */
+  border-radius: 8px;
+  display: block;
+}

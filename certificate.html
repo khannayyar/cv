@@ -20,60 +20,9 @@
       font-family: 'Poppins', 'Raleway', Arial, sans-serif;
       background: #f8f9fa;
     }
-    .search-bar { margin-bottom: 2rem; }
-    .certificate-card {
-      background: #fff; /* Remove gradient */
-      border-radius: 14px;
-      box-shadow: none; /* Remove shadow */
-      margin-bottom: 2rem;
-      padding: 2rem 2.2rem;
-      border: 1px solid #e3e3e3;
-      transition: border-color 0.2s;
-    }
-    .certificate-card:hover {
-      border-color: #90caf9;
-      box-shadow: none; /* No shadow on hover */
-    }
-    .certificate-title {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: #1565c0;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.01em;
-    }
-    .certificate-meta {
-      font-size: 1rem;
-      color: #374151;
-      margin-bottom: 0.7rem;
-      line-height: 1.7;
-    }
-    .certificate-meta span {
-      margin-right: 1.2em;
-    }
-    .certificate-meta strong {
-      color: #1976d2;
-      font-weight: 500;
-    }
-    .certificate-year-badge {
-      background: #1976d2;
-      color: #fff;
-      font-size: 0.95rem;
-      border-radius: 12px;
-      padding: 0.25em 0.8em;
-      margin-right: 0.7em;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      display: inline-block;
-    }
-    .pdf-preview-btn {
-      margin-right: 0.7rem;
-      font-size: 0.97rem;
-      border-radius: 8px;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-    }
-    .pdf-preview-btn i {
-      margin-right: 0.2em;
+    .certificate-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
     .section-title h2 {
       font-family: 'Raleway', 'Poppins', Arial, sans-serif;
@@ -89,9 +38,107 @@
       margin-bottom: 2rem;
       font-family: 'Open Sans', Arial, sans-serif;
     }
+    .search-bar {
+      margin-bottom: 2rem;
+      max-width: 400px;
+    }
+    .certificate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .certificate-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #90caf9;
+      box-shadow: none;
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+      text-align: center;
+      transition: border-color 0.2s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 320px;
+      justify-content: flex-end;
+      position: relative;
+    }
+    .certificate-card:hover {
+      box-shadow: none;
+      border-color: #1976d2;
+    }
+    .certificate-year-badge {
+      background: #1976d2;
+      color: #fff;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      padding: 0.25em 0.8em;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 18px;
+    }
+    .certificate-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #1565c0;
+      margin-bottom: 0.7rem;
+      margin-top: 2.2rem;
+      letter-spacing: 0.01em;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .certificate-meta {
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 1.2rem;
+      line-height: 1.7;
+    }
+    .certificate-meta span {
+      display: block;
+      margin-bottom: 0.3em;
+    }
+    .certificate-meta strong {
+      color: #1976d2;
+      font-weight: 500;
+    }
+    .pdf-thumbnail {
+      width: 100%;
+      max-width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 0.7rem;
+      background: #f3f3f3;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pdf-icon {
+      font-size: 3rem;
+      color: #1976d2;
+    }
+    .pdf-preview-btn {
+      font-size: 0.97rem;
+      border-radius: 8px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin-top: 0.5rem;
+    }
+    .pdf-preview-btn i {
+      margin-right: 0.2em;
+    }
     @media (max-width: 600px) {
-      .certificate-card { padding: 1.2rem; }
+      .certificate-card { padding: 1rem; min-height: 180px;}
       .section-title h2 { font-size: 1.4rem; }
+      .certificate-title { font-size: 1rem; }
+      .pdf-thumbnail { max-width: 70px; height: 70px;}
     }
   </style>
 </head>
@@ -111,16 +158,16 @@
     </nav>
   </header>
   <main id="main">
-    <section class="about">
-      <div class="container" data-aos="fade-up">
+    <section class="certificate-section">
+      <div class="container">
         <div class="section-title">
           <h2>Certificates</h2>
-          <p>Browse my certificates received from various organizations, sorted by year. Search and preview certificates securely.</p>
+          <p>Click any tile to view the certificate in full. Add new certificates by updating this HTML file.</p>
         </div>
         <div class="search-bar">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search certificates by name, year, organization, or area...">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search certificates by any keyword...">
         </div>
-        <div id="certificates-list"></div>
+        <div id="certificates-list" class="certificate-grid"></div>
       </div>
     </section>
   </main>
@@ -167,31 +214,101 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // --- MANUAL CERTIFICATES LIST ---
+    // Certificates array (auto-generated or manually maintained)
     const certificates = [
-      {
-        name: "Certified Data Scientist",
-        year: 2024,
-        organization: "Coursera",
-        area: "Data Science",
-        pdf: "assets/certificates/data_scientist.pdf"
-      },
-      {
-        name: "AWS Certified Solutions Architect",
-        year: 2023,
-        organization: "Amazon Web Services",
-        area: "Cloud Computing",
-        pdf: "assets/certificates/aws_solutions_architect.pdf"
-      },
-      {
-        name: "Professional Scrum Master",
-        year: 2022,
-        organization: "Scrum.org",
-        area: "Agile Project Management",
-        pdf: "assets/certificates/scrum_master.pdf"
-      }
-      // Add more certificates here
-    ];
+  {year: 2025, title: "Awsacademygenai", organization: "", area: "", file: "AWSAcademyGenAI.pdf", path: "assets/certificates/AWSAcademyGenAI.pdf"},
+  {year: 2025, title: "Dataanalyticsessentials Cisco", organization: "", area: "", file: "DataAnalyticsEssentials_CISCO.pdf", path: "assets/certificates/DataAnalyticsEssentials_CISCO.pdf"},
+  {year: 2025, title: "Generative Ai For Educators Certificate   Google", organization: "", area: "", file: "Generative AI for Educators Certificate _ Google.pdf", path: "assets/certificates/Generative AI for Educators Certificate _ Google.pdf"},
+  {year: 2025, title: "Igi Article", organization: "", area: "", file: "IGI Article.pdf", path: "assets/certificates/IGI Article.pdf"},
+  {year: 2025, title: "Nayyar Ahmed Khan", organization: "", area: "", file: "NAYYAR AHMED KHAN.pdf", path: "assets/certificates/NAYYAR AHMED KHAN.pdf"},
+  {year: 2025, title: "Power Automate Beginner To Pro Workshop   Dr. Nayyar Ahmed Khan", organization: "", area: "", file: "Power Automate Beginner to Pro Workshop - Dr. Nayyar Ahmed Khan.pdf", path: "assets/certificates/Power Automate Beginner to Pro Workshop - Dr. Nayyar Ahmed Khan.pdf"},
+  {year: 2025, title: "Power Bi Meets Fabric   Dr. Nayyar Ahmed Khan", organization: "", area: "", file: "Power BI Meets Fabric - Dr. Nayyar Ahmed Khan.pdf", path: "assets/certificates/Power BI Meets Fabric - Dr. Nayyar Ahmed Khan.pdf"},
+  {year: 2025, title: "Reviewer Certificate 16 May 2025", organization: "", area: "", file: "Reviewer Certificate 16 May 2025.pdf", path: "assets/certificates/Reviewer Certificate 16 May 2025.pdf"},
+  {year: 2024, title: "Artificialintelligencefundamentals Badge20240704 7 8Izsrk", organization: "", area: "", file: "ArtificialIntelligenceFundamentals_Badge20240704-7-8izsrk.pdf", path: "assets/certificates/ArtificialIntelligenceFundamentals_Badge20240704-7-8izsrk.pdf"},
+  {year: 2024, title: "Aws Academy Graduate   Aws Academy Cloud Web Application Builder", organization: "", area: "", file: "AWS_Academy_Graduate___AWS_Academy_Cloud_Web_Application_Builder.pdf", path: "assets/certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Web_Application_Builder.pdf"},
+  {year: 2024, title: "Aws Academy Graduate   Aws Academy Machine Learning For Natural Language Processing", organization: "", area: "", file: "AWS_Academy_Graduate___AWS_Academy_Machine_Learning_for_Natural_Language_Processing.pdf", path: "assets/certificates/AWS_Academy_Graduate___AWS_Academy_Machine_Learning_for_Natural_Language_Processing.pdf"},
+  {year: 2024, title: "Certificate Of Attendance (Rh104 9.1)", organization: "", area: "", file: "Certificate of Attendance (RH104-9.1).pdf", path: "assets/certificates/Certificate of Attendance (RH104-9.1).pdf"},
+  {year: 2024, title: "Cisco 5 Year Certificate", organization: "", area: "", file: "CISCO 5 Year Certificate.pdf", path: "assets/certificates/CISCO 5 Year Certificate.pdf"},      
+  {year: 2024, title: "Google Analytics For Beginners", organization: "", area: "", file: "Google Analytics for Beginners.pdf", path: "assets/certificates/Google Analytics for Beginners.pdf"},
+  {year: 2024, title: "Introduction To Data Science Badge20240912 7 8Snq1F", organization: "", area: "", file: "Introduction_to_Data_Science_Badge20240912-7-8snq1f.pdf", path: "assets/certificates/Introduction_to_Data_Science_Badge20240912-7-8snq1f.pdf"},
+  {year: 2024, title: "Oracle Certified Foundation Asociate", organization: "", area: "", file: "Oracle Certified Foundation Asociate.pdf", path: "assets/certificates/Oracle Certified Foundation Asociate.pdf"},
+  {year: 2024, title: "Reviewer Certificate 19534837 Electronics Mdpi", organization: "", area: "", file: "Reviewer-Certificate-19534837-Electronics MDPI.pdf", path: "assets/certificates/Reviewer-Certificate-19534837-Electronics MDPI.pdf"},
+  {year: 2024, title: "Reviewer Certificate 19534837 Informatics Mdpi", organization: "", area: "", file: "Reviewer-Certificate-19534837-Informatics MDPI.pdf", path: "assets/certificates/Reviewer-Certificate-19534837-Informatics MDPI.pdf"},
+  {year: 2024, title: "Reviewer Certificate 19534837", organization: "", area: "", file: "Reviewer-Certificate-19534837.pdf", path: "assets/certificates/Reviewer-Certificate-19534837.pdf"},
+  {year: 2024, title: "Uipath Diploma Dr. Nayyar Ahmed Khan", organization: "", area: "", file: "UiPath Diploma Dr. Nayyar Ahmed Khan.pdf", path: "assets/certificates/UiPath Diploma Dr. Nayyar Ahmed Khan.pdf"},
+  {year: 2024, title: "Uipath Nayyar Ahmed Khan Partnership", organization: "", area: "", file: "UiPath Nayyar Ahmed Khan Partnership.pdf", path: "assets/certificates/UiPath Nayyar Ahmed Khan Partnership.pdf"},
+  {year: 2024, title: "Volunteering Experience 2024", organization: "", area: "", file: "Volunteering Experience 2024.pdf", path: "assets/certificates/Volunteering Experience 2024.pdf"},
+  {year: 2023, title: "Aatce Certificte Of Achievement Uk", organization: "", area: "", file: "AATCE_Certificte of Achievement_UK.pdf", path: "assets/certificates/AATCE_Certificte of Achievement_UK.pdf"},
+  {year: 2023, title: "Nayyarahmed Khan Certificate Of P Certificate", organization: "", area: "", file: "NayyarAhmed Khan-Certificate of P-certificate.pdf", path: "assets/certificates/NayyarAhmed Khan-Certificate of P-certificate.pdf"},
+  {year: 2023, title: "Quizziz Game Changer", organization: "", area: "", file: "Quizziz Game Changer.pdf", path: "assets/certificates/Quizziz Game Changer.pdf"},
+  {year: 2023, title: "د. نيار أحمد خان", organization: "", area: "", file: "د. نيار أحم مد خان.pdf", path: "assets/certificates/د. نيار أحمد خان.pdf"},
+  {year: 2022, title: "Cert Trainer App Dev W Swift Blk 0620", organization: "", area: "", file: "Cert_Trainer_App_Dev_w_Swift_blk_0620.pdf", path: "assets/certificates/Cert_Trainer_App_Dev_w_Swift_blk_0620.pdf"},
+  {year: 2022, title: "Cert Trainer App Dev W Swift Wht 0620", organization: "", area: "", file: "Cert_Trainer_App_Dev_w_Swift_wht_0620.pdf", path: "assets/certificates/Cert_Trainer_App_Dev_w_Swift_wht_0620.pdf"},
+  {year: 2022, title: "Creative Certification Exam   Google", organization: "", area: "", file: "Creative Certification Exam _ Google.pdf", path: "assets/certificates/Creative Certification Exam _ Google.pdf"},
+  {year: 2022, title: "Intel   Iot Certificate", organization: "", area: "", file: "Intel _ IOT Certificate.pdf", path: "assets/certificates/Intel _ IOT Certificate.pdf"},
+  {year: 2022, title: "Microsoft Certified Professional Certificate 0", organization: "", area: "", file: "Microsoft_Certified_Professional_Certificate_0.pdf", path: "assets/certificates/Microsoft_Certified_Professional_Certificate_0.pdf"},
+  {year: 2022, title: "Microsoft Certified Professional Certificate Data Fundamentals", organization: "", area: "", file: "Microsoft_Certified_Professional_Certificate_Data Fundamentals.pdf", path: "assets/certificates/Microsoft_Certified_Professional_Certificate_Data Fundamentals.pdf"},
+  {year: 2022, title: "Nayyarahmed Khan Certificate Of P Certificate (2)", organization: "", area: "", file: "NayyarAhmed Khan-Certificate of P-certificate (2).pdf", path: "assets/certificates/NayyarAhmed Khan-Certificate of P-certificate (2).pdf"},
+  {year: 2022, title: "Nse 2 Certification", organization: "", area: "", file: "NSE_2_Certification.pdf", path: "assets/certificates/NSE_2_Certification.pdf"},
+  {year: 2022, title: "Nse 3 Certificate", organization: "", area: "", file: "NSE_3_Certificate.pdf", path: "assets/certificates/NSE_3_Certificate.pdf"},
+  {year: 2022, title: "أ.نيار احمد خان", organization: "", area: "", file: "أ.نيار احمد خان.pdf", path: "assets/certificates/أ.نيار احمد خان.pdf"},
+  {year: 2021, title: "Advance Java Course", organization: "", area: "", file: "Advance Java Course.pdf", path: "assets/certificates/Advance Java Course.pdf"},
+  {year: 2021, title: "Amazon Dsp Certification   Learning Console", organization: "", area: "", file: "Amazon DSP Certification _ Learning console.pdf", path: "assets/certificates/Amazon DSP Certification _ Learning console.pdf"},
+  {year: 2021, title: "Aws Training August 2021", organization: "", area: "", file: "AWS Training August 2021.pdf", path: "assets/certificates/AWS Training August 2021.pdf"},      
+  {year: 2021, title: "Aws Academy Graduate   Aws Academy Cloud Foundations Badge20210105 58 39Th5H", organization: "", area: "", file: "AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20210105-58-39th5h.pdf", path: "assets/certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20210105-58-39th5h.pdf"},
+  {year: 2021, title: "Aws Academy Graduate   Aws Academy Machine Learning", organization: "", area: "", file: "AWS_Academy_Graduate___AWS_Academy_Machine_Learning.pdf", path: "assets/certificates/AWS_Academy_Graduate___AWS_Academy_Machine_Learning.pdf"},
+  {year: 2021, title: "Aws Flight Radar", organization: "", area: "", file: "AWS_Flight Radar.pdf", path: "assets/certificates/AWS_Flight Radar.pdf"},
+  {year: 2021, title: "Big Data University Bd0115En Certificate   Cognitive Class", organization: "", area: "", file: "Big Data University BD0115EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Big Data University BD0115EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Big Data University Bd0123En Certificate   Cognitive Class", organization: "", area: "", file: "Big Data University BD0123EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Big Data University BD0123EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Big Data University Bd0143En Certificate   Cognitive Class", organization: "", area: "", file: "Big Data University BD0143EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Big Data University BD0143EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Big Data University Ml0111En Certificate   Cognitive Class", organization: "", area: "", file: "Big Data University ML0111EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Big Data University ML0111EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ccit Appreciation 2021", organization: "", area: "", file: "CCIT Appreciation 2021.pdf", path: "assets/certificates/CCIT Appreciation 2021.pdf"},
+  {year: 2021, title: "Certificateofcompletion Learning Python", organization: "", area: "", file: "CertificateOfCompletion_Learning Python.pdf", path: "assets/certificates/CertificateOfCompletion_Learning Python.pdf"},
+  {year: 2021, title: "Certificateofcompletion Project Management Foundations Teams Pdf 1624014563", organization: "", area: "", file: "CertificateOfCompletion_Project_Management_Foundations_Teams_pdf_1624014563.pdf", path: "assets/certificates/CertificateOfCompletion_Project_Management_Foundations_Teams_pdf_1624014563.pdf"},
+  {year: 2021, title: "Certificateofcompletion Succeeding In Web Development Full Stack And Front End", organization: "", area: "", file: "CertificateOfCompletion_Succeeding in Web Development Full Stack and Front End.pdf", path: "assets/certificates/CertificateOfCompletion_Succeeding in Web Development Full Stack and Front End.pdf"},
+  {year: 2021, title: "Certificateofcompletion Working With Computers And Devices", organization: "", area: "", file: "CertificateOfCompletion_Working with Computers and Devices.pdf", path: "assets/certificates/CertificateOfCompletion_Working with Computers and Devices.pdf"},
+  {year: 2021, title: "Cognitive Class Bd0101En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitive Class BD0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitive Class BD0101EN Certificate _ Cognitive Class.pdf"},      
+  {year: 2021, title: "Cognitive Class Ds0101En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitive Class DS0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitive Class DS0101EN Certificate _ Cognitive Class.pdf"},      
+  {year: 2021, title: "Cognitive Class Dv0101En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitive Class DV0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitive Class DV0101EN Certificate _ Cognitive Class.pdf"},      
+  {year: 2021, title: "Cognitive Class Dv0151En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitive Class DV0151EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitive Class DV0151EN Certificate _ Cognitive Class.pdf"},      
+  {year: 2021, title: "Cognitive Class Rp0105En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitive Class RP0105EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitive Class RP0105EN Certificate _ Cognitive Class.pdf"},      
+  {year: 2021, title: "Cognitiveclass Da0101En Certificate   Cognitive Class", organization: "", area: "", file: "CognitiveClass DA0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/CognitiveClass DA0101EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Cognitiveclass Ds0103En Certificate   Cognitive Class", organization: "", area: "", file: "CognitiveClass DS0103EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/CognitiveClass DS0103EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Cognitiveclass Py0101En Certificate   Cognitive Class", organization: "", area: "", file: "Cognitiveclass PY0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Cognitiveclass PY0101EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "E Learning Workshop", organization: "", area: "", file: "E-Learning Workshop.pdf", path: "assets/certificates/E-Learning Workshop.pdf"},
+  {year: 2021, title: "Elearning Certificate Vice Rector", organization: "", area: "", file: "ELearning Certificate Vice Rector.pdf", path: "assets/certificates/ELearning Certificate Vice Rector.pdf"},
+  {year: 2021, title: "Fortinet Nse 1 Certification", organization: "", area: "", file: "Fortinet NSE_1_Certification.pdf", path: "assets/certificates/Fortinet NSE_1_Certification.pdf"},
+  {year: 2021, title: "Fortinet Nse 1 Certification Nk", organization: "", area: "", file: "Fortinet NSE_1_Certification_NK.pdf", path: "assets/certificates/Fortinet NSE_1_Certification_NK.pdf"},
+  {year: 2021, title: "Full Page Photo", organization: "", area: "", file: "Full page photo.pdf", path: "assets/certificates/Full page photo.pdf"},
+  {year: 2021, title: "Hash Code 2021", organization: "", area: "", file: "Hash Code 2021.pdf", path: "assets/certificates/Hash Code 2021.pdf"},
+  {year: 2021, title: "Ibm Bd0111En Certificate   Cognitive Class", organization: "", area: "", file: "IBM BD0111EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBM BD0111EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibm Bd0121En Certificate   Cognitive Class", organization: "", area: "", file: "IBM BD0121EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBM BD0121EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibm Skills Network Ml0103En Certificate   Cognitive Class", organization: "", area: "", file: "IBM Skills Network ML0103EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBM Skills Network ML0103EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Bc0201En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork BC0201EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork BC0201EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Bc0202En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork BC0202EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork BC0202EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Cc0101En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork CC0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork CC0101EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Cc0201En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork CC0201EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork CC0201EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Co0101En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork CO0101EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork CO0101EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork De0205En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork DE0205EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork DE0205EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Ibmdeveloperskillsnetwork Secm03En Certificate   Cognitive Class", organization: "", area: "", file: "IBMDeveloperSkillsNetwork SECM03EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/IBMDeveloperSkillsNetwork SECM03EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Lightbend Sc0105En Certificate   Cognitive Class", organization: "", area: "", file: "Lightbend SC0105EN Certificate _ Cognitive Class.pdf", path: "assets/certificates/Lightbend SC0105EN Certificate _ Cognitive Class.pdf"},
+  {year: 2021, title: "Nayyar Aws Architecturing", organization: "", area: "", file: "Nayyar AWS Architecturing.pdf", path: "assets/certificates/Nayyar AWS Architecturing.pdf"},   
+  {year: 2021, title: "Nayyar Khan Ec Councill", organization: "", area: "", file: "Nayyar Khan_EC Councill.pdf", path: "assets/certificates/Nayyar Khan_EC Councill.pdf"},
+  {year: 2021, title: "Nayyar Khan Ec Councill June", organization: "", area: "", file: "Nayyar Khan_EC Councill_June.pdf", path: "assets/certificates/Nayyar Khan_EC Councill_June.pdf"},
+  {year: 2021, title: "Nayyarahmedkhan Course Course Excellence Nasscom", organization: "", area: "", file: "NayyarAhmedKhan_course_Course-Excellence-NASSCOM.pdf", path: "assets/certificates/NayyarAhmedKhan_course_Course-Excellence-NASSCOM.pdf"},
+  {year: 2021, title: "Pmlinkedin", organization: "", area: "", file: "PMLinkedIn.pdf", path: "assets/certificates/PMLinkedIn.pdf"},
+  {year: 2021, title: "Scrum Master", organization: "", area: "", file: "Scrum Master.pdf", path: "assets/certificates/Scrum Master.pdf"},
+  {year: 2021, title: "Skillsbuild For Students Cybersecurity Fundamentals", organization: "", area: "", file: "SkillsBuild for Students_Cybersecurity Fundamentals.pdf", path: "assets/certificates/SkillsBuild for Students_Cybersecurity Fundamentals.pdf"},
+  {year: 2021, title: "Thank You Certificate For Volunteers Nkhan Su", organization: "", area: "", file: "Thank you certificate for volunteers-NKhan-SU.pdf", path: "assets/certificates/Thank you certificate for volunteers-NKhan-SU.pdf"},
+  {year: 2021, title: "شهادة أ. نيار", organization: "", area: "", file: "شهادة أ. نيار. .pdf", path: "assets/certificates/شهادة أ. نيار.pdf"},
+  {year: 2020, title: "Course Certification   Nayyar Ahmed Khan", organization: "", area: "", file: "Course Certification - Nayyar Ahmed Khan.pdf", path: "assets/certificates/Course Certification - Nayyar Ahmed Khan.pdf"},
+  {year: 2020, title: "Latex Certificate   Nayyar Ahmed Khan", organization: "", area: "", file: "Latex Certificate - Nayyar Ahmed Khan.pdf", path: "assets/certificates/Latex Certificate - Nayyar Ahmed Khan.pdf"},
+  {year: 2020, title: "Lms Training April 2020", organization: "", area: "", file: "LMS TRAINING APRIL 2020.pdf", path: "assets/certificates/LMS TRAINING APRIL 2020.pdf"},
+  {year: 2020, title: "Thank You For Joining", organization: "", area: "", file: "Thank you for joining.pdf", path: "assets/certificates/Thank you for joining.pdf"},
+  {year: 2020, title: "Thank You For Joining 1", organization: "", area: "", file: "Thank you for joining_1.pdf", path: "assets/certificates/Thank you for joining_1.pdf"},
+  {year: 2020, title: "شهادة حضور دورة اللاتكس للمبتدئين   نير أحمد خان", organization: "", area: "", file: "شهادة حضور دورة اللاتكس للمبتدئين - نير أحمد خان.pdf", path: "assets/certificates/شهادة حضور دورة اللاتكس للمبتدئين - نير أحمد خان.pdf"},
+  {year: 2020, title: "نيير", organization: "", area: "", file: "نيير.pdf", path: "assets/certificates/نيير.pdf"},
+];
 
     // Sort certificates by year descending
     certificates.sort((a, b) => b.year - a.year);
@@ -200,41 +317,40 @@
     function renderCertificates(filter = "") {
       const list = document.getElementById('certificates-list');
       list.innerHTML = "";
+      const search = filter.toLowerCase();
       certificates.filter(cert => {
-        const search = filter.toLowerCase();
         return (
-          cert.name.toLowerCase().includes(search) ||
+          cert.title.toLowerCase().includes(search) ||
           cert.organization.toLowerCase().includes(search) ||
+          cert.area.toLowerCase().includes(search) ||
           cert.year.toString().includes(search) ||
-          cert.area.toLowerCase().includes(search)
+          cert.file.toLowerCase().includes(search)
         );
       }).forEach(cert => {
         list.innerHTML += `
-          <div class="certificate-card">
-            <div>
-              <span class="certificate-year-badge">${cert.year}</span>
-              <span class="certificate-title">${cert.name}</span>
+          <div class="certificate-card" onclick="previewPDF('${cert.path}', '${cert.title}')">
+            <span class="certificate-year-badge">${cert.year}</span>
+            <div class="pdf-thumbnail">
+              <i class="bi bi-file-earmark-pdf pdf-icon"></i>
             </div>
+            <div class="certificate-title">${cert.title}</div>
             <div class="certificate-meta">
-              <span><strong>Organization:</strong> ${cert.organization}</span>
-              <span><strong>Functional Area:</strong> ${cert.area}</span>
+              ${cert.organization ? `<span><strong>Organization:</strong> ${cert.organization}</span>` : ""}
+              ${cert.area ? `<span><strong>Functional Area:</strong> ${cert.area}</span>` : ""}
+              <span><strong>File:</strong> ${cert.file}</span>
             </div>
-            <div class="mt-2">
-              <button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${cert.pdf}', '${cert.name}')"><i class="bi bi-eye"></i> Preview PDF</button>
-            </div>
+            <button class="btn btn-primary btn-sm pdf-preview-btn" onclick="event.stopPropagation();previewPDF('${cert.path}', '${cert.title}');"><i class="bi bi-eye"></i> View Certificate</button>
           </div>
         `;
       });
     }
 
-    // PDF Preview (no download allowed)
     function previewPDF(pdfUrl, title) {
       document.getElementById('pdfFrame').src = pdfUrl;
       document.getElementById('pdfModalLabel').textContent = title;
       new bootstrap.Modal(document.getElementById('pdfModal')).show();
     }
 
-    // Search functionality
     document.addEventListener('DOMContentLoaded', function() {
       renderCertificates();
       document.getElementById('searchInput').addEventListener('input', function() {
