@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Certificates | Dr. Nayyar Ahmed Khan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', 'Raleway', Arial, sans-serif;
+      background: #f8f9fa;
+    }
+    .search-bar { margin-bottom: 2rem; }
+    .certificate-card {
+      background: #fff; /* Remove gradient */
+      border-radius: 14px;
+      box-shadow: none; /* Remove shadow */
+      margin-bottom: 2rem;
+      padding: 2rem 2.2rem;
+      border: 1px solid #e3e3e3;
+      transition: border-color 0.2s;
+    }
+    .certificate-card:hover {
+      border-color: #90caf9;
+      box-shadow: none; /* No shadow on hover */
+    }
+    .certificate-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1565c0;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.01em;
+    }
+    .certificate-meta {
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 0.7rem;
+      line-height: 1.7;
+    }
+    .certificate-meta span {
+      margin-right: 1.2em;
+    }
+    .certificate-meta strong {
+      color: #1976d2;
+      font-weight: 500;
+    }
+    .certificate-year-badge {
+      background: #1976d2;
+      color: #fff;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      padding: 0.25em 0.8em;
+      margin-right: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      display: inline-block;
+    }
+    .pdf-preview-btn {
+      margin-right: 0.7rem;
+      font-size: 0.97rem;
+      border-radius: 8px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .pdf-preview-btn i {
+      margin-right: 0.2em;
+    }
+    .section-title h2 {
+      font-family: 'Raleway', 'Poppins', Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1976d2;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .section-title p {
+      font-size: 1.08rem;
+      color: #374151;
+      margin-bottom: 2rem;
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+    @media (max-width: 600px) {
+      .certificate-card { padding: 1.2rem; }
+      .section-title h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="certificate.html" class="nav-link scrollto active"><i class="bx bx-certification"></i> <span>Certificates</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Certificates</h2>
+          <p>Browse my certificates received from various organizations, sorted by year. Search and preview certificates securely.</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search certificates by name, year, organization, or area...">
+        </div>
+        <div id="certificates-list"></div>
+      </div>
+    </section>
+  </main>
+  <!-- PDF Preview Modal -->
+  <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pdfModalLabel">Certificate PDF Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="height:80vh;">
+          <iframe id="pdfFrame" src="" width="100%" height="100%" style="border:none;" allow="fullscreen"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container">
+      <h3>Dr. Nayyar Ahmed Khan</h3>
+      <p>Software Engineer, Mentor, Developer, Trainer, Designer, Educator and Instructor.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/in/khannayyar/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyrights <strong><span>Dr. Nayyar Ahmed Khan</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">nayyar@outlook.in</a>
+      </div>
+      <div class="visitor-country" id="visitorCountry"></div>
+    </div>
+  </footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // --- MANUAL CERTIFICATES LIST ---
+    const certificates = [
+      {
+        name: "Certified Data Scientist",
+        year: 2024,
+        organization: "Coursera",
+        area: "Data Science",
+        pdf: "assets/certificates/data_scientist.pdf"
+      },
+      {
+        name: "AWS Certified Solutions Architect",
+        year: 2023,
+        organization: "Amazon Web Services",
+        area: "Cloud Computing",
+        pdf: "assets/certificates/aws_solutions_architect.pdf"
+      },
+      {
+        name: "Professional Scrum Master",
+        year: 2022,
+        organization: "Scrum.org",
+        area: "Agile Project Management",
+        pdf: "assets/certificates/scrum_master.pdf"
+      }
+      // Add more certificates here
+    ];
+
+    // Sort certificates by year descending
+    certificates.sort((a, b) => b.year - a.year);
+
+    // Render certificates
+    function renderCertificates(filter = "") {
+      const list = document.getElementById('certificates-list');
+      list.innerHTML = "";
+      certificates.filter(cert => {
+        const search = filter.toLowerCase();
+        return (
+          cert.name.toLowerCase().includes(search) ||
+          cert.organization.toLowerCase().includes(search) ||
+          cert.year.toString().includes(search) ||
+          cert.area.toLowerCase().includes(search)
+        );
+      }).forEach(cert => {
+        list.innerHTML += `
+          <div class="certificate-card">
+            <div>
+              <span class="certificate-year-badge">${cert.year}</span>
+              <span class="certificate-title">${cert.name}</span>
+            </div>
+            <div class="certificate-meta">
+              <span><strong>Organization:</strong> ${cert.organization}</span>
+              <span><strong>Functional Area:</strong> ${cert.area}</span>
+            </div>
+            <div class="mt-2">
+              <button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${cert.pdf}', '${cert.name}')"><i class="bi bi-eye"></i> Preview PDF</button>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    // PDF Preview (no download allowed)
+    function previewPDF(pdfUrl, title) {
+      document.getElementById('pdfFrame').src = pdfUrl;
+      document.getElementById('pdfModalLabel').textContent = title;
+      new bootstrap.Modal(document.getElementById('pdfModal')).show();
+    }
+
+    // Search functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      renderCertificates();
+      document.getElementById('searchInput').addEventListener('input', function() {
+        renderCertificates(this.value);
+      });
+      // Visitor country widget
+      fetch('https://ipinfo.io/json?token=d75d8e6ab608ce')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('visitorCountry').innerHTML = `Visitor from: <strong>${data.country}</strong> (${data.city})`;
+        });
+    });
+  </script>
+</body>
+</html>
