@@ -16,13 +16,91 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Poppins', 'Raleway', Arial, sans-serif;
+      background: #f8f9fa;
+    }
     .search-bar { margin-bottom: 2rem; }
-    .article-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 2rem; padding: 1.5rem; }
-    .article-title { font-size: 1.25rem; font-weight: 600; }
-    .article-meta { font-size: 0.95rem; color: #888; }
-    .download-btn { margin-right: 1rem; }
-    .pdf-preview-btn { margin-right: 1rem; }
-    .visitor-country { font-size: 0.95rem; color: #888; margin-top: 1rem; }
+    .article-card {
+      background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      margin-bottom: 2rem;
+      padding: 2rem 2.2rem;
+      transition: box-shadow 0.2s;
+      border: 1px solid #e3e3e3;
+    }
+    .article-card:hover {
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+      border-color: #90caf9;
+    }
+    .article-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1565c0;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.01em;
+    }
+    .article-meta {
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 0.7rem;
+      line-height: 1.7;
+    }
+    .article-meta span {
+      margin-right: 1.2em;
+    }
+    .article-meta strong {
+      color: #1976d2;
+      font-weight: 500;
+    }
+    .article-year-badge {
+      background: #1976d2;
+      color: #fff;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      padding: 0.25em 0.8em;
+      margin-right: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      display: inline-block;
+    }
+    .download-btn, .pdf-preview-btn, .btn-outline-secondary {
+      margin-right: 0.7rem;
+      font-size: 0.97rem;
+      border-radius: 8px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .pdf-preview-btn i, .download-btn i, .btn-outline-secondary i {
+      margin-right: 0.2em;
+    }
+    .visitor-country {
+      font-size: 0.97rem;
+      color: #1976d2;
+      margin-top: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+    .section-title h2 {
+      font-family: 'Raleway', 'Poppins', Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1976d2;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .section-title p {
+      font-size: 1.08rem;
+      color: #374151;
+      margin-bottom: 2rem;
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+    @media (max-width: 600px) {
+      .article-card { padding: 1.2rem; }
+      .section-title h2 { font-size: 1.4rem; }
+    }
   </style>
 </head>
 <body>
@@ -48,7 +126,7 @@
           <p>Browse my published research articles, sorted by year. Search, preview, and download articles.</p>
         </div>
         <div class="search-bar">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search articles by title, year, or publication/journal...">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search articles by title, year, author, or journal...">
         </div>
         <div id="articles-list"></div>
       </div>
@@ -97,19 +175,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // --- MANUAL ARTICLES LIST ---
-    // Fill this array using BibTeX entries (convert BibTeX fields to JS object fields)
-    // Example BibTeX:
-    // @article{almalki2022enabling,
-    //   title={Enabling blockchain with IoMT devices for healthcare},
-    //   author={Almalki, Jameel and ... and Khan, Nayyar Ahmed},
-    //   journal={Information},
-    //   volume={13},
-    //   number={10},
-    //   pages={448},
-    //   year={2022},
-    //   publisher={MDPI}
-    // }
+    // ...existing code...
+    // articles array as previously provided
     // ...existing code...
 const articles = [
   // 2025
@@ -677,10 +744,8 @@ const articles = [
     link: ""
   }
 ];
-// ...existing code...
-
     // Sort articles by year descending
-    articles.sort((a, b) => b.year - a.year);
+    articles.sort((a, b) => (b.year || 0) - (a.year || 0));
 
     // Render articles
     function renderArticles(filter = "") {
@@ -698,22 +763,25 @@ const articles = [
       }).forEach(article => {
         const pdfButton = article.pdf
           ? `<button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${article.pdf}', '${article.title}')"><i class="bi bi-eye"></i> Preview PDF</button>`
-          : `<button class="btn btn-secondary btn-sm" disabled><i class="bi bi-eye"></i> Preview PDF</button>`;
+          : `<button class="btn btn-outline-secondary btn-sm pdf-preview-btn" disabled><i class="bi bi-eye"></i> Preview PDF</button>`;
         const downloadButton = article.pdf
           ? `<a class="btn btn-success btn-sm download-btn" href="${article.pdf}" download><i class="bi bi-download"></i> Download</a>`
-          : `<a class="btn btn-secondary btn-sm download-btn" disabled><i class="bi bi-download"></i> Download</a>`;
+          : `<a class="btn btn-outline-secondary btn-sm download-btn" disabled><i class="bi bi-download"></i> Download</a>`;
         list.innerHTML += `
           <div class="article-card">
-            <div class="article-title">${article.title}</div>
+            <div>
+              <span class="article-year-badge">${article.year || ""}</span>
+              <span class="article-title">${article.title}</span>
+            </div>
             <div class="article-meta">
-              <span><strong>Authors:</strong> ${article.author || ""}</span><br>
-              <span><strong>Journal:</strong> ${article.journal || ""}</span>
-              ${article.volume ? ` | <span><strong>Volume:</strong> ${article.volume}</span>` : ""}
-              ${article.number ? ` | <span><strong>Number:</strong> ${article.number}</span>` : ""}
-              ${article.pages ? ` | <span><strong>Pages:</strong> ${article.pages}</span>` : ""}
-              <br>
-              <span><strong>Year:</strong> ${article.year || ""}</span>
-              ${article.publisher ? ` | <span><strong>Publisher:</strong> ${article.publisher}</span>` : ""}
+              ${article.author ? `<span><strong>Authors:</strong> ${article.author}</span>` : ""}
+              ${article.journal ? `<span><strong>Journal:</strong> ${article.journal}</span>` : ""}
+              ${article.booktitle ? `<span><strong>Booktitle:</strong> ${article.booktitle}</span>` : ""}
+              ${article.organization ? `<span><strong>Organization:</strong> ${article.organization}</span>` : ""}
+              ${article.volume ? `<span><strong>Volume:</strong> ${article.volume}</span>` : ""}
+              ${article.number ? `<span><strong>Number:</strong> ${article.number}</span>` : ""}
+              ${article.pages ? `<span><strong>Pages:</strong> ${article.pages}</span>` : ""}
+              ${article.publisher ? `<span><strong>Publisher:</strong> ${article.publisher}</span>` : ""}
             </div>
             <div class="mt-2">
               ${pdfButton}
