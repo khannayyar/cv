@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Research Articles | Dr. Nayyar Ahmed Khan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .search-bar { margin-bottom: 2rem; }
+    .article-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 2rem; padding: 1.5rem; }
+    .article-title { font-size: 1.25rem; font-weight: 600; }
+    .article-meta { font-size: 0.95rem; color: #888; }
+    .cite-score { font-size: 0.95rem; color: #0077b6; }
+    .download-btn { margin-right: 1rem; }
+    .pdf-preview-btn { margin-right: 1rem; }
+    .visitor-country { font-size: 0.95rem; color: #888; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="research.html" class="nav-link scrollto active"><i class="bx bx-book"></i> <span>Research</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Research Articles</h2>
+          <p>Browse my published research articles, sorted by year. Search, preview, and download articles. Citation counts are fetched from Google Scholar.</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search articles by title, year, or publication house...">
+        </div>
+        <div id="articles-list"></div>
+      </div>
+    </section>
+  </main>
+  <!-- PDF Preview Modal -->
+  <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pdfModalLabel">Article PDF Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="height:80vh;">
+          <iframe id="pdfFrame" src="" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container">
+      <h3>Dr. Nayyar Ahmed Khan</h3>
+      <p>Software Engineer, Mentor, Developer, Trainer, Designer, Educator and Instructor.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/in/khannayyar/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyrights <strong><span>Dr. Nayyar Ahmed Khan</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">nayyar@outlook.in</a>
+      </div>
+      <div class="visitor-country" id="visitorCountry"></div>
+    </div>
+  </footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // --- CONFIGURATION ---
+    const SERPAPI_KEY = "add249803b04e8fee1e08e0fe45e53551b6285bd3c2d5dcdb8d849ce285f2a32";
+    const SCHOLAR_USER_ID = "A0nTCiwAAAAJ";
+    // If you want to manually attach PDFs, update this object:
+    const pdfs = {
+      // "Exact Article Title": "assets/papers/filename.pdf",
+      // Example: "Smart Parking System using IoT": "assets/papers/smart_parking.pdf"
+    };
+
+    // --- FETCH GOOGLE SCHOLAR PUBLICATIONS ---
+    async function fetchAllPublications() {
+      let allArticles = [];
+      let next = null;
+      let page = 1;
+      try {
+        do {
+          let url = `https://serpapi.com/search.json?engine=google_scholar_author&author_id=${SCHOLAR_USER_ID}&api_key=${SERPAPI_KEY}`;
+          if (next) url += `&after_author=${encodeURIComponent(next)}`;
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("Network error or quota exceeded.");
+          const data = await response.json();
+
+          // Check both 'articles' and 'publications'
+          if (data.articles && data.articles.length) {
+            allArticles = allArticles.concat(data.articles);
+          }
+          if (data.publications && data.publications.length) {
+            allArticles = allArticles.concat(data.publications);
+          }
+
+          next = data.next || null;
+          page++;
+        } while (next && page <= 10); // Limit to 10 pages for safety
+      } catch (err) {
+        document.getElementById('articles-list').innerHTML = `<div style='color:#c00;text-align:center;'>Unable to fetch publications. Error: ${err.message}</div>`;
+        console.error("SerpAPI fetch error:", err);
+      }
+      return allArticles;
+    }
+
+    // --- RENDER ARTICLES ---
+    let articlesCache = [];
+    async function renderArticles(filter = "") {
+      const list = document.getElementById('articles-list');
+      list.innerHTML = "<div style='text-align:center;margin:2rem 0;'><span class='spinner-border'></span> Loading publications...</div>";
+
+      if (!articlesCache.length) {
+        articlesCache = await fetchAllPublications();
+      }
+      if (!articlesCache.length) {
+        list.innerHTML = "<div style='color:#c00;text-align:center;'>No publications found.</div>";
+        return;
+      }
+      // Sort by year descending
+      const filtered = articlesCache.filter(article => {
+        const search = filter.toLowerCase();
+        return (
+          (article.title || "").toLowerCase().includes(search) ||
+          (article.publication || "").toLowerCase().includes(search) ||
+          (article.publication_year || "").toString().includes(search)
+        );
+      }).sort((a, b) => (b.publication_year || 0) - (a.publication_year || 0));
+
+      list.innerHTML = "";
+      filtered.forEach(article => {
+        // PDF logic: show buttons if you manually add PDF link
+        const pdfPath = pdfs[article.title] || "";
+        const pdfButton = pdfPath
+          ? `<button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${pdfPath}', '${article.title.replace(/'/g,"&#39;")}')"><i class="bi bi-eye"></i> Preview PDF</button>`
+          : `<button class="btn btn-secondary btn-sm" disabled><i class="bi bi-eye"></i> Preview PDF</button>`;
+        const downloadButton = pdfPath
+          ? `<a class="btn btn-success btn-sm download-btn" href="${pdfPath}" download><i class="bi bi-download"></i> Download</a>`
+          : `<a class="btn btn-secondary btn-sm download-btn" disabled><i class="bi bi-download"></i> Download</a>`;
+        list.innerHTML += `
+          <div class="article-card">
+            <div class="article-title">${article.title || "Untitled"}</div>
+            <div class="article-meta">
+              <span><strong>Publication:</strong> ${article.publication || "N/A"}</span> |
+              <span><strong>Year:</strong> ${article.publication_year || "N/A"}</span>
+              <span class="cite-score">Citations: <span class="badge bg-info">${article.cited_by_count || 0}</span></span>
+            </div>
+            <div class="mt-2">
+              ${pdfButton}
+              ${downloadButton}
+              <a class="btn btn-outline-secondary btn-sm" href="${article.link || '#'}" target="_blank"><i class="bi bi-link-45deg"></i> View Online</a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    // --- PDF Preview Modal ---
+    function previewPDF(pdfUrl, title) {
+      document.getElementById('pdfFrame').src = pdfUrl;
+      document.getElementById('pdfModalLabel').textContent = title;
+      new bootstrap.Modal(document.getElementById('pdfModal')).show();
+    }
+
+    // --- SEARCH FUNCTIONALITY ---
+    document.addEventListener('DOMContentLoaded', function() {
+      renderArticles();
+      document.getElementById('searchInput').addEventListener('input', function() {
+        renderArticles(this.value);
+      });
+      // Visitor country widget
+      fetch('https://ipinfo.io/json?token=demo')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('visitorCountry').innerHTML = `Visitor from: <strong>${data.country}</strong> (${data.city})`;
+        });
+    });
+  </script>
+</body>
+</html>
