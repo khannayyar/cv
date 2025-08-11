@@ -20,7 +20,6 @@
     .article-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 2rem; padding: 1.5rem; }
     .article-title { font-size: 1.25rem; font-weight: 600; }
     .article-meta { font-size: 0.95rem; color: #888; }
-    .cite-score { font-size: 0.95rem; color: #0077b6; }
     .download-btn { margin-right: 1rem; }
     .pdf-preview-btn { margin-right: 1rem; }
     .visitor-country { font-size: 0.95rem; color: #888; margin-top: 1rem; }
@@ -46,10 +45,10 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Research Articles</h2>
-          <p>Browse my published research articles, sorted by year. Search, preview, and download articles. Citation counts are fetched from Google Scholar.</p>
+          <p>Browse my published research articles, sorted by year. Search, preview, and download articles.</p>
         </div>
         <div class="search-bar">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search articles by title, year, or publication house...">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search articles by title, year, or publication/journal...">
         </div>
         <div id="articles-list"></div>
       </div>
@@ -98,112 +97,649 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // --- CONFIGURATION ---
-    const SERPAPI_KEY = "add249803b04e8fee1e08e0fe45e53551b6285bd3c2d5dcdb8d849ce285f2a32";
-    const SCHOLAR_USER_ID = "A0nTCiwAAAAJ";
-    // If you want to manually attach PDFs, update this object:
-    const pdfs = {
-      // "Exact Article Title": "assets/papers/filename.pdf",
-      // Example: "Smart Parking System using IoT": "assets/papers/smart_parking.pdf"
-    };
+    // --- MANUAL ARTICLES LIST ---
+    // Fill this array using BibTeX entries (convert BibTeX fields to JS object fields)
+    // Example BibTeX:
+    // @article{almalki2022enabling,
+    //   title={Enabling blockchain with IoMT devices for healthcare},
+    //   author={Almalki, Jameel and ... and Khan, Nayyar Ahmed},
+    //   journal={Information},
+    //   volume={13},
+    //   number={10},
+    //   pages={448},
+    //   year={2022},
+    //   publisher={MDPI}
+    // }
+    // ...existing code...
+const articles = [
+  // 2025
+  {
+    title: "Development of Intelligent Student Information System",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Arabian Journal of Basic Science and Research",
+    volume: "7",
+    number: "1",
+    pages: "Arabian--Journal",
+    year: 2025,
+    publisher: "http://doi.org/10.38177/AJBSR.2025.7101",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Development of Intelligent Library Services for University Students",
+    author: "Khan, Nayyar Ahmed; Rajeyyagari, Sivaram; Khan, Asif Rashid",
+    journal: "Mediterranean Journal of Basic and Applied Sciences (MJBAS)",
+    volume: "9",
+    number: "1",
+    pages: "142--147",
+    year: 2025,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Complexities and Challenges for Securing Digital Assets and Infrastructure in Academia: A Review on Digital Asset Security",
+    author: "Alshalaan, Mohammad; Khan, Nayyar Ahmed",
+    journal: "Complexities and Challenges for Securing Digital Assets and Infrastructure",
+    pages: "225--244",
+    year: 2025,
+    publisher: "IGI Global Scientific Publishing",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "NAMAQ-Arabic Handwriting Recognition Using Deep Learning, AI, and ML with Sentiment Analysis",
+    author: "Aljomaee, Wareef Yousuf; Alshahrani, Saeed M; Khan, Nayyar Ahmed",
+    booktitle: "2025 4th International Conference on Computing and Information Technology (ICCIT)",
+    pages: "268--275",
+    year: 2025,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "An Application of Machine Learning, Big Data and IoT of Enterprise Architecture: Challenges, Solutions and Open Issues",
+    author: "Zamani, Abu Sarwar; Akhtar, Md Mobin; Khan, Nayyar Ahmed",
+    year: 2025,
+    publisher: "IntechOpen",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Statistical probability prediction model for E-Learning and realtime proctoring using IoT devices",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Journal of King Saud University -- Science",
+    volume: "37",
+    number: "http://dx.doi.org/10.25259/JKSUS_700_202",
+    pages: "7002025",
+    year: 2025,
+    publisher: "Scientific Scholar",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Innovation in teaching and learning with the use of modern computational tools: A Post Covid experience",
+    author: "Khan, Nayyar Ahmed; Khan, Asif Rashid; Rajeyyagari, Sivaram",
+    journal: "Innovation",
+    volume: "8",
+    number: "2",
+    pages: "74--82",
+    year: 2025,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Living Smart: AI-Based Urban Assistance Systems for Sustainable Wellbeing in Small Cities",
+    author: "Khan, Nayyar Ahmed; Ahamad, Danish",
+    year: 2025,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Learning Three-dimensional Face recognition from Sparse views for Robust Identity verification",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Irish Interdisciplinary Journal of Science & Research",
+    volume: "9",
+    number: "3",
+    pages: "1--7",
+    year: 2025,
+    publisher: "https://doi.org/10.46759/IIJSR.2025.9301",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Network Intrusion Management of Web Form Spamming using Blockchain",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Irish Interdisciplinary Journal of Science & Research",
+    volume: "9",
+    number: "3",
+    pages: "26--34",
+    year: 2025,
+    publisher: "https://doi.org/10.46759/IIJSR.2025.9304",
+    pdf: "",
+    link: ""
+  },
 
-    // --- FETCH GOOGLE SCHOLAR PUBLICATIONS ---
-    async function fetchAllPublications() {
-      let allArticles = [];
-      let next = null;
-      let page = 1;
-      try {
-        do {
-          let url = `https://serpapi.com/search.json?engine=google_scholar_author&author_id=${SCHOLAR_USER_ID}&api_key=${SERPAPI_KEY}`;
-          if (next) url += `&after_author=${encodeURIComponent(next)}`;
-          const response = await fetch(url);
-          if (!response.ok) throw new Error("Network error or quota exceeded.");
-          const data = await response.json();
+  // 2024
+  {
+    title: "Development of Intelligent Pick and Drop Service Manager for Small Cities",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Asian Journal of Basic Science & Research",
+    volume: "6",
+    number: "3",
+    pages: "20--27",
+    year: 2024,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Development of Intelligent Help System for Small Cities",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Asian Journal of Applied Science and Technology",
+    volume: "8",
+    number: "3",
+    pages: "112--119",
+    year: 2024,
+    publisher: "Copyright AJAST 2024",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "An iomt enabled iterative artificial bee colony approach using federated learning for detection of heart disease",
+    author: "Khan, Nayyar Ahmed; Akhtar, Md Mobin; Siddiqi, Ahmed Masih Uddin; Rashid, Khan Asif; Rajeyyagari, Sivaram; Khalid, Mohammad Nadeem; Ahmad, Mohammad",
+    booktitle: "Solving with Bees: Transformative Applications of Artificial Bee Colony Algorithm",
+    pages: "103--116",
+    year: 2024,
+    publisher: "Springer Nature Singapore Singapore",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Integrating Artificial Bee Colony Algorithms for Deep Learning Model Optimization: A Comprehensive Review",
+    author: "Akram, Faiz; Aziz, Shafaque; Khan, Nayyar Ahmed; Faizi, Syed Akramah; Raza, Khalid",
+    journal: "Solving with Bees: Transformative Applications of Artificial Bee Colony Algorithm",
+    pages: "73--102",
+    year: 2024,
+    publisher: "Springer Nature Singapore Singapore",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "A comprehensive secure system enabling healthcare 5.0 using federated learning, intrusion detection and blockchain",
+    author: "Almalki, Jameel; Alshahrani, Saeed M; Khan, Nayyar Ahmed",
+    journal: "PeerJ Computer Science",
+    volume: "10",
+    pages: "e1778",
+    year: 2024,
+    publisher: "PeerJ Inc.",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Colony Approach Using Federated Learning for Detection of Heart Disease",
+    author: "Nayyar Ahmed Khan; Md Mobin Akhtar; Siddiqi, Ahmed Masih Uddin; Rashid, Khan Asif; Rajeyyagari, Sivaram; Khalid, Mohammad Nadeem",
+    journal: "Solving with Bees: Transformative Applications of Artificial Bee Colony Algorithm",
+    pages: "103",
+    year: 2024,
+    publisher: "Springer Nature",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Solving with Bees",
+    author: "Raza, Khalid",
+    year: 2024,
+    publisher: "Springer",
+    pdf: "",
+    link: ""
+  },
 
-          // Check both 'articles' and 'publications'
-          if (data.articles && data.articles.length) {
-            allArticles = allArticles.concat(data.articles);
-          }
-          if (data.publications && data.publications.length) {
-            allArticles = allArticles.concat(data.publications);
-          }
+  // 2023
+  {
+    title: "An Empirical Study on the Future of Publication Repositories and Its Adaptability in Public universities—A Case Study of Shaqra University, Saudi Arabia",
+    author: "Khan, Nayyar Ahmed; Al-Omari, Omaia Mohammed; Alshahrani, Saeed Masoud",
+    booktitle: "Computational Intelligence: Select Proceedings of InCITe 2022",
+    pages: "823--829",
+    year: 2023,
+    publisher: "Springer",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Systematic Survey on Big Data Analytics and Artificial Intelligence for COVID-19 Containment.",
+    author: "Alshahrani, Saeed M; Almalki, Jameel; Alshehri, Waleed; Mehmood, Rashid; Albahar, Marwan; Jannah, Najlaa; Khan, Nayyar Ahmed",
+    journal: "Computer Systems Science & Engineering",
+    volume: "47",
+    number: "2",
+    year: 2023,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "COVID-19 advising application development for Apple devices (iOS)",
+    author: "Alshahrani, Saeed M; Khan, Nayyar Ahmed",
+    journal: "PeerJ Computer Science",
+    volume: "9",
+    pages: "e1274",
+    year: 2023,
+    publisher: "PeerJ Inc.",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "IoT based Helmet: IoT based Helmet",
+    author: "Khan, Nayyar Ahmed",
+    year: 2023,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Filament and pellet integrated co-extruder for additive manufacturing: Filament and pellet integrated co-extruder for additive manufacturing",
+    author: "Khan, Nayyar Ahmed",
+    year: 2023,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Supply Chain Visualization Device: Supply Chain Visualization Device",
+    author: "Khan, Nayyar Ahmed",
+    year: 2023,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "IoT based Pit Detector: IoT based Pit Detector",
+    author: "Khan, Nayyar Ahmed",
+    year: 2023,
+    pdf: "",
+    link: ""
+  },
 
-          next = data.next || null;
-          page++;
-        } while (next && page <= 10); // Limit to 10 pages for safety
-      } catch (err) {
-        document.getElementById('articles-list').innerHTML = `<div style='color:#c00;text-align:center;'>Unable to fetch publications. Error: ${err.message}</div>`;
-        console.error("SerpAPI fetch error:", err);
-      }
-      return allArticles;
-    }
+  // 2022
+  {
+    title: "Enabling blockchain with IoMT devices for healthcare",
+    author: "Almalki, Jameel; Al Shehri, Waleed; Mehmood, Rashid; Alsaif, Khalid; Alshahrani, Saeed M; Jannah, Najlaa; Khan, Nayyar Ahmed",
+    journal: "Information",
+    volume: "13",
+    number: "10",
+    pages: "448",
+    year: 2022,
+    publisher: "MDPI",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation",
+    author: "Alangari, Someah; Alshahrani, Saeed M; Khan, Nayyar Ahmed; Alghamdi, Abdulrahman Abdullah; Almalki, Jameel; Al Shehri, Waleed",
+    journal: "PeerJ Computer Science",
+    volume: "8",
+    pages: "e1120",
+    year: 2022,
+    publisher: "PeerJ Inc.",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Development of an artificially intelligent advising system for Saudi medical transcription",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Development",
+    volume: "6",
+    number: "3",
+    pages: "94796",
+    year: 2022,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "URL Phishing Detection Using Particle Swarm Optimization and Data Mining.",
+    author: "Alshahrani, Saeed M; Khan, Nayyar Ahmed; Almalki, Jameel; Al Shehri, Waleed",
+    journal: "Computers, Materials & Continua",
+    volume: "73",
+    number: "3",
+    year: 2022,
+    pdf: "",
+    link: ""
+  },
 
-    // --- RENDER ARTICLES ---
-    let articlesCache = [];
-    async function renderArticles(filter = "") {
+  // 2021
+  {
+    title: "Development of intelligent alumni management system for universities",
+    author: "Khan, Nayyar Ahmed; Siddiqi, Ahmed Masih Uddin; Ahmad, Mohammad",
+    journal: "Asian Journal of Basic Science & Research",
+    volume: "3",
+    number: "2",
+    pages: "51--60",
+    year: 2021,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Development of mubadarah system-an intelligent system for proposals at a university",
+    author: "Khan, Nayyar Ahmed; Ahamad, Danish; Alam, Shabi; Siddiqi, Ahmad Masih Uddin; Khalid, Mohammad Nadeem; Nasimuddin, Mohammad Ahmad Mohammad",
+    booktitle: "2021 International conference on computational intelligence and knowledge economy (ICCIKE)",
+    pages: "413--417",
+    year: 2021,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "COVIBOT-An intelligent WhatsApp based advising bot for Covid-19",
+    author: "Khan, Nayyar Ahmed; Albatein, Jawad",
+    booktitle: "2021 International conference on computational intelligence and knowledge economy (ICCIKE)",
+    pages: "418--422",
+    year: 2021,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Development of Medidrone: a drone based emergency service system for Saudi Arabian Healthcare",
+    author: "Khan, Nayyar Ahmed; Ahmad, Mohammad; Alam, Shabi; Siddiqi, Ahmad Masih Uddin; Ahamad, Danish; Khalid, Mohammad Nadeem",
+    booktitle: "2021 International Conference on Computational Intelligence and Knowledge Economy (ICCIKE)",
+    pages: "407--412",
+    year: 2021,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "An empirical analysis on users’ acceptance and usage of BYOD-technology for saudi universities: a case study of Shaqra University",
+    author: "Khan, Nayyar Ahmed; Khalid, Mohammad Nadeem; Ahmad, Mohammad; Siddiqi, Ahmed Masih Uddin; Shukla, Vinod Kumar",
+    booktitle: "2021 International conference on technological advancements and innovations (ICTAI)",
+    pages: "57--62",
+    year: 2021,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Artificially intelligent warehouse management system",
+    author: "Alangari, Someah; Khan, Nayyar Ahmed",
+    journal: "Asian Journal of Basic Science & Research",
+    volume: "3",
+    number: "3",
+    pages: "16--24",
+    year: 2021,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Measuring Academics Intentions to use a Project Management System (PMS): A Case Study of the College of Computing and Information Technology, Shaqra University",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Trends in Future Informatics and Emerging Technologies",
+    pages: "58--69",
+    year: 2021,
+    publisher: "Bentham Science Publishers",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Zigbee technology to provide elderly people with well-being at home",
+    author: "Alsulami, Majid H; Atkins, Anthony S; Alaboudi, Abdulellah A; Khan, Nayyar A",
+    journal: "International Journal of Sensors Wireless Communications and Control",
+    volume: "11",
+    number: "9",
+    pages: "921--927",
+    year: 2021,
+    publisher: "Bentham Science Publishers",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Smart University Model for Saudi Arabian Universities",
+    author: "Alsulami, Majid H; Alotaibi, Sultan; Khan, Nayyar",
+    journal: "Design Engineering",
+    pages: "162--181",
+    year: 2021,
+    pdf: "",
+    link: ""
+  },
+
+  // 2020
+  {
+    title: "Internet of Things (IOT) Based Educational Data Mining (EDM) System",
+    author: "Khan, VII Nayyar Ahmed; Mahafdah, Rund Fareed; Al-Omari, Omaia Mohammad; Dardouri, Samia; Siddiqi, Ahmed Masih Uddin; Nasimuddin, Mohammad Ahmad Mohammad",
+    journal: "J. Mech. Cont. & Math. Sci",
+    volume: "15",
+    number: "3",
+    pages: "271--284",
+    year: 2020,
+    pdf: "",
+    link: ""
+  },
+
+  // 2019
+  {
+    title: "Prevention of web-form spamming for cloud based applications: a proposed model",
+    author: "Khan, Nayyar Ahmed; Siddiqi, Ahmed Masih Uddin; Mohammad, Mohammad Ahmad; Ahmad, Danish; Hameed, Shabi Alam; Al Omari, Omaia Mohammad",
+    booktitle: "2019 Amity International Conference on Artificial Intelligence (AICAI)",
+    pages: "249--254",
+    year: 2019,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Intrusion management to avoid web-form spamming in cloud based architectures",
+    author: "Khan, Nayyar Ahmed; Mahafdah, Rund Fareed; Nasimuddin, Mohammad Ahmad Mohammad; Alomari, Omaia Mohammad; Siddiqi, Ahmed Masih Uddin; Ahamad, Danish",
+    booktitle: "2019 International conference on computational intelligence and knowledge economy (ICCIKE)",
+    pages: "437--442",
+    year: 2019,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Wireless Requirements and Benefits in the Academics Domain",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Middle East Journal of Applied Science & Technology (MEJAST)",
+    volume: "2",
+    number: "3",
+    pages: "45--49",
+    year: 2019,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Basics of Ethical Hacking and Computer Security Paperback--1 January 2019",
+    author: "Khan, Nayyar Ahmed",
+    year: 2019,
+    publisher: "Roseword Books",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Security management protocols in cloud computation",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Middle East Journal of Applied Science & Technology",
+    volume: "2",
+    number: "1",
+    pages: "16--23",
+    year: 2019,
+    pdf: "",
+    link: ""
+  },
+
+  // 2018
+  {
+    title: "Development of Web Based E-Cooperative Training System",
+    author: "Alanezi, Rayid; Alanezi, Mohammed Ateeq; Khan, Nayyar Ahmed",
+    booktitle: "2018 International Conference on Smart Computing and Electronic Enterprise (ICSCEE)",
+    pages: "1--6",
+    year: 2018,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Learning Modal Adaptability to Improve Reading and Writing skills of Students",
+    author: "Mahafdah, Rund Fareed; Al-Omari, Omaia Mohammed; Khan, Nayyar Ahmed",
+    year: 2018,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Cloud applications development and deployment: The future of cost effective programming and a step ahead",
+    author: "Khan, Nayyar Ahmed",
+    journal: "Middle East Journal of Applied Science & Technology",
+    volume: "1",
+    number: "1",
+    pages: "30--36",
+    year: 2018,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Adaption of Moodle as E-Learning in Saudi Arabian University: Empirical Examination and its Outcomes Using TAM",
+    author: "Alanezi, Mohammed Ateeq",
+    journal: "International Journal of Computer",
+    volume: "29",
+    number: "1",
+    pages: "132--148",
+    year: 2018,
+    pdf: "",
+    link: ""
+  },
+
+  // 2017
+  {
+    title: "Managing Data Replication in Mobile Ad-Hoc Network Databases Using Content Based Energy Optimization",
+    author: "Hassan, Mobarak Abaker Adam; Khan, Nayyar Ahmed; Nasim, Mohammad Ahmad Mohammad",
+    journal: "Mediterranean Journal of Basic and Applied Sciences (MJBAS)",
+    volume: "1",
+    number: "1",
+    pages: "142--154",
+    year: 2017,
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Ranking and Reputation Based Resource Allocation in P2P System",
+    author: "Al Omari, Omaia Mohammad Awad; Khan, Nayyar Ahmed; Mahafdah, Rund",
+    journal: "Mediterranean Journal of Basic and Applied Sciences (MJBAS)",
+    volume: "1",
+    number: "1",
+    pages: "293--301",
+    year: 2017,
+    pdf: "",
+    link: ""
+  },
+
+  // 2015
+  {
+    title: "Cyber Forensics and Proposed Techniques to Overcome Cyber Threats for Cyber Security",
+    author: "Khan, Nayyar Ahmed; Ghamdi, Abdul Rehman Al",
+    journal: "International Journal of Engineering and Management Research (IJEMR)",
+    volume: "5",
+    number: "5",
+    pages: "187--191",
+    year: 2015,
+    publisher: "Vandana Publications",
+    pdf: "",
+    link: ""
+  },
+
+  // 2014
+  {
+    title: "Simulation analysis of directed diffusion and SPIN routing protocol in wireless sensor network",
+    author: "Jain, Vaishali; Khan, Nayyar Ahmed",
+    booktitle: "2014 Conference on IT in Business, Industry and Government (CSIBIG)",
+    pages: "1--6",
+    year: 2014,
+    organization: "IEEE",
+    pdf: "",
+    link: ""
+  },
+
+  // No year or miscellaneous
+  {
+    title: "Use of IT to enhance the Academic Quality and Educational Environment at University Level “Use of information technology is indeed the need for the hour”",
+    author: "Khan, Nayyar Ahmed; Al Omari, Omaia Mohammed; Mahafdah, Rund Fareed",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "BLUEWEB SECURITY SYSTEM",
+    author: "Khan, Nayyar Ahmed; Nasim, Mohammad Ahmad Mohammad; Hassan, Mobarak Abaker Adam; Riyadh, KSA",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Cloud Computing: The Future of Cost Effective and Enterprise Friendly Computing",
+    author: "Nasimuddin, Mohammad Ahmad Mohammad; Khan, Nayyar Ahmed",
+    pdf: "",
+    link: ""
+  },
+  {
+    title: "Research Article Design and Verification of Cache Coherence Protocol",
+    author: "Khan, Nayyar Ahmed",
+    pdf: "",
+    link: ""
+  }
+];
+// ...existing code...
+
+    // Sort articles by year descending
+    articles.sort((a, b) => b.year - a.year);
+
+    // Render articles
+    function renderArticles(filter = "") {
       const list = document.getElementById('articles-list');
-      list.innerHTML = "<div style='text-align:center;margin:2rem 0;'><span class='spinner-border'></span> Loading publications...</div>";
-
-      if (!articlesCache.length) {
-        articlesCache = await fetchAllPublications();
-      }
-      if (!articlesCache.length) {
-        list.innerHTML = "<div style='color:#c00;text-align:center;'>No publications found.</div>";
-        return;
-      }
-      // Sort by year descending
-      const filtered = articlesCache.filter(article => {
+      list.innerHTML = "";
+      articles.filter(article => {
         const search = filter.toLowerCase();
         return (
-          (article.title || "").toLowerCase().includes(search) ||
-          (article.publication || "").toLowerCase().includes(search) ||
-          (article.publication_year || "").toString().includes(search)
+          (article.title && article.title.toLowerCase().includes(search)) ||
+          (article.journal && article.journal.toLowerCase().includes(search)) ||
+          (article.year && article.year.toString().includes(search)) ||
+          (article.author && article.author.toLowerCase().includes(search)) ||
+          (article.publisher && article.publisher.toLowerCase().includes(search))
         );
-      }).sort((a, b) => (b.publication_year || 0) - (a.publication_year || 0));
-
-      list.innerHTML = "";
-      filtered.forEach(article => {
-        // PDF logic: show buttons if you manually add PDF link
-        const pdfPath = pdfs[article.title] || "";
-        const pdfButton = pdfPath
-          ? `<button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${pdfPath}', '${article.title.replace(/'/g,"&#39;")}')"><i class="bi bi-eye"></i> Preview PDF</button>`
+      }).forEach(article => {
+        const pdfButton = article.pdf
+          ? `<button class="btn btn-primary btn-sm pdf-preview-btn" onclick="previewPDF('${article.pdf}', '${article.title}')"><i class="bi bi-eye"></i> Preview PDF</button>`
           : `<button class="btn btn-secondary btn-sm" disabled><i class="bi bi-eye"></i> Preview PDF</button>`;
-        const downloadButton = pdfPath
-          ? `<a class="btn btn-success btn-sm download-btn" href="${pdfPath}" download><i class="bi bi-download"></i> Download</a>`
+        const downloadButton = article.pdf
+          ? `<a class="btn btn-success btn-sm download-btn" href="${article.pdf}" download><i class="bi bi-download"></i> Download</a>`
           : `<a class="btn btn-secondary btn-sm download-btn" disabled><i class="bi bi-download"></i> Download</a>`;
         list.innerHTML += `
           <div class="article-card">
-            <div class="article-title">${article.title || "Untitled"}</div>
+            <div class="article-title">${article.title}</div>
             <div class="article-meta">
-              <span><strong>Publication:</strong> ${article.publication || "N/A"}</span> |
-              <span><strong>Year:</strong> ${article.publication_year || "N/A"}</span>
-              <span class="cite-score">Citations: <span class="badge bg-info">${article.cited_by_count || 0}</span></span>
+              <span><strong>Authors:</strong> ${article.author || ""}</span><br>
+              <span><strong>Journal:</strong> ${article.journal || ""}</span>
+              ${article.volume ? ` | <span><strong>Volume:</strong> ${article.volume}</span>` : ""}
+              ${article.number ? ` | <span><strong>Number:</strong> ${article.number}</span>` : ""}
+              ${article.pages ? ` | <span><strong>Pages:</strong> ${article.pages}</span>` : ""}
+              <br>
+              <span><strong>Year:</strong> ${article.year || ""}</span>
+              ${article.publisher ? ` | <span><strong>Publisher:</strong> ${article.publisher}</span>` : ""}
             </div>
             <div class="mt-2">
               ${pdfButton}
               ${downloadButton}
-              <a class="btn btn-outline-secondary btn-sm" href="${article.link || '#'}" target="_blank"><i class="bi bi-link-45deg"></i> View Online</a>
+              ${article.link ? `<a class="btn btn-outline-secondary btn-sm" href="${article.link}" target="_blank"><i class="bi bi-link-45deg"></i> View Online</a>` : ""}
             </div>
           </div>
         `;
       });
     }
 
-    // --- PDF Preview Modal ---
+    // PDF Preview
     function previewPDF(pdfUrl, title) {
       document.getElementById('pdfFrame').src = pdfUrl;
       document.getElementById('pdfModalLabel').textContent = title;
       new bootstrap.Modal(document.getElementById('pdfModal')).show();
     }
 
-    // --- SEARCH FUNCTIONALITY ---
+    // Search functionality
     document.addEventListener('DOMContentLoaded', function() {
       renderArticles();
       document.getElementById('searchInput').addEventListener('input', function() {
         renderArticles(this.value);
       });
       // Visitor country widget
-      fetch('https://ipinfo.io/json?token=demo')
+      fetch('https://ipinfo.io/json?token=d75d8e6ab608ce')
         .then(response => response.json())
         .then(data => {
           document.getElementById('visitorCountry').innerHTML = `Visitor from: <strong>${data.country}</strong> (${data.city})`;
