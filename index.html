@@ -584,6 +584,63 @@
                 }).join('');
             } catch(e) { /* silent */ }
         })();
+
+        // Load recent publications on homepage
+        (async function(){
+            try {
+                const res = await fetch('data/research.json');
+                const data = await res.json();
+                const container = document.getElementById('publications-container');
+                if (!container) return;
+                
+                const recentPubs = (data.publications || []).slice(0, 5);
+                if (!recentPubs.length) {
+                    container.innerHTML = `
+                        <div class="text-center py-12 bg-gray-50 rounded-xl">
+                            <i class="fas fa-book-open text-4xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-600">Publications will be loaded automatically from Google Scholar</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                container.innerHTML = recentPubs.map((pub, index) => `
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="${index * 100}">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2 hover:text-purple-600 transition">
+                                    <a href="${pub.url || pub.link || '#'}" target="_blank" rel="noopener noreferrer">
+                                        ${pub.title}
+                                    </a>
+                                </h3>
+                                <p class="text-gray-600 mb-2">${pub.authors}</p>
+                                <p class="text-sm text-gray-500 mb-3">
+                                    <i class="fas fa-book mr-2"></i>${pub.journal}
+                                </p>
+                                <div class="flex items-center gap-4 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full font-medium">
+                                        <i class="far fa-calendar mr-1"></i>${pub.year}
+                                    </span>
+                                    ${pub.citations ? `
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full font-medium">
+                                        <i class="fas fa-quote-left mr-1"></i>${pub.citations} citations
+                                    </span>
+                                    ` : ''}
+                                </div>
+                            </div>
+                            ${pub.url || pub.link ? `
+                            <a href="${pub.url || pub.link}" target="_blank" rel="noopener noreferrer" 
+                               class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white hover:shadow-lg transition">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            } catch(e) {
+                console.error('Error loading publications:', e);
+            }
+        })();
     </script>
 </body>
 </html>
