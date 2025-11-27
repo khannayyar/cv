@@ -1,16 +1,196 @@
 {
     "projects": [
         {
-            "title": "[Project Title]",
+            "title": "Realtime Proctoring Using IoT Devices",
             "role": "Principal Investigator",
-            "duration": "20XX - 20XX",
-            "funding": "[Funding Agency]",
-            "amount": "$XXX,XXX",
-            "description": "[Project description]",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "AI & Security",
+            "technologies": ["IoT", "AI", "Machine Learning", "Video Processing", "Markov Chain", "Probability Analysis"],
+            "description": "Statistical validation model using explainable AI to distinguish suspicious activities during proctoring at higher education institutions. Framework trained with probabilistic prediction function based on Markov Chain for real-time instructor-free proctoring.",
             "outcomes": [
-                "[Outcome 1]",
-                "[Outcome 2]"
-            ]
+                "Developed intelligent surveillance system for exam proctoring",
+                "Achieved high-performance real-time prediction using IoT devices",
+                "Published research with considerable outcomes for e-learning proctoring"
+            ],
+            "link": "https://jksus.org/statistical-probability-prediction-model-for-e-learning-and-realtime-proctoring-using-iot-devices/",
+            "publicationDate": "2025-07-23"
+        },
+        {
+            "title": "NAMAQ - Arabic Handwriting Recognition Using Deep Learning",
+            "role": "Co-Investigator",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "AI & NLP",
+            "collaborators": ["Wareef Yousuf Aljomaee", "Saeed M Alshahrani"],
+            "technologies": ["Deep Learning", "CNN", "Machine Learning", "NLP", "Sentiment Analysis"],
+            "description": "Recognition system for Arabic handwritten scripts using CNN for feature extraction. Addresses complexity of Arabic language characters and variations in handwriting styles with machine learning classifiers.",
+            "outcomes": [
+                "Achieved 96.4% recognition rate for 29 Arabic character classes",
+                "Developed robust feature extraction using CNN",
+                "Tested with large-scale Arabic handwriting datasets"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/10989445",
+            "publicationDate": "2025-04-13"
+        },
+        {
+            "title": "Intelligent Student Information System",
+            "role": "Principal Investigator",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Database Systems", "Web Development", "Information Management"],
+            "description": "Digital system providing administration and students easy access to necessary information and forms. Reduces paperwork, minimizes errors, and facilitates systematic information management with complete student statistics.",
+            "outcomes": [
+                "Eliminated paper-based form processing",
+                "Automated student information collection and management",
+                "Provided real-time statistics to administration",
+                "Reduced processing time and resource wastage"
+            ],
+            "publicationDate": "2025-02"
+        },
+        {
+            "title": "COVID-19 Advising Application for Apple Devices (iOS)",
+            "role": "Principal Investigator",
+            "duration": "2022 - 2023",
+            "status": "Completed",
+            "category": "Healthcare & Mobile Development",
+            "technologies": ["iOS Development", "NLP", "AI", "Healthcare Technology"],
+            "description": "Powerful NLP-based iOS application to advise COVID-19 patients. Helps users identify critical situations and make necessary decisions when infected. Focuses on security and safety advantages of iOS platform.",
+            "outcomes": [
+                "Developed secure iOS healthcare application",
+                "Implemented NLP for patient symptom analysis",
+                "Provided real-time COVID-19 medical advice",
+                "Enhanced security compared to Android/web alternatives"
+            ],
+            "link": "https://peerj.com/articles/cs-1274/",
+            "publicationDate": "2023-03-13"
+        },
+        {
+            "title": "DSpace Publication Repository System in University Environment",
+            "role": "Principal Investigator",
+            "duration": "2022 - 2023",
+            "status": "Completed",
+            "category": "Digital Library & Knowledge Management",
+            "technologies": ["DSpace", "Repository Systems", "Database Management", "Web Technologies"],
+            "description": "Survey-based study for deploying publication repository systems in Saudi Arabian government universities. Provides data on academic intentions to maintain university-level research information.",
+            "outcomes": [
+                "Assessed academic publication repository needs",
+                "Provided deployment guidelines for universities",
+                "Facilitated research information management",
+                "Published framework for university repository systems"
+            ],
+            "link": "https://link.springer.com/chapter/10.1007/978-981-19-7346-8_71",
+            "publicationDate": "2023-02-16"
+        },
+        {
+            "title": "Blockchain-Based Digitally Secured Model for Educational Sector",
+            "role": "Principal Investigator",
+            "duration": "2021 - 2022",
+            "status": "Completed",
+            "category": "Blockchain & Security",
+            "technologies": ["Blockchain", "Cryptography", "Digital Transformation", "Security"],
+            "description": "Secure, fast, and transparent model for academic certificate verification in Saudi Arabia's education sector. Uses blockchain technology to prevent document fraud and facilitate digital transformation in academic document verification.",
+            "outcomes": [
+                "Developed blockchain-based certificate verification system",
+                "Prevented academic document fraud and forgery",
+                "Enabled fast and transparent verification process",
+                "Supported Saudi Arabia's digital transformation goals"
+            ],
+            "link": "https://peerj.com/articles/cs-1120/",
+            "publicationDate": "2022-09-29"
+        },
+        {
+            "title": "Project Management System (PMS) at College of Computing and IT",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "Information Systems",
+            "institution": "Shaqra University",
+            "technologies": ["Project Management", "Database Systems", "Quality Assurance", "TAM Model", "DOI Model"],
+            "description": "Application to manage complete datasets for quality assurance projects in academic domain. Blends DOI model with TAM Model to measure academics' intentions to use the Project Management System.",
+            "outcomes": [
+                "Deployed PMS at College of Computing and IT, Shaqra University",
+                "Managed quality assurance project datasets",
+                "Positive relationship found between perceived usefulness and usage intentions",
+                "Improved academic information management efficiency"
+            ],
+            "link": "https://www.benthamdirect.com/content/books/9789814998451.chapter-6",
+            "publicationDate": "2021-10-11"
+        },
+        {
+            "title": "Intelligent Alumni Management System for Universities",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Database Management", "Web Development", "Communication Systems"],
+            "description": "Alumni information management system enabling communications between colleges and graduates. Provides platform for job opportunities, announcements, and professional networking. Focuses on security, usability, and accessibility.",
+            "outcomes": [
+                "Facilitated university-alumni communication",
+                "Created job opportunity discovery platform",
+                "Collected graduate working experience data",
+                "Improved teaching process through graduate feedback"
+            ],
+            "link": "https://ajbsr.net/data/uploads/77626(1).pdf",
+            "publicationDate": "2021-04"
+        },
+        {
+            "title": "COVIBOT - Intelligent WhatsApp Based Advising Bot for COVID-19",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "AI & Healthcare",
+            "technologies": ["AI", "NLP", "WhatsApp Integration", "Chatbot Development"],
+            "description": "WhatsApp messenger integrated bot using AI and NLP to advise COVID-19 patients about first aid and immediate treatment. Provides symptom-based medical attention guidance and nearest hospital information.",
+            "outcomes": [
+                "Developed AI-powered COVID-19 advisory chatbot",
+                "Integrated with WhatsApp for wide accessibility",
+                "Provided symptom-based medical advice",
+                "Directed patients to nearest medical facilities"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410801",
+            "publicationDate": "2021-03-17"
+        },
+        {
+            "title": "Mubadarah System - Intelligent System for Proposals at University",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "Decision Support Systems",
+            "technologies": ["Web Development", "Voting Systems", "Database Management"],
+            "description": "Interactive system for proposing and voting on ideas at university level. Creates transparent communication between decision-makers and stakeholders. 'Mubadarah' (meaning 'Idea' in Arabic) enables online proposal submission and democratic voting.",
+            "outcomes": [
+                "Enabled transparent idea proposal mechanism",
+                "Implemented democratic voting system",
+                "Facilitated stakeholder-administration communication",
+                "Streamlined university decision-making process"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410773",
+            "publicationDate": "2021-03-17"
+        },
+        {
+            "title": "Medidrone - Drone Based Emergency Service System for Saudi Healthcare",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "Healthcare Technology & Drones",
+            "technologies": ["Drone Technology", "Mobile App Development", "Emergency Systems", "IoT"],
+            "description": "Emergency service system using drones to provide first aid at accident locations in Saudi Arabia. Addresses traffic delays in ambulance services through mobile app integration and drone deployment.",
+            "outcomes": [
+                "Developed drone-based emergency response system",
+                "Reduced emergency response time in traffic conditions",
+                "Integrated mobile app for accident reporting",
+                "Provided rapid first aid delivery mechanism"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410685/",
+            "publicationDate": "2021-03-17"
         }
-    ]
+    ],
+    "statistics": {
+        "totalProjects": 11,
+        "completed": 11,
+        "ongoing": 0,
+        "categories": ["AI & Security", "AI & NLP", "Educational Technology", "Healthcare & Mobile Development", "Digital Library & Knowledge Management", "Blockchain & Security", "Information Systems", "AI & Healthcare", "Decision Support Systems", "Healthcare Technology & Drones"]
+    }
 }
