@@ -111,6 +111,32 @@ async function loadHighlightsStats() {
         setCount(patEl, patents);
     setCount(comEl, community);
     setCount(trainerEl, trainerRoles);
+
+        // On mobile or if highlights already visible, animate immediately
+        const section = document.getElementById('highlights');
+        if (section) {
+            const inView = section.getBoundingClientRect().top < window.innerHeight * 0.9; // mostly in view
+            const isMobile = window.innerWidth < 768; // md breakpoint
+            if (inView || isMobile) {
+                const counters = section.querySelectorAll('[data-count]');
+                counters.forEach(counter => {
+                    // Only animate if still showing 0
+                    if (counter.textContent === '0') {
+                        animateCounter(counter);
+                    }
+                });
+            } else {
+                // Fallback: force animation after 3s if user hasn't scrolled yet (helps very small screens)
+                setTimeout(() => {
+                    const stillZero = Array.from(section.querySelectorAll('[data-count]')).some(c => c.textContent === '0');
+                    if (stillZero) {
+                        section.querySelectorAll('[data-count]').forEach(c => {
+                            if (c.textContent === '0') animateCounter(c);
+                        });
+                    }
+                }, 3000);
+            }
+        }
     } catch (err) {
         console.warn('Failed to load highlight stats:', err);
     }
