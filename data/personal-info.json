@@ -1,0 +1,44 @@
+{
+    "name": "Dr. Nayyar Ahmed Khan",
+    "title": "Faculty of Computer Science",
+    "department": "Computer Science",
+    "university": "Shaqra University",
+    "email": "nayyar@su.edu.sa",
+    "phone": "+966-11-647-5526",
+    "address": "College of Computing and Information Technology, Shaqra University, Shaqra City, Riyadh Province, 15526",
+    "officeHours": "8:00 AM to 8:00 PM",
+    "website": "https://khannayyar.github.io/cv",
+    "bio": "I serve as Faculty of Computer Science in the Department of Computer Science at Shaqra University, College of Computing and Information Technology. With a Ph.D. in Computer Science and Engineering from Devi Ahilya Vishwavidyalaya, India, my research expertise lies in network security, cloud computing, and intrusion detection systems. My doctoral work focused on developing innovative network intrusion management models to prevent web form spamming in cloud computing environments, contributing significantly to the field of cybersecurity. I am deeply committed to advancing knowledge through cutting-edge research, inspiring and mentoring the next generation of computer science scholars, and leveraging technology to address real-world security challenges in cloud-based applications.",
+    "researchInterests": [
+        "Blockchain Technology and Applications",
+        "Network Security and Intrusion Detection",
+        "Cloud Computing Security",
+        "Artificial Intelligence and Machine Learning",
+        "Web Application Security and Spam Prevention",
+        "Data Science and Analytics",
+        "Cybersecurity and Information Security"
+    ],
+    "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/khannayyar/",
+        "googleScholar": "https://scholar.google.com/citations?user=A0nTCiwAAAAJ",
+        "orcid": "https://orcid.org/0000-0003-3642-2830",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57205294112",
+        "credly": "https://www.credly.com/users/nayyarkhan",
+        "youtube": "https://www.youtube.com/@ccitsu",
+        "sciprofile": "https://sciprofiles.com/profile/nayyar"
+    },
+    "trainerHighlights": [
+        "Apple Professional Learning Specialist",
+        "Apple Certified Trainer",
+        "AWS Certified Educator",
+        "Cisco Instructor (7+ years)",
+        "Red Hat Certified Instructor",
+        "Huawei Trainer"
+    ],
+    "statistics": {
+        "publications": 50,
+        "citations": 500,
+        "projects": 15,
+        "awards": 10
+    }
+}

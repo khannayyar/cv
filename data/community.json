@@ -1,0 +1,164 @@
+{
+    "contributions": [
+        {
+            "id": 1,
+            "title": "Workshop on LMS System",
+            "organization": "Shaqra University",
+            "type": "Workshop",
+            "date": "2017",
+            "description": "Conducted comprehensive workshop on Learning Management System (LMS) implementation and best practices across the university network, training faculty and staff on effective digital learning platforms.",
+            "link": "http://newspaper.su.edu.sa/?p=8206",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Workshop on Project Management System",
+            "organization": "Shaqra University",
+            "type": "Workshop",
+            "date": "2017",
+            "description": "Led an extensive workshop on Project Management System methodologies and tools, enhancing project coordination and execution capabilities across university departments.",
+            "link": "http://newspaper.su.edu.sa/?p=7393",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "Online Examination System - Implementation & Report",
+            "organization": "Shaqra University",
+            "type": "System Implementation",
+            "date": "2017-11",
+            "description": "Successfully coordinated and reported on the university-wide online examination system implementation, ensuring seamless digital assessment delivery during critical academic periods.",
+            "link": "https://twitter.com/ShaqraUni/status/935529299108646912",
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Competitions Administration - University Centers",
+            "organization": "Shaqra University",
+            "type": "Competition",
+            "date": "2017-10",
+            "description": "Administered and coordinated academic competitions across all centers of Shaqra University, fostering competitive excellence and student engagement in technology and innovation.",
+            "link": "https://twitter.com/shaqrauni/status/924954028945084416",
+            "featured": false
+        },
+        {
+            "id": 5,
+            "title": "Computer Security Training Courses",
+            "organization": "Shaqra University - Central Hub",
+            "type": "Training",
+            "date": "2017-10",
+            "description": "Delivered comprehensive training courses on computer security fundamentals and best practices at the central hub, reaching multiple university departments and enhancing cybersecurity awareness.",
+            "link": "https://twitter.com/shaqrauni/status/921072747391934466",
+            "featured": true
+        },
+        {
+            "id": 6,
+            "title": "iLMS Project - University-Wide Training Initiative",
+            "organization": "College of Computing and IT, Shaqra University",
+            "type": "Training",
+            "date": "2017",
+            "description": "Led the iLMS (integrated Learning Management System) training project across the entire university network, personally driving adoption and providing hands-on training to hundreds of faculty members.",
+            "link": "http://colleges.su.edu.sa/Shaqra/CCIT/News/Pages/news049.aspx",
+            "featured": true
+        },
+        {
+            "id": 7,
+            "title": "Seminar on Project Management System",
+            "organization": "Shaqra University",
+            "type": "Seminar",
+            "date": "2017",
+            "description": "Presented a detailed seminar on modern project management systems, methodologies, and digital tools for effective project planning and execution in academic environments.",
+            "link": "http://newspaper.su.edu.sa/?p=7393",
+            "featured": false
+        },
+        {
+            "id": 8,
+            "title": "LMS Workshop - College of Applied Medicine",
+            "organization": "College of Applied Medicine, Shaqra University",
+            "type": "Workshop",
+            "date": "2017",
+            "description": "Conducted specialized LMS workshop tailored for the College of Applied Medicine, addressing unique needs of medical education and healthcare training in digital learning environments.",
+            "link": "http://newspaper.su.edu.sa/?p=8206",
+            "featured": false
+        },
+        {
+            "id": 9,
+            "title": "Google Hash Code 2020 - Coordination",
+            "organization": "Shaqra University",
+            "type": "Competition",
+            "date": "2020-02",
+            "description": "Coordinated Shaqra University's participation in Google Hash Code 2020, a global team programming competition, promoting algorithmic problem-solving and collaborative coding among students.",
+            "link": "https://twitter.com/ShaqraUni/status/1227943737768251394",
+            "featured": true
+        },
+        {
+            "id": 10,
+            "title": "LMS Online - Digital Learning Transition",
+            "organization": "Shaqra University",
+            "type": "System Implementation",
+            "date": "2020-04",
+            "description": "Led the critical transition to fully online LMS during the COVID-19 pandemic, ensuring uninterrupted education delivery and supporting faculty in remote teaching methodologies.",
+            "link": "https://twitter.com/ShaqraUni/status/1251540395080716289",
+            "featured": true
+        },
+        {
+            "id": 11,
+            "title": "Workshop on Thesis Management System",
+            "organization": "Shaqra University",
+            "type": "Workshop",
+            "date": "2021-03",
+            "description": "Facilitated workshop on thesis management systems for graduate students and supervisors, streamlining research project tracking, documentation, and submission processes.",
+            "link": "https://twitter.com/shaqrauni/status/1376518052083302401",
+            "featured": false
+        },
+        {
+            "id": 12,
+            "title": "Academy Connect @ CCIT",
+            "organization": "College of Computing and IT, Shaqra University",
+            "type": "Event",
+            "date": "2021-11",
+            "description": "Organized Academy Connect initiative at CCIT, creating networking opportunities between students, faculty, and industry partners, bridging academic learning with professional practice.",
+            "link": "https://twitter.com/ShaqraUni/status/1458498383979614209",
+            "featured": false
+        },
+        {
+            "id": 13,
+            "title": "Python Programming Competition",
+            "organization": "Shaqra University",
+            "type": "Competition",
+            "date": "2021-12",
+            "description": "Organized and judged Python programming competition, encouraging students to demonstrate coding proficiency, problem-solving skills, and algorithmic thinking in practical challenges.",
+            "link": "https://twitter.com/ShaqraUni/status/1468551064777633800",
+            "featured": true
+        },
+        {
+            "id": 14,
+            "title": "Patent Publication Announcement",
+            "organization": "College of Computing and IT, Shaqra University",
+            "type": "Achievement",
+            "date": "2022-05",
+            "description": "Celebrated and shared the announcement of successful patent publication, highlighting innovation and research excellence in technology and computer science.",
+            "link": "https://mobile.twitter.com/CCIT_SU/status/1522649506889748480",
+            "featured": false
+        },
+        {
+            "id": 15,
+            "title": "iOS Mobile Application Development Training",
+            "organization": "Shaqra University",
+            "type": "Training",
+            "date": "2022-12",
+            "description": "Delivered comprehensive training program on iOS mobile application development, covering Swift programming, Xcode IDE, and modern mobile app design patterns for Apple ecosystem.",
+            "link": "https://twitter.com/shaqrauni/status/1607055880427810818",
+            "featured": true
+        }
+    ],
+    "stats": {
+        "totalContributions": 15,
+        "workshops": 4,
+        "training": 4,
+        "competitions": 3,
+        "seminars": 1,
+        "implementations": 2,
+        "events": 1,
+        "years": "2017-2022"
+    }
+}

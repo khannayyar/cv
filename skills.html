@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skills - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .skill-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        .skill-card:hover::before {
+            left: 100%;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.3);
+        }
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        .skill-card:hover .skill-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+        .progress-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            transition: width 0.8s ease;
+        }
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+        .category-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+    <!-- Unified Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0"><a href="index.html" class="text-2xl font-bold gradient-text">Dr. Nayyar Ahmed Khan</a></div>
+                <div class="hidden md:flex items-center ml-6 gap-2">
+                    <a href="index.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Home</a>
+                    <a href="about.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">About</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Academics <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="education.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Education</a>
+                            <a href="experience.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Experience</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Research <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="research.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Overview</a>
+                            <a href="publications.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Publications</a>
+                            <a href="patents.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Patents</a>
+                            <a href="projects.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Achievements <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="awards.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Awards</a>
+                            <a href="certifications.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Certifications</a>
+                            <a href="badges.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Digital Badges</a>
+                            <a href="community.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Community</a>
+                            <a href="testimonials.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Testimonials</a>
+                        </div>
+                    </div>
+                    <a href="skills.html" data-nav class="px-3 py-2 text-sm font-medium text-purple-600">Skills</a>
+                    <a href="contact.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Contact</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 hover:text-purple-600 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button></div>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-3 pb-3 space-y-2 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">About</a>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Academics</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="education.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Education</a>
+                        <a href="experience.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Experience</a>
+                    </div>
+                </details>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Research</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="research.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Overview</a>
+                        <a href="publications.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Publications</a>
+                        <a href="patents.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Patents</a>
+                        <a href="projects.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Projects</a>
+                    </div>
+                </details>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Achievements</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="awards.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Awards</a>
+                        <a href="certifications.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Certifications</a>
+                        <a href="badges.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Digital Badges</a>
+                        <a href="community.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Community</a>
+                        <a href="testimonials.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Testimonials</a>
+                    </div>
+                </details>
+                <a href="skills.html" class="block px-3 py-2 text-base font-medium text-purple-600 rounded-md">Skills</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute transform rotate-45 -left-32 top-32 w-96 h-96 bg-white rounded-full"></div>
+            <div class="absolute transform -rotate-45 -right-32 bottom-32 w-96 h-96 bg-white rounded-full"></div>
+            <div class="absolute transform rotate-12 left-1/2 top-20 w-64 h-64 bg-yellow-300 rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-6" data-aos="fade-up">
+                💼 Skills & Expertise
+            </h1>
+            <p class="text-2xl md:text-3xl text-white/95 mb-8 font-light" data-aos="fade-up" data-aos-delay="100">
+                20+ Years of Technical Excellence & Professional Mastery
+            </p>
+            <div class="mt-12 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-lg rounded-3xl px-10 py-6 shadow-2xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold text-white">5</div>
+                    <div class="text-sm text-white/90 mt-2 font-medium">Skill Categories</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-3xl px-10 py-6 shadow-2xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold text-white">35+</div>
+                    <div class="text-sm text-white/90 mt-2 font-medium">Technical Skills</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-3xl px-10 py-6 shadow-2xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold text-white">10+</div>
+                    <div class="text-sm text-white/90 mt-2 font-medium">Programming Languages</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Skills -->
+    <section class="py-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-bold gradient-text mb-4 flex items-center justify-center gap-3">
+                    <i class="fas fa-briefcase text-purple-600"></i>
+                    Professional Skills
+                </h2>
+                <p class="text-xl text-gray-600">Core competencies in technology leadership and education</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-card bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Apple Mobile Developer</h3>
+                    <p class="text-purple-100 leading-relaxed">Certified from Apple Inc. UK - Application Development & Training</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Apple Learning Specialist</h3>
+                    <p class="text-blue-100 leading-relaxed">Empowering education with cutting-edge technology solutions</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">LMS Administrator</h3>
+                    <p class="text-green-100 leading-relaxed">Expert in Learning Management System deployment & optimization</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-red-500 to-red-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Cyber Security Enthusiast</h3>
+                    <p class="text-red-100 leading-relaxed">Network security, intrusion detection, and cloud security</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Cloud Computing Enthusiast</h3>
+                    <p class="text-cyan-100 leading-relaxed">AWS, Azure, IBM Cloud - Architecture & implementation</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fab fa-osi"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Open Source Expert</h3>
+                    <p class="text-orange-100 leading-relaxed">Linux, ERP, Moodle, Drupal, and enterprise solutions</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">System Design & Analysis</h3>
+                    <p class="text-indigo-100 leading-relaxed">Architecture design, requirements analysis, and optimization</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">System Administration</h3>
+                    <p class="text-pink-100 leading-relaxed">Multi-platform administration and infrastructure management</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-teal-500 to-teal-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Data Center Management</h3>
+                    <p class="text-teal-100 leading-relaxed">Infrastructure, virtualization, and high-availability systems</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-gradient-to-br from-yellow-500 to-yellow-700 rounded-2xl p-8 shadow-xl" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="skill-icon text-6xl text-white mb-6">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Project Management</h3>
+                    <p class="text-yellow-100 leading-relaxed">Agile, Scrum, and traditional project management methodologies</p>
+                    <div class="mt-6 bg-white/20 rounded-full h-2">
+                        <div class="progress-bar w-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills (Operating Systems) -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-bold gradient-text mb-4 flex items-center justify-center gap-3">
+                    <i class="fas fa-desktop text-blue-600"></i>
+                    Technical Skills
+                </h2>
+                <p class="text-xl text-gray-600">Multi-platform operating system expertise</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- macOS -->
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card border-t-4 border-gray-800" data-aos="fade-right">
+                    <div class="text-center mb-8">
+                        <div class="w-28 h-28 mx-auto bg-gradient-to-br from-gray-700 to-black rounded-3xl flex items-center justify-center shadow-2xl mb-6">
+                            <i class="fab fa-apple text-6xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">macOS</h3>
+                        <p class="text-gray-500 font-medium">Apple Operating Systems</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">OS-X</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Mojave</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Monterey</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Catalina</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Ventura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux -->
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card border-t-4 border-yellow-500" data-aos="fade-up">
+                    <div class="text-center mb-8">
+                        <div class="w-28 h-28 mx-auto bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl flex items-center justify-center shadow-2xl mb-6">
+                            <i class="fab fa-linux text-6xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">Linux</h3>
+                        <p class="text-gray-500 font-medium">Open Source Distributions</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-orange-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-orange-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Kali Linux</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-orange-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-orange-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Ubuntu</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-orange-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-orange-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Fedora</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-orange-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-orange-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">RedHat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows -->
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card border-t-4 border-blue-600" data-aos="fade-left">
+                    <div class="text-center mb-8">
+                        <div class="w-28 h-28 mx-auto bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl flex items-center justify-center shadow-2xl mb-6">
+                            <i class="fab fa-windows text-6xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">Windows</h3>
+                        <p class="text-gray-500 font-medium">Microsoft Operating Systems</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-blue-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Windows 11</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Windows 10</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Windows 8, 7, 2000</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50 rounded-xl p-4">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Windows XP, 98, 95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages -->
+    <section class="py-20 bg-gradient-to-br from-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-bold gradient-text mb-4 flex items-center justify-center gap-3">
+                    <i class="fas fa-code text-purple-600"></i>
+                    Software & Programming Skills
+                </h2>
+                <p class="text-xl text-gray-600">Proficient in modern programming languages and frameworks</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-orange-500" data-aos="flip-left" data-aos-delay="0">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fab fa-swift text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Swift/SwiftUI</h3>
+                    <p class="text-gray-500 text-sm mb-3">iOS Development</p>
+                    <span class="inline-block px-4 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">Xcode</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-blue-500" data-aos="flip-left" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fab fa-python text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Python</h3>
+                    <p class="text-gray-500 text-sm mb-3">Data Science & ML</p>
+                    <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Advanced</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-red-500" data-aos="flip-left" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fab fa-java text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Java</h3>
+                    <p class="text-gray-500 text-sm mb-3">Enterprise Apps</p>
+                    <span class="inline-block px-4 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">Expert</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-purple-500" data-aos="flip-left" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-hashtag text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">C#</h3>
+                    <p class="text-gray-500 text-sm mb-3">.NET Framework</p>
+                    <span class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Advanced</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-indigo-500" data-aos="flip-left" data-aos-delay="400">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fab fa-php text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">PHP</h3>
+                    <p class="text-gray-500 text-sm mb-3">Web Development</p>
+                    <span class="inline-block px-4 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Expert</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-blue-600" data-aos="flip-left" data-aos-delay="500">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-code text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">ASP.NET</h3>
+                    <p class="text-gray-500 text-sm mb-3">Web Applications</p>
+                    <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Advanced</span>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 skill-card text-center border-l-4 border-cyan-500" data-aos="flip-left" data-aos-delay="600">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-copyright text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">C++</h3>
+                    <p class="text-gray-500 text-sm mb-3">System Programming</p>
+                    <span class="inline-block px-4 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-semibold">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Skills -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-bold gradient-text mb-4 flex items-center justify-center gap-3">
+                    <i class="fas fa-database text-indigo-600"></i>
+                    Database Skills
+                </h2>
+                <p class="text-xl text-gray-600">Expertise in relational and NoSQL databases</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card transform hover:rotate-1" data-aos="zoom-in">
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mb-6 shadow-xl">
+                            <i class="fas fa-database text-5xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">SQL Server</h3>
+                        <p class="text-gray-500 text-sm">Microsoft Database</p>
+                        <div class="mt-6 flex justify-center gap-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card transform hover:-rotate-1" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mb-6 shadow-xl">
+                            <i class="fas fa-feather-alt text-5xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">SQLite</h3>
+                        <p class="text-gray-500 text-sm">Embedded Database</p>
+                        <div class="mt-6 flex justify-center gap-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card transform hover:rotate-1" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mb-6 shadow-xl">
+                            <i class="fas fa-file-code text-5xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">NoSQL - JSON</h3>
+                        <p class="text-gray-500 text-sm">Document Database</p>
+                        <div class="mt-6 flex justify-center gap-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl p-10 skill-card transform hover:-rotate-1" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-500 to-orange-700 rounded-full flex items-center justify-center mb-6 shadow-xl">
+                            <i class="fas fa-dolphin text-5xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">MySQL</h3>
+                        <p class="text-gray-500 text-sm">Open Source RDBMS</p>
+                        <div class="mt-6 flex justify-center gap-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Skills -->
+    <section class="py-20 bg-gradient-to-br from-white to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-bold gradient-text mb-4 flex items-center justify-center gap-3">
+                    <i class="fab fa-osi text-green-600"></i>
+                    Open Source Skills
+                </h2>
+                <p class="text-xl text-gray-600">Enterprise open source solutions and platforms</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl shadow-2xl p-10 skill-card text-center" data-aos="fade-up">
+                    <div class="w-28 h-28 mx-auto bg-white rounded-full flex items-center justify-center mb-6 shadow-xl">
+                        <i class="fas fa-building text-6xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-3">ERP</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">Enterprise Resource Planning Systems</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl shadow-2xl p-10 skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-28 h-28 mx-auto bg-white rounded-full flex items-center justify-center mb-6 shadow-xl">
+                        <i class="fas fa-graduation-cap text-6xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-3">Moodle</h3>
+                    <p class="text-orange-100 text-sm leading-relaxed">Learning Management System Platform</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 rounded-3xl shadow-2xl p-10 skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-28 h-28 mx-auto bg-white rounded-full flex items-center justify-center mb-6 shadow-xl">
+                        <i class="fab fa-drupal text-6xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-3">Drupal</h3>
+                    <p class="text-purple-100 text-sm leading-relaxed">Content Management Framework</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-500 to-green-700 rounded-3xl shadow-2xl p-10 skill-card text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-28 h-28 mx-auto bg-white rounded-full flex items-center justify-center mb-6 shadow-xl">
+                        <i class="fas fa-project-diagram text-6xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-3">Redmine</h3>
+                    <p class="text-green-100 text-sm leading-relaxed">Project Management & Issue Tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+            <h2 class="text-5xl font-bold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-2xl text-white/90 mb-10">Let's work together on innovative projects and research</p>
+            <a href="contact.html" class="inline-block bg-white text-purple-600 px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transform hover:scale-105 transition shadow-2xl">
+                <i class="fas fa-envelope mr-3"></i>Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-4">
+                <i class="fas fa-code text-purple-400 mr-2"></i>
+                Combining technical expertise with educational innovation
+            </p>
+            <p>&copy; 2025 Dr. Nayyar Ahmed Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

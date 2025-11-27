@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Alliances & Certifications - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0"><a href="index.html" class="text-2xl font-bold gradient-text">Dr. Nayyar Ahmed Khan</a></div>
+                <div class="hidden md:flex items-center ml-6 gap-2">
+                    <a href="index.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Home</a>
+                    <a href="about.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">About</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Academics <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="education.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Education</a>
+                            <a href="experience.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Experience</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Research <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="research.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Overview</a>
+                            <a href="publications.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Publications</a>
+                            <a href="patents.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Patents</a>
+                            <a href="projects.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-purple-600 inline-flex items-center gap-1">Achievements <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="visible opacity-100 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="awards.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Awards</a>
+                            <a href="certifications.html" data-nav class="block px-3 py-2 rounded-lg text-purple-600 bg-purple-50">Certifications</a>
+                            <a href="badges.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Digital Badges</a>
+                            <a href="community.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Community</a>
+                            <a href="testimonials.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Testimonials</a>
+                        </div>
+                    </div>
+                    <a href="skills.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Skills</a>
+                    <a href="contact.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Contact</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 hover:text-purple-600 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-3 pb-3 space-y-2 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">About</a>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Academics</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="education.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Education</a>
+                        <a href="experience.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Experience</a>
+                    </div>
+                </details>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Research</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="research.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Overview</a>
+                        <a href="publications.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Publications</a>
+                            <a href="patents.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Patents</a>
+                            <a href="projects.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Projects</a>
+                    </div>
+                </details>
+                <details open class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-purple-600">Achievements</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="awards.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Awards</a>
+                        <a href="certifications.html" class="block px-2 py-1 text-purple-600 bg-purple-50 rounded">Certifications</a>
+                        <a href="badges.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Digital Badges</a>
+                        <a href="community.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Community</a>
+                        <a href="testimonials.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Testimonials</a>
+                    </div>
+                </details>
+                <a href="skills.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Skills</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-handshake mr-3"></i>Industry Alliances & Certifications
+            </h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">
+                🌐 Strategic partnerships with leading technology organizations worldwide
+            </p>
+            <!-- Featured Trainer Roles -->
+            <div id="featured-roles" class="mt-6 flex flex-wrap justify-center gap-3" data-aos="fade-up" data-aos-delay="200"></div>
+            <div class="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <div class="text-3xl font-bold" id="total-orgs">0</div>
+                    <div class="text-sm">Total Alliances</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <div class="text-3xl font-bold" id="active-orgs">0</div>
+                    <div class="text-sm">Active Partnerships</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Current Active Partnerships -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-star text-yellow-500 mr-2"></i>Current Active Partnerships
+                </h2>
+                <div id="current-orgs" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Long-term Partnerships -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-award text-purple-500 mr-2"></i>Long-term Collaborations
+                </h2>
+                <div id="longterm-orgs" class="grid md:grid-cols-2 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Past Partnerships -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-history text-blue-500 mr-2"></i>Previous Partnerships
+                </h2>
+                <div id="past-orgs" class="grid md:grid-cols-2 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Dr. Nayyar Ahmed Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function loadOrganizations() {
+            try {
+                const response = await fetch('data/organizations.json');
+                const data = await response.json();
+                
+                const colorMap = {
+                    'gray': { bg: 'from-gray-700 to-gray-900', text: 'text-gray-700', border: 'border-gray-200' },
+                    'red': { bg: 'from-red-500 to-red-700', text: 'text-red-600', border: 'border-red-200' },
+                    'orange': { bg: 'from-orange-500 to-orange-700', text: 'text-orange-600', border: 'border-orange-200' },
+                    'blue': { bg: 'from-blue-500 to-blue-700', text: 'text-blue-600', border: 'border-blue-200' }
+                };
+                
+                // Count statistics
+                document.getElementById('total-orgs').textContent = data.organizations.length;
+                document.getElementById('active-orgs').textContent = data.organizations.filter(o => o.category === 'current').length;
+                
+                // Separate organizations by category
+                const current = data.organizations.filter(o => o.category === 'current');
+                const longterm = data.organizations.filter(o => o.category === 'longterm');
+                const past = data.organizations.filter(o => o.category === 'past');
+                
+                // Function to create organization card
+                function createOrgCard(org, index) {
+                    const colors = colorMap[org.color] || colorMap['blue'];
+                    return `
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 ${colors.border}" data-aos="fade-up" data-aos-delay="${Math.min(index * 50, 300)}">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br ${colors.bg} rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="${org.icon} text-3xl text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">${org.name}</h3>
+                                <p class="${colors.text} font-semibold text-sm">${org.position}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="far fa-calendar-alt ${colors.text} mr-2"></i>${org.date}
+                            </p>
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="fas fa-map-marker-alt ${colors.text} mr-2"></i>${org.location}
+                            </p>
+                            ${org.email ? `
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="fas fa-envelope ${colors.text} mr-2"></i><a href="mailto:${org.email}" class="hover:underline">${org.email}</a>
+                            </p>
+                            ` : ''}
+                        </div>
+                        
+                        <p class="text-gray-700 text-sm leading-relaxed">${org.description}</p>
+                    </div>
+                    `;
+                }
+                
+                // Populate sections
+                document.getElementById('current-orgs').innerHTML = current.map((org, i) => createOrgCard(org, i)).join('');
+                document.getElementById('longterm-orgs').innerHTML = longterm.map((org, i) => createOrgCard(org, i)).join('');
+                document.getElementById('past-orgs').innerHTML = past.map((org, i) => createOrgCard(org, i)).join('');
+                
+            } catch (error) {
+                console.error('Error loading organizations:', error);
+            }
+        }
+        
+        loadOrganizations();
+
+        // Render featured trainer roles under header
+        (async function(){
+            try {
+                const res = await fetch('data/certifications.json');
+                const data = await res.json();
+                const wrap = document.getElementById('featured-roles');
+                if (!wrap) return;
+                const roles = (data.featuredRoles || []);
+                const colorMap = {
+                    black: 'from-gray-800 to-gray-900',
+                    gray: 'from-gray-400 to-gray-600',
+                    orange: 'from-orange-500 to-amber-600',
+                    blue: 'from-blue-500 to-indigo-600',
+                    red: 'from-red-500 to-rose-600',
+                    purple: 'from-purple-500 to-fuchsia-600'
+                };
+                wrap.innerHTML = roles.map((r,i) => {
+                    const grad = colorMap[r.color] || 'from-purple-500 to-blue-600';
+                    return `<span class="px-4 py-2 bg-white/20 rounded-full text-sm font-semibold inline-flex items-center gap-2" data-aos="zoom-in" data-aos-delay="${Math.min(i*50,300)}">
+                        <span class="inline-flex w-7 h-7 items-center justify-center rounded-full bg-gradient-to-br ${grad}">
+                            <i class="${r.icon} text-white text-xs"></i>
+                        </span>
+                        ${r.role}
+                    </span>`;
+                }).join('');
+            } catch(e) { /* no-op */ }
+        })();
+    </script>
+</body>
+</html>

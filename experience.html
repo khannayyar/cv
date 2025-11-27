@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Dr. Nayyar Ahmed Khan</a>
+                </div>
+                <div class="hidden md:flex items-center ml-6 gap-2">
+                    <a href="index.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Home</a>
+                    <a href="about.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">About</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-purple-600 inline-flex items-center gap-1">Academics <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="visible opacity-100 absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="education.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Education</a>
+                            <a href="experience.html" data-nav class="block px-3 py-2 rounded-lg text-purple-600 bg-purple-50">Experience</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Research <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="research.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Overview</a>
+                            <a href="publications.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Publications</a>
+                            <a href="patents.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Patents</a>
+                            <a href="projects.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 inline-flex items-center gap-1">Achievements <i class="fas fa-chevron-down text-xs"></i></button>
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border p-2 z-50">
+                            <a href="awards.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Awards</a>
+                            <a href="certifications.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Certifications</a>
+                            <a href="badges.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Digital Badges</a>
+                            <a href="community.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Community</a>
+                            <a href="testimonials.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Testimonials</a>
+                        </div>
+                    </div>
+                    <a href="skills.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Skills</a>
+                    <a href="contact.html" data-nav class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600">Contact</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 hover:text-purple-600 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-3 pb-3 space-y-2 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">About</a>
+                <details open class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-purple-600">Academics</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="education.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Education</a>
+                        <a href="experience.html" class="block px-2 py-1 text-purple-600 bg-purple-50 rounded">Experience</a>
+                    </div>
+                </details>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Research</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="research.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Overview</a>
+                        <a href="publications.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Publications</a>
+                            <a href="patents.html" data-nav class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-purple-50 hover:text-purple-600">Patents</a>
+                            <a href="projects.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Projects</a>
+                    </div>
+                </details>
+                <details class="px-3 py-2 bg-gray-50 rounded-md">
+                    <summary class="cursor-pointer font-medium text-gray-700">Achievements</summary>
+                    <div class="mt-2 pl-3 space-y-1">
+                        <a href="awards.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Awards</a>
+                        <a href="certifications.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Certifications</a>
+                        <a href="badges.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Digital Badges</a>
+                        <a href="community.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Community</a>
+                        <a href="testimonials.html" class="block px-2 py-1 text-gray-700 hover:text-purple-600">Testimonials</a>
+                    </div>
+                </details>
+                <a href="skills.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Skills</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">Professional Experience</h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">Career history and achievements</p>
+        </div>
+    </section>
+    
+    <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="experience-list" class="space-y-8">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Dr. Nayyar Ahmed Khan. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function loadExperience() {
+            try {
+                const response = await fetch('data/experience.json');
+                const data = await response.json();
+                
+                // Icon mapping for different responsibilities
+                const getIconForResponsibility = (resp) => {
+                    const text = resp.toLowerCase();
+                    
+                    // Technology Academy Icons with brand colors
+                    if (text.includes('apple')) return '<i class="fab fa-apple text-gray-800"></i>';
+                    if (text.includes('huawei')) return '<i class="fas fa-network-wired text-red-600"></i>';
+                    if (text.includes('aws')) return '<i class="fab fa-aws text-orange-500"></i>';
+                    if (text.includes('ibm')) return '<i class="fas fa-server text-blue-700"></i>';
+                    if (text.includes('oracle')) return '<i class="fas fa-database text-red-500"></i>';
+                    if (text.includes('microsoft')) return '<i class="fab fa-microsoft text-blue-600"></i>';
+                    if (text.includes('vmware')) return '<i class="fas fa-cloud text-blue-500"></i>';
+                    if (text.includes('ec council')) return '<i class="fas fa-shield-alt text-red-600"></i>';
+                    if (text.includes('redhat')) return '<i class="fab fa-redhat text-red-700"></i>';
+                    if (text.includes('open edg') || text.includes('python')) return '<i class="fab fa-python text-blue-500"></i>';
+                    if (text.includes('lms') || text.includes('learning')) return '<i class="fas fa-graduation-cap text-purple-600"></i>';
+                    if (text.includes('research')) return '<i class="fas fa-flask text-green-600"></i>';
+                    if (text.includes('project') && text.includes('developer')) return '<i class="fas fa-code text-indigo-600"></i>';
+                    if (text.includes('project') && text.includes('designer')) return '<i class="fas fa-project-diagram text-teal-600"></i>';
+                    if (text.includes('teaching') || text.includes('courses')) return '<i class="fas fa-chalkboard-teacher text-purple-600"></i>';
+                    if (text.includes('supervising') || text.includes('students')) return '<i class="fas fa-users text-blue-600"></i>';
+                    if (text.includes('publishing') || text.includes('papers')) return '<i class="fas fa-file-alt text-gray-600"></i>';
+                    
+                    // Default icon
+                    return '<i class="fas fa-check-circle text-purple-600"></i>';
+                };
+                
+                document.getElementById('experience-list').innerHTML = data.positions.map((position, index) => `
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="${index * 100}">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">${position.title}</h3>
+                                <p class="text-lg text-purple-600 font-medium">
+                                    <i class="fas fa-building mr-2"></i>${position.institution}
+                                </p>
+                                ${position.department ? `<p class="text-gray-600 mt-1"><i class="fas fa-sitemap mr-2"></i>${position.department}</p>` : ''}
+                            </div>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold whitespace-nowrap">
+                                ${position.duration}
+                            </span>
+                        </div>
+                        ${position.location ? `<p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>${position.location}</p>` : ''}
+                        ${position.description ? `<p class="text-gray-700 mb-4 leading-relaxed">${position.description}</p>` : ''}
+                        ${position.responsibilities && position.responsibilities.length > 0 ? `
+                            <div class="mt-6">
+                                <h4 class="font-semibold text-gray-800 mb-4 text-lg flex items-center">
+                                    <i class="fas fa-tasks mr-2 text-purple-600"></i>
+                                    Key Responsibilities & Leadership Roles:
+                                </h4>
+                                <div class="grid gap-3">
+                                    ${position.responsibilities.map(resp => `
+                                        <div class="flex items-start bg-gradient-to-r from-purple-50 to-blue-50 p-3 rounded-lg hover:shadow-md transition duration-200">
+                                            <span class="mr-3 mt-0.5 text-lg">
+                                                ${getIconForResponsibility(resp)}
+                                            </span>
+                                            <span class="text-gray-700 flex-1">${resp}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        ${position.title.includes('Assistant Professor') && position.institution.includes('Shaqra') ? `
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <h4 class="font-semibold text-gray-800 mb-4 text-lg flex items-center">
+                                    <i class="fas fa-award mr-2 text-yellow-600"></i>
+                                    Technology Academy Partnerships:
+                                </h4>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fab fa-apple text-4xl text-gray-800 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">Apple Training</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fas fa-network-wired text-4xl text-red-600 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">Huawei ICT</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fab fa-aws text-4xl text-orange-500 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">AWS Academy</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fas fa-server text-4xl text-blue-700 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">IBM Skills</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fas fa-database text-4xl text-red-500 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">Oracle</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fab fa-microsoft text-4xl text-blue-600 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">Microsoft</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fas fa-cloud text-4xl text-blue-500 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">VMware</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fas fa-shield-alt text-4xl text-red-600 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">EC Council</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fab fa-redhat text-4xl text-red-700 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">RedHat</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                                        <i class="fab fa-python text-4xl text-blue-500 mb-2"></i>
+                                        <span class="text-xs text-center font-medium">Open EDG</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Error loading experience:', error);
+            }
+        }
+        loadExperience();
+    </script>
+</body>
+</html>

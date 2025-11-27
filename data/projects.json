@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "title": "[Project Title]",
+            "role": "Principal Investigator",
+            "duration": "20XX - 20XX",
+            "funding": "[Funding Agency]",
+            "amount": "$XXX,XXX",
+            "description": "[Project description]",
+            "outcomes": [
+                "[Outcome 1]",
+                "[Outcome 2]"
+            ]
+        }
+    ]
+}

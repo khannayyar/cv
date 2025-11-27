@@ -1,0 +1,76 @@
+{
+    "awards": [
+        {
+            "title": "Certificate of Appreciation for Google HashCode",
+            "issuer": "Google Inc.",
+            "date": "2020, 2021, 2022",
+            "description": "Consistently awarded for three consecutive years for organizing the Central Hub for conduction of Google HashCode Competition successfully.",
+            "icon": "fab fa-google",
+            "color": "blue"
+        },
+        {
+            "title": "Certificate of Excellence",
+            "issuer": "Deanship of College of Computing and IT, Shaqra University",
+            "date": "April 2020",
+            "description": "Workshop on the Management of E-Examination using the LMS Platform.",
+            "icon": "fas fa-certificate",
+            "color": "purple"
+        },
+        {
+            "title": "Certificate of Excellence",
+            "issuer": "Deanship of College of Computing and IT, Shaqra University",
+            "date": "April 2019",
+            "description": "Awarded for meritorious and outstanding performance at the University of Shaqra, KSA, 2019.",
+            "icon": "fas fa-award",
+            "color": "yellow"
+        },
+        {
+            "title": "Certificate of Excellence",
+            "issuer": "Deanship of College of Computing and IT, Shaqra University",
+            "date": "May 2018",
+            "description": "Awarded for meritorious and outstanding performance at the University of Shaqra, KSA, 2018.",
+            "icon": "fas fa-award",
+            "color": "yellow"
+        },
+        {
+            "title": "IBM Cloud Application Developer Mastery Award",
+            "issuer": "IBM Skills Academy, MEA",
+            "date": "February 2018",
+            "description": "Recognizes individuals who have worked on IBM Bluemix clouds for application development using Node.js, Cloudant, Kinetise, Boilerplates, Kubernetes Cluster and many such components.",
+            "icon": "fab fa-ibm",
+            "color": "blue"
+        },
+        {
+            "title": "Certificate of Excellence",
+            "issuer": "Deanship of College of Computing and IT, Shaqra University",
+            "date": "December 2017",
+            "description": "Awarded for organizing the ACM programming competition along with the 2nd National Computing Colleges Conference (NC3 2017) at the University of Hail, KSA, 2017.",
+            "icon": "fas fa-trophy",
+            "color": "orange"
+        },
+        {
+            "title": "Certificate of Excellence",
+            "issuer": "Deanship of College of Computing and IT, Shaqra University",
+            "date": "May 2016",
+            "description": "Awarded for organizing the Smart College Project Contribution at the University of Shaqra, KSA, 2016.",
+            "icon": "fas fa-lightbulb",
+            "color": "green"
+        },
+        {
+            "title": "EMC Academic Awards",
+            "issuer": "EMC Academic Alliance Manager",
+            "date": "February 2015",
+            "description": "Recognizes individuals and organizations who have exceeded expectations and demonstrated commitment to excellence through innovation and thought leadership in building next generation professionals.",
+            "icon": "fas fa-medal",
+            "color": "purple"
+        },
+        {
+            "title": "Best Faculty and Orator",
+            "issuer": "Teach for India Society",
+            "date": "May 2006",
+            "description": "Awarded for excellence in teaching and oratory skills.",
+            "icon": "fas fa-chalkboard-teacher",
+            "color": "red"
+        }
+    ]
+}

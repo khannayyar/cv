@@ -1,0 +1,300 @@
+{
+    "badges": [
+        {
+            "title": "Enterprise Design Thinking Practitioner",
+            "issuer": "IBM",
+            "category": "Professional Skills",
+            "url": "https://www.credly.com/badges/76dc8ed1-c231-4c9c-ad4e-f819be884fc2/public_url",
+            "icon": "fas fa-brain",
+            "color": "blue"
+        },
+        {
+            "title": "Artificial Intelligence Fundamentals",
+            "issuer": "IBM",
+            "category": "Artificial Intelligence",
+            "url": "https://www.credly.com/badges/6ea2e5e7-1b47-4524-905d-be93ba1686fe/public_url",
+            "icon": "fas fa-robot",
+            "color": "purple"
+        },
+        {
+            "title": "AWS Academy Educator",
+            "issuer": "AWS",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/badges/934ffd79-a64e-46b5-955d-cbc32e1ddfa4/public_url",
+            "icon": "fab fa-aws",
+            "color": "orange"
+        },
+        {
+            "title": "Instructor 5 Years of Service",
+            "issuer": "AWS",
+            "category": "Professional Achievement",
+            "url": "https://www.credly.com/badges/f0d9f01c-20a0-4cd0-8d46-91a026a2227e/public_url",
+            "icon": "fas fa-award",
+            "color": "yellow"
+        },
+        {
+            "title": "AWS Academy Graduate - Machine Learning for Natural Language Processing",
+            "issuer": "AWS",
+            "category": "Machine Learning",
+            "url": "https://www.credly.com/badges/55f95f59-6d07-479c-8853-b0b5f7327aa9/public_url",
+            "icon": "fas fa-language",
+            "color": "orange"
+        },
+        {
+            "title": "AWS Academy Graduate - Cloud Web Application Builder",
+            "issuer": "AWS",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/badges/d9158e1d-f242-4c12-8379-3396ea61ada9/public_url",
+            "icon": "fas fa-cloud",
+            "color": "orange"
+        },
+        {
+            "title": "Lifelong Learning",
+            "issuer": "IBM",
+            "category": "Professional Achievement",
+            "url": "https://www.credly.com/badges/983e1d6f-1fa3-4006-94bd-bdf463a37105/public_url",
+            "icon": "fas fa-graduation-cap",
+            "color": "blue"
+        },
+        {
+            "title": "Microsoft Certified: Azure Fundamentals",
+            "issuer": "Microsoft",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/badges/40923387-2407-450b-91cf-20711b031e45/public_url",
+            "icon": "fab fa-microsoft",
+            "color": "blue"
+        },
+        {
+            "title": "Microsoft Certified: Azure AI Fundamentals",
+            "issuer": "Microsoft",
+            "category": "Artificial Intelligence",
+            "url": "https://www.credly.com/earner/earned/badge/8848aad9-a95f-4922-b7f8-8210fe292861",
+            "icon": "fab fa-microsoft",
+            "color": "purple"
+        },
+        {
+            "title": "Cybersecurity Fundamentals",
+            "issuer": "IBM",
+            "category": "Cybersecurity",
+            "url": "https://www.credly.com/badges/2f81d3ad-1313-44f2-98ba-4216401ebcfe/public_url",
+            "icon": "fas fa-shield-alt",
+            "color": "red"
+        },
+        {
+            "title": "Data Visualization with R",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/785f3d84-9bff-4fd4-b32e-48b16e16aad9",
+            "icon": "fas fa-chart-bar",
+            "color": "green"
+        },
+        {
+            "title": "Introduction to Cybersecurity",
+            "issuer": "Cisco",
+            "category": "Cybersecurity",
+            "url": "https://www.credly.com/earner/earned/badge/244a04eb-7db2-4b18-9002-dc56020f2bbc",
+            "icon": "fas fa-lock",
+            "color": "red"
+        },
+        {
+            "title": "Accelerated Deep Learning with GPU",
+            "issuer": "NVIDIA",
+            "category": "Machine Learning",
+            "url": "https://www.credly.com/earner/earned/badge/f045c7f6-1ac3-4d04-bca1-7b8702866e51",
+            "icon": "fas fa-microchip",
+            "color": "green"
+        },
+        {
+            "title": "Cloud Native Security Conference - App Security",
+            "issuer": "IBM",
+            "category": "Cybersecurity",
+            "url": "https://www.credly.com/earner/earned/badge/b3f53675-e602-48c6-a78d-37866ff6eb7d",
+            "icon": "fas fa-mobile-alt",
+            "color": "red"
+        },
+        {
+            "title": "Cloud Native Security Conference - Data Security",
+            "issuer": "IBM",
+            "category": "Cybersecurity",
+            "url": "https://www.credly.com/earner/earned/badge/a6fe6b32-050e-45c3-9188-bbc5006769ac",
+            "icon": "fas fa-database",
+            "color": "red"
+        },
+        {
+            "title": "Cloud Native Security Conference - DevSecOps",
+            "issuer": "IBM",
+            "category": "Cybersecurity",
+            "url": "https://www.credly.com/earner/earned/badge/74345d98-b1fe-4c8a-8d94-8ee3d9c6e4bf",
+            "icon": "fas fa-code-branch",
+            "color": "red"
+        },
+        {
+            "title": "Machine Learning with Python - Level 1",
+            "issuer": "IBM",
+            "category": "Machine Learning",
+            "url": "https://www.credly.com/earner/earned/badge/85c8f9b6-11cc-4cb1-9e5b-2e1a294209a4",
+            "icon": "fab fa-python",
+            "color": "purple"
+        },
+        {
+            "title": "Hadoop Foundations - Level 1",
+            "issuer": "IBM",
+            "category": "Big Data",
+            "url": "https://www.credly.com/earner/earned/badge/1445a04c-2023-41b4-8a01-5c3daf9406b6",
+            "icon": "fas fa-server",
+            "color": "yellow"
+        },
+        {
+            "title": "Data Visualization Using Python",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/b1617f7a-10ac-4e57-99c4-d4122e8cd466",
+            "icon": "fas fa-chart-line",
+            "color": "green"
+        },
+        {
+            "title": "Applied Data Science with Python - Level 2",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/5f2442da-479c-4ec0-81c2-670db245414d",
+            "icon": "fab fa-python",
+            "color": "blue"
+        },
+        {
+            "title": "Big Data Foundations - Level 1",
+            "issuer": "IBM",
+            "category": "Big Data",
+            "url": "https://www.credly.com/earner/earned/badge/5ab8f1bf-7795-4402-970e-3b810067426c",
+            "icon": "fas fa-database",
+            "color": "yellow"
+        },
+        {
+            "title": "Data Analysis Using Python",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/6ce97b1d-c891-45f5-8bfe-9faf97b6c1c3",
+            "icon": "fab fa-python",
+            "color": "blue"
+        },
+        {
+            "title": "Data Science Methodologies",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/724050fb-3cc2-4e24-83f3-cbb978152600",
+            "icon": "fas fa-flask",
+            "color": "green"
+        },
+        {
+            "title": "Hadoop Programming - Level 1",
+            "issuer": "IBM",
+            "category": "Big Data",
+            "url": "https://www.credly.com/earner/earned/badge/3e3df434-86c2-473b-88d3-633f01db63cf",
+            "icon": "fas fa-code",
+            "color": "yellow"
+        },
+        {
+            "title": "Hadoop Programming - Level 2",
+            "issuer": "IBM",
+            "category": "Big Data",
+            "url": "https://www.credly.com/earner/earned/badge/fe805a0d-c6e8-4a34-b210-2c3db170a751",
+            "icon": "fas fa-code",
+            "color": "yellow"
+        },
+        {
+            "title": "DataOps Methodology",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/92048a80-4df0-47b9-a08e-93337ea29522",
+            "icon": "fas fa-project-diagram",
+            "color": "green"
+        },
+        {
+            "title": "Docker Essentials: A Developer Introduction",
+            "issuer": "IBM",
+            "category": "DevOps",
+            "url": "https://www.credly.com/earner/earned/badge/35661bc3-d62a-4f60-9e7f-75ab148e27ed",
+            "icon": "fab fa-docker",
+            "color": "blue"
+        },
+        {
+            "title": "Simplifying Data Pipelines with Apache Kafka",
+            "issuer": "IBM",
+            "category": "Big Data",
+            "url": "https://www.credly.com/earner/earned/badge/a71294a6-862a-4bae-97dc-9f3b79d2226f",
+            "icon": "fas fa-stream",
+            "color": "yellow"
+        },
+        {
+            "title": "Cloud Core",
+            "issuer": "IBM",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/earner/earned/badge/8e5c3055-f3ff-442c-9c45-c8aa4b83fbb2",
+            "icon": "fas fa-cloud",
+            "color": "blue"
+        },
+        {
+            "title": "Containers & Kubernetes Essentials",
+            "issuer": "IBM",
+            "category": "DevOps",
+            "url": "https://www.credly.com/earner/earned/badge/3202fdc1-0148-4a84-9a73-694b2c3fd4c5",
+            "icon": "fas fa-cubes",
+            "color": "blue"
+        },
+        {
+            "title": "IBM Blockchain Essentials V2",
+            "issuer": "IBM",
+            "category": "Blockchain",
+            "url": "https://www.credly.com/earner/earned/badge/ea586d64-a6fd-4084-bf51-fed6181e7614",
+            "icon": "fas fa-link",
+            "color": "purple"
+        },
+        {
+            "title": "IBM Blockchain Foundation Developer V2",
+            "issuer": "IBM",
+            "category": "Blockchain",
+            "url": "https://www.credly.com/earner/earned/badge/e6641b8a-8607-49ff-a644-e0842e590cdc",
+            "icon": "fas fa-cube",
+            "color": "purple"
+        },
+        {
+            "title": "Data Science with Scala",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/922cae66-9088-460a-93f3-44bb1731341f",
+            "icon": "fas fa-code",
+            "color": "red"
+        },
+        {
+            "title": "Python for Data Science",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/b134676d-c9f8-46b3-b246-d1071fd12091",
+            "icon": "fab fa-python",
+            "color": "blue"
+        },
+        {
+            "title": "Data Science Foundations - Level 1",
+            "issuer": "IBM",
+            "category": "Data Science",
+            "url": "https://www.credly.com/earner/earned/badge/e4e2d41c-0d54-491c-917f-6fd118028015",
+            "icon": "fas fa-chart-area",
+            "color": "green"
+        },
+        {
+            "title": "AWS Academy Graduate - Cloud Foundations",
+            "issuer": "AWS",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/earner/earned/badge/5d9af727-dd7f-44ea-b35d-218852897d1e",
+            "icon": "fab fa-aws",
+            "color": "orange"
+        },
+        {
+            "title": "Introduction to Virtualization",
+            "issuer": "IBM",
+            "category": "Cloud Computing",
+            "url": "https://www.credly.com/earner/earned/badge/6185f1b8-2b61-4123-a093-d03f16840a2a",
+            "icon": "fas fa-server",
+            "color": "blue"
+        }
+    ]
+}

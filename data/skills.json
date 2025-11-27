@@ -1,0 +1,20 @@
+{
+    "categories": [
+        {
+            "name": "Programming Languages",
+            "skills": ["Python", "Java", "C++", "MATLAB", "R"]
+        },
+        {
+            "name": "Research Tools",
+            "skills": ["LaTeX", "Overleaf", "Zotero", "Mendeley"]
+        },
+        {
+            "name": "Data Analysis",
+            "skills": ["Machine Learning", "Statistical Analysis", "Data Visualization"]
+        },
+        {
+            "name": "Software & Tools",
+            "skills": ["Git", "Docker", "Jupyter", "TensorFlow", "PyTorch"]
+        }
+    ]
+}

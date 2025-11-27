@@ -1,0 +1,130 @@
+{
+    "patents": [
+        {
+            "id": 1,
+            "title": "Data Security for Distributed Streaming Data Collection System Using Provenance Model",
+            "patentNumber": "AU2020101787",
+            "status": "Granted",
+            "filingDate": "2020-01-01",
+            "grantDate": "2020-12-31",
+            "country": "Australia",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "An innovative patent for securing distributed streaming data collection systems through a comprehensive provenance model, ensuring data integrity and traceability in real-time data environments.",
+            "links": {
+                "patent": "http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2020101787",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["Data Security", "Distributed Systems", "Provenance Model", "Streaming Data"],
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Water Bottle with Digital Wallet",
+            "patentNumber": "IN358285-001",
+            "status": "Granted",
+            "filingDate": "2022-01-01",
+            "grantDate": "2022-12-31",
+            "country": "India",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "A novel design patent for an intelligent water bottle integrated with digital wallet functionality, combining IoT technology with everyday utility for secure contactless payments and hydration tracking.",
+            "links": {
+                "patent": "https://search.ipindia.gov.in/DesignApplicationStatus",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["IoT", "Digital Wallet", "Smart Design", "Wearable Technology"],
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "IoT Based Data Managing Device for Banks",
+            "patentNumber": "IN359269-001",
+            "status": "Granted",
+            "filingDate": "2022-01-01",
+            "grantDate": "2022-12-31",
+            "country": "India",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "An innovative IoT-enabled data management device specifically designed for banking operations, providing secure, real-time data processing and management capabilities for financial institutions.",
+            "links": {
+                "patent": "https://search.ipindia.gov.in/DesignApplicationStatus",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["IoT", "Banking Technology", "Data Management", "Financial Security"],
+            "featured": true
+        },
+        {
+            "id": 4,
+            "title": "IoT Based Helmet Design",
+            "patentNumber": "UK6276219",
+            "status": "Granted",
+            "filingDate": "2023-01-01",
+            "grantDate": "2023-12-31",
+            "country": "United Kingdom",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "A cutting-edge smart helmet design incorporating IoT sensors and connectivity features for enhanced safety monitoring, real-time communication, and environmental awareness in industrial and personal use scenarios.",
+            "links": {
+                "patent": "https://www.registered-design.service.gov.uk/find/",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["IoT", "Safety Equipment", "Smart Wearables", "Industrial IoT"],
+            "featured": false
+        },
+        {
+            "id": 5,
+            "title": "IoT Based Pit Detector Design",
+            "patentNumber": "UK6276220",
+            "status": "Granted",
+            "filingDate": "2023-01-01",
+            "grantDate": "2023-12-31",
+            "country": "United Kingdom",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "An intelligent IoT-enabled pit detection system designed to identify and alert about road hazards, potholes, and surface irregularities, contributing to safer roads and infrastructure maintenance optimization.",
+            "links": {
+                "patent": "https://www.registered-design.service.gov.uk/find/",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["IoT", "Road Safety", "Smart Infrastructure", "Detection Systems"],
+            "featured": false
+        },
+        {
+            "id": 6,
+            "title": "Filament and Pellet Integrated Co-Extruder for Additive Manufacturing",
+            "patentNumber": "UK6277526",
+            "status": "Granted",
+            "filingDate": "2023-01-01",
+            "grantDate": "2023-12-31",
+            "country": "United Kingdom",
+            "inventors": [
+                "Dr. Nayyar Ahmed Khan"
+            ],
+            "abstract": "An innovative co-extrusion system for 3D printing that integrates both filament and pellet feeding mechanisms, enabling versatile material usage and enhanced manufacturing capabilities in additive manufacturing processes.",
+            "links": {
+                "patent": "https://www.registered-design.service.gov.uk/find/",
+                "pdf": "",
+                "certificate": ""
+            },
+            "tags": ["3D Printing", "Additive Manufacturing", "Co-Extrusion", "Manufacturing Innovation"],
+            "featured": false
+        }
+    ],
+    "stats": {
+        "totalPatents": 6,
+        "granted": 6,
+        "pending": 0,
+        "countries": ["Australia", "India", "United Kingdom"]
+    }
+}

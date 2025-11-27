@@ -1,0 +1,53 @@
+{
+    "featuredRoles": [
+        {
+            "role": "Apple Professional Learning Specialist",
+            "organization": "Apple Education",
+            "years": "5+ years",
+            "icon": "fab fa-apple",
+            "color": "black",
+            "description": "Supporting pedagogical transformation and technology integration across Apple ecosystem for enhanced student engagement."
+        },
+        {
+            "role": "Apple Certified Trainer",
+            "organization": "Apple Education",
+            "years": "5+ years",
+            "icon": "fab fa-apple",
+            "color": "gray",
+            "description": "Delivering certified instructional programs and professional development for educators on Apple platforms."
+        },
+        {
+            "role": "AWS Certified Educator",
+            "organization": "Amazon Web Services",
+            "years": "7+ years",
+            "icon": "fab fa-aws",
+            "color": "orange",
+            "description": "Designing and teaching cloud computing curricula, labs and hands-on projects using AWS Academy resources."
+        },
+        {
+            "role": "Cisco Instructor",
+            "organization": "Cisco Networking Academy",
+            "years": "7+ years",
+            "icon": "fas fa-network-wired",
+            "color": "blue",
+            "description": "Instructing networking, cybersecurity and infrastructure courses aligned with Cisco certifications."
+        },
+        {
+            "role": "Red Hat Certified Instructor",
+            "organization": "Red Hat Training",
+            "years": "5+ years",
+            "icon": "fab fa-redhat",
+            "color": "red",
+            "description": "Providing Linux administration, containerization and open source enterprise solutions training."
+        },
+        {
+            "role": "Huawei Trainer",
+            "organization": "Huawei ICT Academy",
+            "years": "4+ years",
+            "icon": "fas fa-broadcast-tower",
+            "color": "purple",
+            "description": "Delivering ICT infrastructure, cloud services and emerging technology modules within Huawei academic initiatives."
+        }
+    ],
+    "certifications": []
+}

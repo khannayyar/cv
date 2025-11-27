@@ -1,0 +1,27 @@
+{
+    "degrees": [
+        {
+            "degree": "Doctor of Philosophy (Ph.D.) in Computer Science and Engineering",
+            "institution": "College of Computer Science and Engineering",
+            "year": "Completed",
+            "location": "India",
+            "specialization": "Network Security and Cloud Computing",
+            "thesis": "Network Intrusion Management Model to Avoid Web Form Spamming for Cloud Computing Based Applications",
+            "advisor": ""
+        },
+        {
+            "degree": "Master of Engineering (M.E.) in Computer Science and Engineering",
+            "institution": "Institute of Engineering and Technology, Devi Ahilya Vishwavidyalaya",
+            "year": "2008-2010",
+            "location": "Indore, Madhya Pradesh, India",
+            "specialization": "Computer Science and Engineering"
+        },
+        {
+            "degree": "Bachelor of Engineering (B.E.) in Computer Science and Engineering",
+            "institution": "Shri Vaishnav Institute of Science and Technology, Rajiv Gandhi Progdyogiki Vishwavidyalaya",
+            "year": "2004",
+            "location": "Bhopal, Madhya Pradesh, India",
+            "specialization": "Computer Science and Engineering"
+        }
+    ]
+}
