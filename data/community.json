@@ -149,16 +149,28 @@
             "description": "Delivered comprehensive training program on iOS mobile application development, covering Swift programming, Xcode IDE, and modern mobile app design patterns for Apple ecosystem.",
             "link": "https://twitter.com/shaqrauni/status/1607055880427810818",
             "featured": true
+        },
+        {
+            "id": 16,
+            "title": "Conference Program Co-Chair - ICICCT 2025",
+            "organization": "Third International Conference on Innovative Computing and Cutting-edge Technologies",
+            "type": "Conference Leadership",
+            "date": "2025",
+            "location": "Istanbul, Turkey",
+            "description": "Served as Conference Program Co-Chair for the Third International Conference on Innovative Computing and Cutting-edge Technologies (ICICCT 2025), overseeing program development, paper selection, and technical sessions for this prestigious international conference.",
+            "link": "https://meacse.org/ICICCT/com.html",
+            "featured": true
         }
     ],
     "stats": {
-        "totalContributions": 15,
+        "totalContributions": 16,
         "workshops": 4,
         "training": 4,
         "competitions": 3,
         "seminars": 1,
         "implementations": 2,
         "events": 1,
-        "years": "2017-2022"
+        "conferenceLeadership": 1,
+        "years": "2017-2025"
     }
 }
