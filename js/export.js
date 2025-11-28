@@ -376,7 +376,7 @@ async function exportToPDF() {
                 doc.setFontSize(10);
                 doc.setFont('helvetica', 'normal');
                 doc.setTextColor(0, 0, 0);
-                doc.text(`• ${award.title} - ${award.year}`, leftMargin + 5, yPos);
+                doc.text(`• ${award.title} - ${award.date || award.year || 'N/A'}`, leftMargin + 5, yPos);
                 yPos += 6;
             });
         }
@@ -606,7 +606,7 @@ ${personalInfo.researchInterests.map(interest => `  \\item ${interest}`).join('\
         if (awards.awards && awards.awards.length > 0) {
             latex += `\\section{Awards \\& Honors}\n\\begin{itemize}\n`;
             awards.awards.forEach(award => {
-                latex += `  \\item ${award.title}, ${award.year}\n`;
+                latex += `  \\item ${award.title}, ${award.date || award.year || 'N/A'}\n`;
             });
             latex += '\\end{itemize}\n\n';
         }

@@ -1,20 +1,44 @@
 {
     "categories": [
         {
-            "name": "Programming Languages",
-            "skills": ["Python", "Java", "C++", "MATLAB", "R"]
+            "name": "Academic Writing & Publishing",
+            "skills": ["Scholarly Article Writing", "Research Paper Composition", "Grant Proposal Development", "Technical Documentation", "Peer Review Expertise", "Conference Proceedings"]
         },
         {
-            "name": "Research Tools",
-            "skills": ["LaTeX", "Overleaf", "Zotero", "Mendeley"]
+            "name": "LaTeX & Typesetting Mastery",
+            "skills": ["Advanced LaTeX Document Preparation", "Overleaf Collaboration", "IEEE & ACM Templates", "Mathematical Typesetting", "Bibliography Management (BibTeX)", "Complex Table & Figure Design"]
         },
         {
-            "name": "Data Analysis",
-            "skills": ["Machine Learning", "Statistical Analysis", "Data Visualization"]
+            "name": "AI & Machine Learning Expertise",
+            "skills": ["Deep Learning Model Design", "Neural Network Architecture", "Natural Language Processing", "Computer Vision Applications", "Predictive Analytics", "Algorithm Optimization"]
         },
         {
-            "name": "Software & Tools",
-            "skills": ["Git", "Docker", "Jupyter", "TensorFlow", "PyTorch"]
+            "name": "Research Methodology & Tools",
+            "skills": ["Systematic Literature Review", "Experimental Design", "Statistical Analysis (SPSS, R)", "Qualitative & Quantitative Research", "Meta-Analysis", "Research Ethics"]
+        },
+        {
+            "name": "Programming & Development",
+            "skills": ["Python (Expert)", "Java", "C++", "MATLAB", "R Programming", "SQL & Database Management"]
+        },
+        {
+            "name": "AI/ML Frameworks & Platforms",
+            "skills": ["TensorFlow & Keras", "PyTorch", "Scikit-learn", "OpenCV", "Hugging Face Transformers", "Google Colab & Jupyter"]
+        },
+        {
+            "name": "Scholarly Research Tools",
+            "skills": ["Zotero & Mendeley", "SCOPUS & Web of Science", "VOSviewer & Bibliometric Analysis", "Grammarly & Turnitin", "Reference Management", "Citation Analysis"]
+        },
+        {
+            "name": "Data Science & Visualization",
+            "skills": ["Data Mining & Preprocessing", "Statistical Modeling", "Tableau & Power BI", "Matplotlib & Seaborn", "Interactive Dashboards", "Big Data Analytics"]
+        },
+        {
+            "name": "Cloud & DevOps",
+            "skills": ["AWS & Azure", "Docker & Kubernetes", "Git & GitHub", "CI/CD Pipelines", "Cloud Security", "Microservices Architecture"]
+        },
+        {
+            "name": "Cybersecurity & Network Security",
+            "skills": ["Intrusion Detection Systems", "Penetration Testing", "Cryptography", "Security Auditing", "Firewall Configuration", "Threat Analysis"]
         }
     ]
 }

@@ -8,7 +8,14 @@
     "address": "College of Computing and Information Technology, Shaqra University, Shaqra City, Riyadh Province, 15526",
     "officeHours": "8:00 AM to 8:00 PM",
     "website": "https://khannayyar.github.io/cv",
-    "bio": "I serve as Faculty of Computer Science in the Department of Computer Science at Shaqra University, College of Computing and Information Technology. With a Ph.D. in Computer Science and Engineering from Devi Ahilya Vishwavidyalaya, India, my research expertise lies in network security, cloud computing, and intrusion detection systems. My doctoral work focused on developing innovative network intrusion management models to prevent web form spamming in cloud computing environments, contributing significantly to the field of cybersecurity. I am deeply committed to advancing knowledge through cutting-edge research, inspiring and mentoring the next generation of computer science scholars, and leveraging technology to address real-world security challenges in cloud-based applications.",
+    "professionalExpertise": [
+        "Prolific Scholarly Writer with 60+ peer-reviewed publications in prestigious journals",
+        "LaTeX Typesetting Expert specializing in IEEE, ACM, and Springer templates",
+        "AI/ML Model Designer with expertise in deep learning and neural network architectures",
+        "Research Methodology Specialist in systematic reviews and experimental design",
+        "Advanced Data Analytics utilizing Python, R, and machine learning frameworks",
+        "Project Management Leader for multidisciplinary research initiatives"
+    ],
     "researchInterests": [
         "Blockchain Technology and Applications",
         "Network Security and Intrusion Detection",
