@@ -202,17 +202,23 @@ async function exportToPDF() {
             });
         }
 
-        // Publications (Top 10)
+        // Publications (All - Latest to Oldest)
         if (research.publications && research.publications.length > 0) {
             checkPageBreak(30);
             doc.setFontSize(14);
             doc.setFont('helvetica', 'bold');
             doc.setTextColor(102, 126, 234);
-            doc.text('SELECTED PUBLICATIONS', leftMargin, yPos);
+            doc.text('PUBLICATIONS', leftMargin, yPos);
             yPos += 8;
 
-            const topPubs = research.publications.slice(0, 10);
-            topPubs.forEach((pub, index) => {
+            // Sort publications by year (latest first)
+            const sortedPubs = [...research.publications].sort((a, b) => {
+                const yearA = parseInt(a.year) || 0;
+                const yearB = parseInt(b.year) || 0;
+                return yearB - yearA;
+            });
+
+            sortedPubs.forEach((pub, index) => {
                 checkPageBreak(20);
                 doc.setFontSize(9);
                 doc.setFont('helvetica', 'normal');
@@ -514,7 +520,15 @@ ${personalInfo.researchInterests.map(interest => `  \\item ${interest}`).join('\
         // Publications
         if (research.publications && research.publications.length > 0) {
             latex += `\\section{Publications}\n\\begin{enumerate}\n`;
-            research.publications.forEach(pub => {
+            
+            // Sort publications by year (latest first)
+            const sortedPubs = [...research.publications].sort((a, b) => {
+                const yearA = parseInt(a.year) || 0;
+                const yearB = parseInt(b.year) || 0;
+                return yearB - yearA;
+            });
+            
+            sortedPubs.forEach(pub => {
                 latex += `  \\item ${pub.authors}. ``${pub.title}''. \\textit{${pub.journal}}, ${pub.year}. Citations: ${pub.citations}.\n`;
             });
             latex += '\\end{enumerate}\n\n';
