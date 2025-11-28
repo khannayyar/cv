@@ -74,16 +74,18 @@ async function loadHighlightsStats() {
     const patEl  = document.querySelector('#highlights h3[data-metric="patents"]');
     const comEl  = document.querySelector('#highlights h3[data-metric="community"]');
     const trainerEl = document.querySelector('#highlights h3[data-metric="trainerRoles"]');
+    const coursesEl = document.querySelector('#highlights h3[data-metric="courses"]');
     if (!pubsEl && !citsEl && !projEl && !awdEl && !patEl && !comEl && !trainerEl) return;
 
     try {
-        const [researchRes, awardsRes, projectsRes, patentsRes, communityRes, certificationsRes] = await Promise.all([
+        const [researchRes, awardsRes, projectsRes, patentsRes, communityRes, certificationsRes, teachingRes] = await Promise.all([
             fetch('data/research.json').then(r => r.ok ? r.json() : { publications: [], totalCitations: 0 }),
             fetch('data/awards.json').then(r => r.ok ? r.json() : { awards: [] }).catch(() => ({ awards: [] })),
             fetch('data/projects.json').then(r => r.ok ? r.json() : { projects: [] }).catch(() => ({ projects: [] })),
             fetch('data/patents.json').then(r => r.ok ? r.json() : { patents: [] }).catch(() => ({ patents: [] })),
             fetch('data/community.json').then(r => r.ok ? r.json() : { contributions: [] }).catch(() => ({ contributions: [] })),
-            fetch('data/certifications.json').then(r => r.ok ? r.json() : { featuredRoles: [] }).catch(() => ({ featuredRoles: [] }))
+            fetch('data/certifications.json').then(r => r.ok ? r.json() : { featuredRoles: [] }).catch(() => ({ featuredRoles: [] })),
+            fetch('data/teaching.json').then(r => r.ok ? r.json() : { statistics: { totalCourses: 0 } }).catch(() => ({ statistics: { totalCourses: 0 } }))
         ]);
 
         const publications = Array.isArray(researchRes.publications) ? researchRes.publications.length : 0;
@@ -97,6 +99,10 @@ async function loadHighlightsStats() {
         const patents = Array.isArray(patentsRes.patents) ? patentsRes.patents.length : 0;
     const community = Array.isArray(communityRes.contributions) ? communityRes.contributions.length : 0;
     const trainerRoles = Array.isArray(certificationsRes.featuredRoles) ? certificationsRes.featuredRoles.length : 0;
+    const coursesTaught = teachingRes && teachingRes.statistics ? teachingRes.statistics.totalCourses : 0;
+    const yearsTaught = teachingRes && teachingRes.statistics && teachingRes.statistics.yearsTaught
+        ? teachingRes.statistics.yearsTaught
+        : (Array.isArray(teachingRes.years) ? teachingRes.years.length : 0);
 
         function setCount(el, value) {
             if (!el) return;
@@ -111,6 +117,14 @@ async function loadHighlightsStats() {
         setCount(patEl, patents);
     setCount(comEl, community);
     setCount(trainerEl, trainerRoles);
+    setCount(coursesEl, coursesTaught);
+
+        // Populate teaching summary ribbon if present
+        const teachingSummaryTextEl = document.getElementById('teaching-summary-text');
+        if (teachingSummaryTextEl) {
+            const yearLabel = yearsTaught === 1 ? 'academic year' : 'academic years';
+            teachingSummaryTextEl.textContent = `${coursesTaught} courses across ${yearsTaught} ${yearLabel}`;
+        }
 
         // On mobile or if highlights already visible, animate immediately
         const section = document.getElementById('highlights');

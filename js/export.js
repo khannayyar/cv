@@ -49,6 +49,7 @@ async function exportToPDF() {
         const skills = await safeFetch('data/skills.json', { categories: [] });
         const awards = await safeFetch('data/awards.json', { awards: [] });
         const community = await safeFetch('data/community.json', { contributions: [] });
+        const teaching = await safeFetch('data/teaching.json', { years: [], statistics: {} });
 
         // Load jsPDF
         const { jsPDF } = await loadJsPDF();
@@ -296,6 +297,46 @@ async function exportToPDF() {
             yPos += 4;
         }
 
+        // Teaching
+        if (teaching.years && teaching.years.length > 0) {
+            checkPageBreak(30);
+            doc.setFontSize(14);
+            doc.setFont('helvetica', 'bold');
+            doc.setTextColor(102, 126, 234);
+            doc.text('TEACHING EXPERIENCE', leftMargin, yPos);
+            yPos += 8;
+
+            const totalCourses = teaching.statistics?.totalCourses || 0;
+            const yearsTaught = teaching.statistics?.yearsTaught || teaching.years.length;
+            doc.setFontSize(10);
+            doc.setFont('helvetica', 'italic');
+            doc.setTextColor(0, 0, 0);
+            doc.text(`${totalCourses} courses taught across ${yearsTaught} academic years`, leftMargin, yPos);
+            yPos += 10;
+
+            teaching.years.forEach(yearGroup => {
+                checkPageBreak(20);
+                doc.setFontSize(11);
+                doc.setFont('helvetica', 'bold');
+                doc.setTextColor(0, 0, 0);
+                doc.text(yearGroup.academicYear, leftMargin, yPos);
+                yPos += 6;
+
+                if (yearGroup.courses && yearGroup.courses.length > 0) {
+                    doc.setFontSize(9);
+                    doc.setFont('helvetica', 'normal');
+                    yearGroup.courses.forEach(course => {
+                        checkPageBreak(8);
+                        const courseText = `• ${course.title}${course.level ? ' (' + course.level + ')' : ''}`;
+                        doc.text(courseText, leftMargin + 5, yPos);
+                        yPos += 5;
+                    });
+                }
+                yPos += 3;
+            });
+            yPos += 5;
+        }
+
         // Skills
         if (skills.categories && skills.categories.length > 0) {
             checkPageBreak(30);
@@ -411,6 +452,7 @@ async function exportToLaTeX() {
         const skills = await safeFetch('data/skills.json', { categories: [] });
         const awards = await safeFetch('data/awards.json', { awards: [] });
     const community = await safeFetch('data/community.json', { contributions: [] });
+        const teaching = await safeFetch('data/teaching.json', { years: [], statistics: {} });
 
         // Generate LaTeX content
         let latex = `\\documentclass[11pt,a4paper,sans]{moderncv}
@@ -526,6 +568,27 @@ ${personalInfo.researchInterests.map(interest => `  \\item ${interest}`).join('\
             latex += `\\section{Additional Certifications}\n`;
             certifications.certifications.forEach(cert => {
                 latex += `\\cventry{${cert.year || ''}}{${cert.name}}{${cert.issuer}}{}{}{}\n`;
+            });
+            latex += '\n';
+        }
+
+        // Teaching
+        if (teaching.years && teaching.years.length > 0) {
+            const totalCourses = teaching.statistics?.totalCourses || 0;
+            const yearsTaught = teaching.statistics?.yearsTaught || teaching.years.length;
+            latex += `\\section{Teaching Experience}\n`;
+            latex += `\\textit{${totalCourses} courses taught across ${yearsTaught} academic years}\n\n`;
+            teaching.years.forEach(yearGroup => {
+                latex += `\\cventry{${yearGroup.academicYear}}{}{}{}{}{\n`;
+                if (yearGroup.courses && yearGroup.courses.length > 0) {
+                    latex += `  \\begin{itemize}\n`;
+                    yearGroup.courses.forEach(course => {
+                        const courseText = `${course.title}${course.level ? ' (' + course.level + ')' : ''}`;
+                        latex += `    \\item ${courseText}\n`;
+                    });
+                    latex += `  \\end{itemize}\n`;
+                }
+                latex += `}\n`;
             });
             latex += '\n';
         }
