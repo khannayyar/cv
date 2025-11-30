@@ -1,0 +1,27 @@
+{
+  "title": "Research Philosophy",
+  "summary": "I pursue research that unites rigorous method with practical impact—advancing AI/ML, cloud systems, and security with reproducible results, ethical framing, and clear scholarly communication.",
+  "pillars": [
+    {
+      "title": "Methodological Rigor, Reproducibility",
+      "description": "Design sound experiments, share artifacts, and favor transparent pipelines—so findings can be trusted, extended, and taught."
+    },
+    {
+      "title": "AI/ML for Real Systems",
+      "description": "Build deployable models for networks, cloud, and IoT; measure where it matters: latency, robustness, generalization, and cost."
+    },
+    {
+      "title": "Security-First Thinking",
+      "description": "Treat adversaries as first-class constraints; integrate detection, response, and resilience into system design from the start."
+    },
+    {
+      "title": "Ethics and Societal Impact",
+      "description": "Frame questions around privacy, fairness, and accountability; publish with clear risk analyses and de-biasing strategies."
+    },
+    {
+      "title": "Scholarly Communication",
+      "description": "Write to be read: LaTeX mastery, precise figures, credible citations; distill ideas so others can build on them."
+    }
+  ],
+  "callout": "Impact isn’t accidental—it’s engineered through rigor, clarity, and care."
+}

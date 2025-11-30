@@ -50,6 +50,7 @@ async function exportToPDF() {
         const awards = await safeFetch('data/awards.json', { awards: [] });
         const community = await safeFetch('data/community.json', { contributions: [] });
         const teaching = await safeFetch('data/teaching.json', { years: [], statistics: {} });
+        const researchPhilosophy = await safeFetch('data/research_philosophy.json', { summary: '', pillars: [] });
 
         // Load jsPDF
         const { jsPDF } = await loadJsPDF();
@@ -139,6 +140,47 @@ async function exportToPDF() {
             yPos += 6;
         });
         yPos += 5;
+
+        // Research Philosophy
+        if (researchPhilosophy.summary || (researchPhilosophy.pillars && researchPhilosophy.pillars.length > 0)) {
+            checkPageBreak(30);
+            doc.setFontSize(14);
+            doc.setFont('helvetica', 'bold');
+            doc.setTextColor(102, 126, 234);
+            doc.text('RESEARCH PHILOSOPHY', leftMargin, yPos);
+            yPos += 8;
+            
+            if (researchPhilosophy.summary) {
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'normal');
+                doc.setTextColor(0, 0, 0);
+                const summaryLines = doc.splitTextToSize(researchPhilosophy.summary, rightMargin - leftMargin);
+                doc.text(summaryLines, leftMargin, yPos);
+                yPos += summaryLines.length * 5 + 5;
+            }
+            
+            if (researchPhilosophy.pillars && researchPhilosophy.pillars.length > 0) {
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'bold');
+                researchPhilosophy.pillars.forEach(pillar => {
+                    checkPageBreak(15);
+                    const title = pillar.title || pillar.name || '';
+                    const desc = pillar.description || pillar.text || '';
+                    if (title) {
+                        doc.text(`• ${title}`, leftMargin + 5, yPos);
+                        yPos += 5;
+                        if (desc) {
+                            doc.setFont('helvetica', 'normal');
+                            const descLines = doc.splitTextToSize(desc, rightMargin - leftMargin - 10);
+                            doc.text(descLines, leftMargin + 10, yPos);
+                            yPos += descLines.length * 5 + 3;
+                            doc.setFont('helvetica', 'bold');
+                        }
+                    }
+                });
+            }
+            yPos += 5;
+        }
 
         // Education
         if (education.degrees && education.degrees.length > 0) {
@@ -498,6 +540,29 @@ ${personalInfo.researchInterests.map(interest => `  \\item ${interest}`).join('\
 \\end{itemize}
 
 `;
+
+        // Research Philosophy
+        if (researchPhilosophy.summary || (researchPhilosophy.pillars && researchPhilosophy.pillars.length > 0)) {
+            latex += `\\section{Research Philosophy}\n`;
+            if (researchPhilosophy.summary) {
+                latex += `${researchPhilosophy.summary}\n\n`;
+            }
+            if (researchPhilosophy.pillars && researchPhilosophy.pillars.length > 0) {
+                latex += `\\begin{itemize}\n`;
+                researchPhilosophy.pillars.forEach(pillar => {
+                    const title = pillar.title || pillar.name || '';
+                    const desc = pillar.description || pillar.text || '';
+                    if (title) {
+                        latex += `  \\item \\textbf{${title}}`;
+                        if (desc) {
+                            latex += `: ${desc}`;
+                        }
+                        latex += `\n`;
+                    }
+                });
+                latex += `\\end{itemize}\n\n`;
+            }
+        }
 
         // Education
         if (education.degrees && education.degrees.length > 0) {

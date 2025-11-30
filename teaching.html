@@ -117,6 +117,18 @@
         </div>
     </section>
 
+    <!-- Teaching Philosophy -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold gradient-text">Teaching Philosophy</h2>
+                <p class="mt-3 text-gray-600" id="philosophy-summary"></p>
+            </div>
+            <div id="philosophy-pillars" class="grid sm:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="100"></div>
+            <div id="philosophy-callout" class="mt-10"></div>
+        </div>
+    </section>
+
     <!-- Filters -->
     <section class="py-8 bg-white border-b">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -242,6 +254,53 @@
         }
     }
     loadTeaching();
+
+    async function loadPhilosophy() {
+        try {
+            const res = await fetch('data/philosophy.json');
+            const data = await res.json();
+            const summaryEl = document.getElementById('philosophy-summary');
+            const pillarsEl = document.getElementById('philosophy-pillars');
+            const calloutEl = document.getElementById('philosophy-callout');
+
+            if (data.summary) {
+                summaryEl.textContent = data.summary;
+            }
+
+            if (Array.isArray(data.pillars)) {
+                pillarsEl.innerHTML = data.pillars.map((p, i) => {
+                    const title = p.title || p.name || 'Pillar';
+                    const desc = p.description || p.text || '';
+                    return `
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="${i*80}">
+                        <div class="flex items-start gap-3">
+                            <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 text-white flex items-center justify-center shadow"><i class="fas fa-star"></i></span>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">${title}</h3>
+                                <p class="mt-1 text-gray-600">${desc}</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            }
+
+            const calloutText = typeof data.callout === 'string' ? data.callout : (data.callout && data.callout.text);
+            if (calloutText) {
+                calloutEl.innerHTML = `
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-2xl p-8 shadow-lg" data-aos="zoom-in">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-quote-left text-2xl opacity-80"></i>
+                            <p class="text-lg">${calloutText}</p>
+                        </div>
+                    </div>
+                `;
+            }
+        } catch (e) {
+            console.error('Failed to load philosophy', e);
+        }
+    }
+    loadPhilosophy();
     </script>
 </body>
 </html>

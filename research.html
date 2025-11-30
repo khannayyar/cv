@@ -105,25 +105,17 @@
     
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-bold mb-6 gradient-text text-center">
-                    <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>Research Interests
-                </h2>
-                <div id="research-interests" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Research Philosophy placed above interests -->
+            <div id="research-philosophy" class="grid md:grid-cols-2 gap-8 mb-16">
                 <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-right">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">
                         <i class="fas fa-brain text-purple-600 mr-2"></i>Research Philosophy
                     </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        My research is driven by a commitment to addressing real-world challenges through rigorous scientific inquiry and innovative methodologies. I believe in interdisciplinary collaboration and the translation of research findings into practical applications that benefit society.
-                    </p>
+                    <p id="research-philosophy-summary" class="text-gray-700 leading-relaxed"></p>
+                    <div id="research-philosophy-pillars" class="mt-6 grid sm:grid-cols-2 gap-4"></div>
+                    <div id="research-philosophy-callout" class="mt-8"></div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-left">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">
                         <i class="fas fa-crosshairs text-blue-600 mr-2"></i>Current Focus
@@ -131,6 +123,15 @@
                     <p class="text-gray-700 leading-relaxed">
                         Currently, my research focuses on Network Intrusion Detection and Management for Cloud Computing environments, focusing on developing intelligent security frameworks that protect critical infrastructure and sensitive data from evolving cyber threats.
                     </p>
+                </div>
+            </div>
+
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-6 gradient-text text-center">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>Research Interests
+                </h2>
+                <div id="research-interests" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Will be populated by JavaScript -->
                 </div>
             </div>
             
@@ -200,6 +201,47 @@
             }
         }
         loadResearch();
+
+        async function loadResearchPhilosophy() {
+            try {
+                const res = await fetch('data/research_philosophy.json');
+                const rp = await res.json();
+                const summaryEl = document.getElementById('research-philosophy-summary');
+                const pillarsEl = document.getElementById('research-philosophy-pillars');
+                const calloutEl = document.getElementById('research-philosophy-callout');
+
+                if (rp.summary) summaryEl.textContent = rp.summary;
+                if (Array.isArray(rp.pillars)) {
+                    pillarsEl.innerHTML = rp.pillars.map((p, i) => {
+                        const title = p.title || p.name || 'Principle';
+                        const desc = p.description || p.text || '';
+                        return `
+                        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4" data-aos="fade-up" data-aos-delay="${i*80}">
+                            <div class="flex items-start gap-3">
+                                <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 text-white flex items-center justify-center"><i class="fas fa-gem"></i></span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">${title}</h4>
+                                    <p class="text-sm text-gray-600 mt-1">${desc}</p>
+                                </div>
+                            </div>
+                        </div>`;
+                    }).join('');
+                }
+                const calloutText = typeof rp.callout === 'string' ? rp.callout : (rp.callout && rp.callout.text);
+                if (calloutText) {
+                    calloutEl.innerHTML = `
+                        <div class="bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-xl p-6 shadow" data-aos="zoom-in">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-quote-left opacity-80"></i>
+                                <p class="text-lg">${calloutText}</p>
+                            </div>
+                        </div>`;
+                }
+            } catch (e) {
+                console.error('Error loading research philosophy', e);
+            }
+        }
+        loadResearchPhilosophy();
     </script>
 </body>
 </html>

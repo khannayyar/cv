@@ -1,0 +1,27 @@
+{
+  "title": "Teaching Philosophy",
+  "summary": "I believe in cultivating rigorous, compassionate, and future-ready computer scientists through research-informed teaching, ethical practice, and authentic, project-based learning.",
+  "pillars": [
+    {
+      "name": "Research-Informed, Practice-Driven",
+      "text": "Courses connect core CS theory with real-world systems. I integrate current scholarship (security, cloud, AI/ML) with labs and capstone projects to develop judgment, not just skills."
+    },
+    {
+      "name": "AI/ML as Amplifier",
+      "text": "Students learn to design and evaluate models responsibly—using AI/ML to augment insight, automate analysis, and generate ideas, while understanding limitations, bias, and reproducibility."
+    },
+    {
+      "name": "Mastery in Communication",
+      "text": "I train students to write clearly and publish credibly: LaTeX proficiency, sound citation practice, and persuasive technical storytelling—because ideas must travel to matter."
+    },
+    {
+      "name": "Ethics, Security, and Impact",
+      "text": "Security mindset and ethical reasoning are embedded across courses. We discuss privacy, fairness, and societal consequences alongside performance and scalability."
+    },
+    {
+      "name": "Learning by Building",
+      "text": "Project-based learning, peer review, and iterative design cultivate autonomy and resilience. Students build artifacts—code, reports, demos—that demonstrate real capability."
+    }
+  ],
+  "callout": "Graduates leave not only with skills but with habits: curiosity, clarity, and care."
+}

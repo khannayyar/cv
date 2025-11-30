@@ -147,6 +147,11 @@
                             <ul id="research-interests" class="space-y-2 text-gray-700">
                                 <!-- Will be populated by JS -->
                             </ul>
+                            <div class="mt-4">
+                                <a href="research.html#research-philosophy" class="inline-flex items-center px-3 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition">
+                                    <i class="fas fa-brain mr-2"></i> View Research Philosophy
+                                </a>
+                            </div>
                         </div>
                         
                         <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6">
@@ -217,8 +222,25 @@
             try {
                 const response = await fetch('data/personal-info.json');
                 const data = await response.json();
+                // Fetch live stats from research and teaching
+                let publicationsCount = null;
+                let coursesCount = null;
+                try {
+                    const rRes = await fetch('data/research.json');
+                    const rData = await rRes.json();
+                    const pubs = Array.isArray(rData.publications) ? rData.publications.length : (Array.isArray(rData) ? rData.length : null);
+                    publicationsCount = pubs;
+                } catch (e) { console.warn('Live publications fetch failed', e); }
+                try {
+                    const tRes = await fetch('data/teaching.json');
+                    const tData = await tRes.json();
+                    const years = Array.isArray(tData.years) ? tData.years : [];
+                    const allCourses = years.flatMap(y => Array.isArray(y.courses) ? y.courses : []);
+                    coursesCount = allCourses.length || (tData.statistics && tData.statistics.totalCourses) || null;
+                } catch (e) { console.warn('Live courses fetch failed', e); }
                 
-                document.getElementById('bio-content').innerHTML = `<p class="text-lg">${data.bio}</p>`;
+                const bio = data.bio || 'Biography unavailable at the moment.';
+                document.getElementById('bio-content').innerHTML = `<p class="text-lg">${bio}</p>`;
                 
                 document.getElementById('research-interests').innerHTML = data.researchInterests
                     .map((interest, index) => {
@@ -238,6 +260,12 @@
                     <p><i class="fas fa-clock text-orange-600 mr-2"></i>${data.officeHours}</p>
                 `;
                 
+                const stats = data.statistics || {};
+                const pubs = (publicationsCount ?? stats.publications) ?? 0;
+                const cites = stats.citations ?? 0;
+                const projects = stats.projects ?? 0;
+                const awards = stats.awards ?? 0;
+                const courses = (coursesCount ?? null);
                 document.getElementById('quick-facts').innerHTML = `
                     <div class="flex justify-between border-b pb-2">
                         <span class="text-gray-600"><i class="fas fa-user-tie mr-2 text-purple-600"></i>Position:</span>
@@ -249,12 +277,25 @@
                     </div>
                     <div class="flex justify-between border-b pb-2">
                         <span class="text-gray-600"><i class="fas fa-book mr-2 text-green-600"></i>Publications:</span>
-                        <span class="font-semibold">${data.statistics.publications}</span>
+                        <span class="font-semibold">${pubs}</span>
                     </div>
                     <div class="flex justify-between">
                         <span class="text-gray-600"><i class="fas fa-quote-right mr-2 text-orange-600"></i>Citations:</span>
-                        <span class="font-semibold">${data.statistics.citations}</span>
+                        <span class="font-semibold">${cites}</span>
                     </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-gray-600"><i class="fas fa-code-branch mr-2 text-purple-600"></i>Projects:</span>
+                        <span class="font-semibold">${projects}</span>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-gray-600"><i class="fas fa-trophy mr-2 text-yellow-600"></i>Awards:</span>
+                        <span class="font-semibold">${awards}</span>
+                    </div>
+                    ${courses !== null ? `
+                    <div class="flex justify-between mt-2">
+                        <span class="text-gray-600"><i class="fas fa-chalkboard-teacher mr-2 text-blue-600"></i>Courses Taught:</span>
+                        <span class="font-semibold">${courses}</span>
+                    </div>` : ''}
                 `;
                 // Trainer badges
                 const rolesWrap = document.getElementById('trainer-roles');
