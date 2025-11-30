@@ -241,11 +241,17 @@
                 // Fetch teaching stats
                 try {
                     const tRes = await fetch('data/teaching.json');
+                    if (!tRes.ok) throw new Error(`Teaching fetch failed: ${tRes.status}`);
                     const tData = await tRes.json();
+                    console.log('Teaching data loaded:', tData);
                     const years = Array.isArray(tData.years) ? tData.years : [];
                     const allCourses = years.flatMap(y => Array.isArray(y.courses) ? y.courses : []);
                     coursesCount = allCourses.length || (tData.statistics && tData.statistics.totalCourses) || 0;
-                } catch (e) { console.warn('Teaching data fetch failed', e); }
+                    console.log('Courses count:', coursesCount, 'from', allCourses.length, 'courses');
+                } catch (e) { 
+                    console.error('Teaching data fetch failed:', e); 
+                    coursesCount = 0;
+                }
                 
                 // Fetch projects count
                 try {
