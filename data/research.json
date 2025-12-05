@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2025-12-03",
-    "totalCitations": 487,
+    "lastUpdated": "2025-12-05",
+    "totalCitations": 492,
     "hIndex": 12,
     "i10Index": 19,
     "publications": [
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 28,
+            "citations": 29,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -347,6 +347,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4fGpz3EwCPoC"
         },
         {
+            "title": "Complexities and Challenges for Securing Digital Assets and Infrastructure in Academia: A Review on Digital Asset Security",
+            "authors": "M Alshalaan, NA Khan",
+            "journal": "Complexities and Challenges for Securing Digital Assets and Infrastructure …, 2025",
+            "year": "2025",
+            "citations": 4,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC"
+        },
+        {
             "title": "Statistical probability prediction model for E-Learning and realtime proctoring using IoT devices",
             "authors": "R Alotaibi, NA Khan, MM Akhtar",
             "journal": "Journal of King Saud University–Science 37, 2025",
@@ -435,15 +444,6 @@
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4hFrxpcac9AC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4hFrxpcac9AC"
-        },
-        {
-            "title": "Complexities and Challenges for Securing Digital Assets and Infrastructure in Academia: A Review on Digital Asset Security",
-            "authors": "M Alshalaan, NA Khan",
-            "journal": "Complexities and Challenges for Securing Digital Assets and Infrastructure …, 2025",
-            "year": "2025",
-            "citations": 0,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC"
         },
         {
             "title": "Colony Approach Using Federated Learning for Detection of Heart Disease",
