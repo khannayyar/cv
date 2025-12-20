@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2025-12-16",
-    "totalCitations": 527,
+    "lastUpdated": "2025-12-20",
+    "totalCitations": 529,
     "hIndex": 13,
     "i10Index": 22,
     "publications": [
@@ -9,7 +9,7 @@
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 72,
+            "citations": 73,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -365,6 +365,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC"
         },
         {
+            "title": "Adaption of Moodle as E-Learning in Saudi Arabian University: Empirical Examination and its Outcomes Using TAM",
+            "authors": "MA Alanezi",
+            "journal": "International Journal of Computer 29 (1), 132-148, 2018",
+            "year": "2018",
+            "citations": 4,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BUYA1_V_uYcC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BUYA1_V_uYcC"
+        },
+        {
             "title": "Ranking and Reputation Based Resource Allocation in P2P System",
             "authors": "OMA Al Omari, NA Khan, R Mahafdah",
             "journal": "Mediterranean Journal of Basic and Applied Sciences (MJBAS) 1 (1), 293-301, 2017",
@@ -390,15 +399,6 @@
             "citations": 3,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:8d8msizDQcsC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:8d8msizDQcsC"
-        },
-        {
-            "title": "Adaption of Moodle as E-Learning in Saudi Arabian University: Empirical Examination and its Outcomes Using TAM",
-            "authors": "MA Alanezi",
-            "journal": "International Journal of Computer 29 (1), 132-148, 2018",
-            "year": "2018",
-            "citations": 3,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BUYA1_V_uYcC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BUYA1_V_uYcC"
         },
         {
             "title": "Learning Modal Adaptability to Improve Reading and Writing skills of Students",
