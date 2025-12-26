@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2025-12-23",
-    "totalCitations": 529,
+    "lastUpdated": "2025-12-26",
+    "totalCitations": 530,
     "hIndex": 13,
     "i10Index": 22,
     "publications": [
@@ -221,6 +221,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4DMP91E08xMC"
         },
         {
+            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ, 8, e1120–e1120",
+            "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
+            "journal": "",
+            "year": "2022",
+            "citations": 9,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC"
+        },
+        {
             "title": "Measuring Academics Intentions to use a Project Management System (PMS): A Case Study of the College of Computing and Information Technology, Shaqra University",
             "authors": "NA Khan",
             "journal": "Trends in Future Informatics and Emerging Technologies, 58-69, 2021",
@@ -255,15 +264,6 @@
             "citations": 8,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BqipwSGYUEgC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BqipwSGYUEgC"
-        },
-        {
-            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ, 8, e1120–e1120",
-            "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
-            "journal": "",
-            "year": "2022",
-            "citations": 8,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC"
         },
         {
             "title": "Cyber Forensics and Proposed Techniques to Overcome Cyber Threats for Cyber Security",
