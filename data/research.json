@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-01-03",
-    "totalCitations": 532,
+    "lastUpdated": "2026-01-04",
+    "totalCitations": 533,
     "hIndex": 13,
     "i10Index": 22,
     "publications": [
@@ -68,6 +68,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:YOwf2qJgpHMC"
         },
         {
+            "title": "Zigbee technology to provide elderly people with well-being at home",
+            "authors": "MH Alsulami, AS Atkins, AA Alaboudi, NA Khan",
+            "journal": "International Journal of Sensors Wireless Communications and Control 11 (9 …, 2021",
+            "year": "2021",
+            "citations": 17,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ZeXyd9-uunAC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ZeXyd9-uunAC"
+        },
+        {
             "title": "Systematic Survey on Big Data Analytics and Artificial Intelligence for COVID-19 Containment.",
             "authors": "SM Alshahrani, J Almalki, W Alshehri, R Mehmood, M Albahar, N Jannah, ...",
             "journal": "Computer Systems Science & Engineering 47 (2), 2023",
@@ -75,15 +84,6 @@
             "citations": 16,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC"
-        },
-        {
-            "title": "Zigbee technology to provide elderly people with well-being at home",
-            "authors": "MH Alsulami, AS Atkins, AA Alaboudi, NA Khan",
-            "journal": "International Journal of Sensors Wireless Communications and Control 11 (9 …, 2021",
-            "year": "2021",
-            "citations": 16,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ZeXyd9-uunAC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ZeXyd9-uunAC"
         },
         {
             "title": "Artificially intelligent warehouse management system",
