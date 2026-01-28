@@ -185,11 +185,89 @@
             ],
             "link": "https://ieeexplore.ieee.org/abstract/document/9410685/",
             "publicationDate": "2021-03-17"
+        },
+        {
+            "title": "Course Add/Drop Management System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Web Development", "Workflow Management", "Email Notifications", "PDF Generation", "Database Systems"],
+            "description": "Web-based platform that simplifies academic course registration and modification. Allows students to view available courses and submit add or drop requests online with ease. The system follows a structured multi-level approval process involving academic advisors, department heads, and registrars to ensure accuracy and compliance with university policies. Users receive real-time status updates and email notifications throughout the workflow. Once approved, the system generates a downloadable PDF record of the request.",
+            "outcomes": [
+                "Simplified course registration and modification process for students",
+                "Implemented multi-level approval workflow for compliance and accuracy",
+                "Provided real-time status updates and email notifications",
+                "Generated downloadable PDF records of approved requests",
+                "Reduced paperwork and improved transparency in academic operations",
+                "Enhanced efficiency for students and academic administrators"
+            ],
+            "link": "https://ccitsu.github.io/dac/",
+            "publicationDate": "2026-01-28"
+        },
+        {
+            "title": "Student Absence Management System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Web Development", "Workflow Management", "Role-Based Access Control", "Authentication Systems", "Dashboard Development", "Database Systems"],
+            "description": "Web-based application that streamlines leave requests and approvals within an academic workflow. Enables students to register, submit absence/leave applications, and track real-time status through a three-level hierarchical approval pipeline involving Advisors, Heads of Department (HODs), and Vice Deans. The system provides role-based access, unified authentication for staff, and dashboard interfaces for each user category. Requests traverse sequential approval stages, capturing decision states and timestamps to ensure auditability. Its UI guides users through application submission, progress monitoring, and administrative review.",
+            "outcomes": [
+                "Streamlined leave request and approval process for students",
+                "Implemented three-level hierarchical approval pipeline",
+                "Provided role-based access control for different user categories",
+                "Enabled real-time status tracking and monitoring",
+                "Captured comprehensive decision states and timestamps for auditability",
+                "Enhanced efficiency and transparency in academic absence management",
+                "Unified authentication system for staff members"
+            ],
+            "link": "https://suedusa.github.io/ams/",
+            "publicationDate": "2026-01-28"
+        },
+        {
+            "title": "Field (Cooperative) Education Program",
+            "role": "Principal Investigator",
+            "institution": "CCIT, Shaqra University",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Web Development", "Interactive Handbook", "Educational Documentation", "Educational Platform", "Database Systems"],
+            "description": "Structured experiential learning initiative that bridges academic theory with real-world industry practice. Hosted as an interactive online handbook, this project outlines program goals, stakeholder responsibilities, procedures, assessment methods, and essential forms to support students, faculty, and host organizations. It aims to guide undergraduate trainees through every stage of their professional field training, ensuring clarity, compliance, and measurable outcomes. By integrating curriculum requirements with workplace expectations, this platform enhances student preparedness and strengthens university-industry collaboration for computing and IT disciplines.",
+            "outcomes": [
+                "Created comprehensive interactive online handbook for field education program",
+                "Documented program goals, stakeholder responsibilities, and procedures",
+                "Established clear assessment methods and compliance frameworks",
+                "Provided essential forms and resources for students, faculty, and host organizations",
+                "Enhanced student preparedness through structured guidance",
+                "Strengthened university-industry collaboration",
+                "Integrated curriculum requirements with workplace expectations",
+                "Supported all stages of professional field training"
+            ],
+            "link": "https://ccitsu.github.io/coop/",
+            "publicationDate": "2026-01-28"
+        },
+        {
+            "title": "Field Training Permission System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": ["Web Development", "User Authentication", "Secure Login", "Registration Systems", "Form Management", "Database Systems", "Industry Collaboration"],
+            "description": "Web platform that simplifies how students register and apply for cooperative/field training. It allows secure login and registration, captures essential student details, and streamlines permission requests for field training in partnership with industry organizations. This tool supports academic units in managing training records and helps students connect with practical work opportunities, enhancing their readiness for future careers.",
+            "outcomes": [
+                "Simplified student registration and field training application process",
+                "Implemented secure login and authentication mechanisms",
+                "Captured and managed essential student details efficiently",
+                "Streamlined permission requests for field training partnerships",
+                "Enabled academic units to manage training records effectively",
+                "Facilitated student-industry organization connections",
+                "Enhanced student career readiness through practical opportunities",
+                "Improved accessibility to cooperative training programs"
+            ],
+            "link": "https://suedusa.github.io/coop/",
+            "publicationDate": "2026-01-28"
         }
     ],
     "statistics": {
-        "totalProjects": 11,
-        "completed": 11,
+        "totalProjects": 14,
+        "completed": 14,
         "ongoing": 0,
         "categories": ["AI & Security", "AI & NLP", "Educational Technology", "Healthcare & Mobile Development", "Digital Library & Knowledge Management", "Blockchain & Security", "Information Systems", "AI & Healthcare", "Decision Support Systems", "Healthcare Technology & Drones"]
     }
