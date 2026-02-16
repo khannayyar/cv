@@ -1,15 +1,15 @@
 {
-    "lastUpdated": "2026-02-15",
-    "totalCitations": 566,
+    "lastUpdated": "2026-02-16",
+    "totalCitations": 567,
     "hIndex": 13,
-    "i10Index": 24,
+    "i10Index": 23,
     "publications": [
         {
             "title": "Enabling blockchain with IoMT devices for healthcare",
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 76,
+            "citations": 75,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 35,
+            "citations": 36,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -45,7 +45,7 @@
             "authors": "NA Khan, AMU Siddiqi, M Ahmad",
             "journal": "Asian Journal of Basic Science & Research 3 (2), 51-60, 2021",
             "year": "2021",
-            "citations": 22,
+            "citations": 21,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:kNdYIx-mwKoC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:kNdYIx-mwKoC"
         },
@@ -68,15 +68,6 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:YOwf2qJgpHMC"
         },
         {
-            "title": "Systematic Survey on Big Data Analytics and Artificial Intelligence for COVID-19 Containment.",
-            "authors": "SM Alshahrani, J Almalki, W Alshehri, R Mehmood, M Albahar, N Jannah, ...",
-            "journal": "Computer Systems Science & Engineering 47 (2), 2023",
-            "year": "2023",
-            "citations": 17,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC"
-        },
-        {
             "title": "Zigbee technology to provide elderly people with well-being at home",
             "authors": "MH Alsulami, AS Atkins, AA Alaboudi, NA Khan",
             "journal": "International Journal of Sensors Wireless Communications and Control 11 (9 …, 2021",
@@ -86,7 +77,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ZeXyd9-uunAC"
         },
         {
-            "title": "Integrating Artificial Bee Colony Algorithms for Deep Learning Model Optimization: A Comprehensive Review",
+            "title": "Integrating artificial bee colony algorithms for deep learning model optimization: a comprehensive review",
             "authors": "F Akram, S Aziz, NA Khan, SA Faizi, K Raza",
             "journal": "Solving with Bees: Transformative Applications of Artificial Bee Colony …, 2024",
             "year": "2024",
@@ -95,11 +86,20 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:2KloaMYe4IUC"
         },
         {
+            "title": "Systematic Survey on Big Data Analytics and Artificial Intelligence for COVID-19 Containment.",
+            "authors": "SM Alshahrani, J Almalki, W Alshehri, R Mehmood, M Albahar, N Jannah, ...",
+            "journal": "Computer Systems Science & Engineering 47 (2), 2023",
+            "year": "2023",
+            "citations": 16,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:-f6ydRqryjwC"
+        },
+        {
             "title": "Artificially intelligent warehouse management system",
             "authors": "S Alangari, NA Khan",
             "journal": "Asian Journal of Basic Science & Research 3 (3), 16-24, 2021",
             "year": "2021",
-            "citations": 16,
+            "citations": 15,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:9ZlFYXVOiuMC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:9ZlFYXVOiuMC"
         },
@@ -117,7 +117,7 @@
             "authors": "V Jain, NA Khan",
             "journal": "2014 Conference on IT in Business, Industry and Government (CSIBIG), 1-6, 2014",
             "year": "2014",
-            "citations": 15,
+            "citations": 14,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Zph67rFs4hoC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Zph67rFs4hoC"
         },
@@ -138,6 +138,24 @@
             "citations": 13,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:KlAtU1dfN6UC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:KlAtU1dfN6UC"
+        },
+        {
+            "title": "Computational intelligence",
+            "authors": "A Shukla, BK Murthy, N Hasteer, JP Van Belle",
+            "journal": "Lecture Notes in Electrical Engineering 968, 1876-1119, 2022",
+            "year": "2022",
+            "citations": 12,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:AvfA0Oy_GE0C",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:AvfA0Oy_GE0C"
+        },
+        {
+            "title": "An empirical analysis on users’ acceptance and usage of BYOD-technology for Saudi universities: a case study of Shaqra University",
+            "authors": "NA Khan, MN Khalid, M Ahmad, AMU Siddiqi, VK Shukla",
+            "journal": "2021 International conference on technological advancements and innovations …, 2021",
+            "year": "2021",
+            "citations": 12,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:aqlVkmm33-oC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:aqlVkmm33-oC"
         },
         {
             "title": "Intrusion management to avoid web-form spamming in cloud based architectures",
@@ -163,26 +181,8 @@
             "journal": "Solving with Bees: Transformative Applications of Artificial Bee Colony …, 2024",
             "year": "2024",
             "citations": 11,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:tzM49s52ZIMC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:tzM49s52ZIMC"
-        },
-        {
-            "title": "Computational intelligence",
-            "authors": "A Shukla, BK Murthy, N Hasteer, JP Van Belle",
-            "journal": "Lecture Notes in Electrical Engineering 968, 1876-1119, 2022",
-            "year": "2022",
-            "citations": 11,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:AvfA0Oy_GE0C",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:AvfA0Oy_GE0C"
-        },
-        {
-            "title": "An empirical analysis on users’ acceptance and usage of BYOD-technology for saudi universities: a case study of Shaqra University",
-            "authors": "NA Khan, MN Khalid, M Ahmad, AMU Siddiqi, VK Shukla",
-            "journal": "2021 International conference on technological advancements and innovations …, 2021",
-            "year": "2021",
-            "citations": 11,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:aqlVkmm33-oC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:aqlVkmm33-oC"
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C"
         },
         {
             "title": "Smart University Model for Saudi Arabian Universities",
@@ -194,7 +194,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IWHjjKOFINEC"
         },
         {
-            "title": "An Empirical Study on the Future of Publication Repositories and Its Adaptability in Public universities—A Case Study of Shaqra University, Saudi Arabia",
+            "title": "An empirical study on the future of publication repositories and its adaptability in public universities—A Case Study of Shaqra University, Saudi Arabia",
             "authors": "NA Khan, OM Al-Omari, SM Alshahrani",
             "journal": "Computational Intelligence: Select Proceedings of InCITe 2022, 823-829, 2023",
             "year": "2023",
@@ -210,15 +210,6 @@
             "citations": 10,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4TOpqqG69KYC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4TOpqqG69KYC"
-        },
-        {
-            "title": "Cloud applications development and deployment: The future of cost effective programming and a step ahead",
-            "authors": "NA Khan",
-            "journal": "Middle East Journal of Applied Science & Technology 1 (1), 30-36, 2018",
-            "year": "2018",
-            "citations": 10,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uJ-U7cs_P_0C",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uJ-U7cs_P_0C"
         },
         {
             "title": "Development of Intelligent Pick and Drop Service Manager for Small Cities",
@@ -239,7 +230,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BqipwSGYUEgC"
         },
         {
-            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ, 8, e1120–e1120",
+            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ Computer Science, 8: e1120",
             "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
             "journal": "",
             "year": "2022",
@@ -248,18 +239,18 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC"
         },
         {
-            "title": "Security management protocols in cloud computation",
+            "title": "Cloud applications development and deployment: The future of cost effective programming and a step ahead",
             "authors": "NA Khan",
-            "journal": "Middle East Journal of Applied Science & Technology 2 (1), 16-23, 2019",
-            "year": "2019",
+            "journal": "Middle East Journal of Applied Science & Technology 1 (1), 30-36, 2018",
+            "year": "2018",
             "citations": 9,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Z5m8FVwuT1cC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Z5m8FVwuT1cC"
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uJ-U7cs_P_0C",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uJ-U7cs_P_0C"
         },
         {
-            "title": "NAMAQ-Arabic Handwriting Recognition Using Deep Learning, AI, and ML with Sentiment Analysis",
+            "title": "NAMAQ-Arabic handwriting recognition using deep learning, AI, and ML with sentiment analysis",
             "authors": "WY Aljomaee, SM Alshahrani, NA Khan",
-            "journal": "2025 4th International Conference on Computing and Information Technology …, 2025",
+            "journal": "2025 4th international conference on computing and information technology …, 2025",
             "year": "2025",
             "citations": 8,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:EkHepimYqZsC",
@@ -275,6 +266,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC"
         },
         {
+            "title": "Security management protocols in cloud computation",
+            "authors": "NA Khan",
+            "journal": "Middle East Journal of Applied Science & Technology 2 (1), 16-23, 2019",
+            "year": "2019",
+            "citations": 8,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Z5m8FVwuT1cC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Z5m8FVwuT1cC"
+        },
+        {
             "title": "Cyber Forensics and Proposed Techniques to Overcome Cyber Threats for Cyber Security",
             "authors": "NA Khan, ARA Ghamdi",
             "journal": "International Journal of Engineering and Management Research (IJEMR) 5 (5 …, 2015",
@@ -286,7 +286,7 @@
         {
             "title": "Development of Intelligent Library Services for University Students",
             "authors": "NA Khan, S Rajeyyagari, AR Khan",
-            "journal": "Mediterranean Journal of Basic and Applied Sciences (MJBAS) 9 (1), 142-147, 2025",
+            "journal": "Mediterranean Journal of Basic and Applied Sciences 9 (1), 142-147, 2025",
             "year": "2025",
             "citations": 7,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:yB1At4FlUx8C",
@@ -322,11 +322,20 @@
         {
             "title": "An Application of Machine Learning, Big Data and IoT of Enterprise Architecture: Challenges, Solutions and Open Issues",
             "authors": "AS Zamani, MM Akhtar, NA Khan",
-            "journal": "IntechOpen, 2025",
+            "journal": "Quality Control-Artificial Intelligence, Big Data, and New Trends, 2025",
             "year": "2025",
             "citations": 6,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC"
+        },
+        {
+            "title": "A comprehensive secure system enabling healthcare 5.0 using federated learning, intrusion detection and blockchain. PeerJ Computer Science, 10: e1778",
+            "authors": "J Almalki, SM Alshahrani, NA Khan",
+            "journal": "",
+            "year": "1778",
+            "citations": 6,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:DUooU5lO8OsC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:DUooU5lO8OsC"
         },
         {
             "title": "Innovation in teaching and learning with the use of modern computational tools: A Post Covid experience",
@@ -376,7 +385,7 @@
         {
             "title": "Ranking and Reputation Based Resource Allocation in P2P System",
             "authors": "OMA Al Omari, NA Khan, R Mahafdah",
-            "journal": "Mediterranean Journal of Basic and Applied Sciences (MJBAS) 1 (1), 293-301, 2017",
+            "journal": "Mediterranean Journal of Basic and Applied Sciences 1 (1), 293-301, 2017",
             "year": "2017",
             "citations": 4,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:XD-gHx7UXLsC",
@@ -385,7 +394,7 @@
         {
             "title": "Managing Data Replication in Mobile Ad-Hoc Network Databases Using Content Based Energy Optimization",
             "authors": "MAA Hassan, NA Khan, MAM Nasim",
-            "journal": "Mediterranean Journal of Basic and Applied Sciences (MJBAS) 1 (1), 142-154, 2017",
+            "journal": "Mediterranean Journal of Basic and Applied Sciences 1 (1), 142-154, 2017",
             "year": "2017",
             "citations": 4,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:j8SEvjWlNXcC",
@@ -408,15 +417,6 @@
             "citations": 1,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:a9-T7VOCCH8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:a9-T7VOCCH8C"
-        },
-        {
-            "title": "Colony Approach Using Federated Learning for Detection of Heart Disease",
-            "authors": "MMA Nayyar Ahmed Khan, AMU Siddiqi, KA Rashid, S Rajeyyagari, ...",
-            "journal": "Solving with Bees: Transformative Applications of Artificial Bee Colony …, 2024",
-            "year": "2024",
-            "citations": 1,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C"
         },
         {
             "title": "Learning Modal Adaptability to Improve Reading and Writing skills of Students",
