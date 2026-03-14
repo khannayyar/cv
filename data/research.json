@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-03-07",
-    "totalCitations": 573,
+    "lastUpdated": "2026-03-14",
+    "totalCitations": 576,
     "hIndex": 13,
     "i10Index": 23,
     "publications": [
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 37,
+            "citations": 39,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -419,6 +419,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:a9-T7VOCCH8C"
         },
         {
+            "title": "Advanced Computing Techniques: Implementation, Informatics and Emerging Technologies",
+            "authors": "D Kumar, S Dhir",
+            "journal": "Bentham Science Publishers, 2021",
+            "year": "2021",
+            "citations": 1,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:6ZxmRoH8BuwC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:6ZxmRoH8BuwC"
+        },
+        {
             "title": "Learning Modal Adaptability to Improve Reading and Writing skills of Students",
             "authors": "RF Mahafdah, OM Al-Omari, NA Khan",
             "journal": "",
@@ -428,6 +437,24 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mB3voiENLucC"
         },
         {
+            "title": "A Cloud-Based Multi-Tier Approval System for Academic Course Registration: Design, Implementation, and Evaluations",
+            "authors": "AMUSMA Nayyar Ahmed Khan, Asif Rashid Khan, Sivaram Rajeyyagari, Mobin Akhtar",
+            "journal": "Middle East Journal of Applied Science & Technology 9 (1), 37-54, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IRz6iEL74y4C",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IRz6iEL74y4C"
+        },
+        {
+            "title": "Serverless Absence Management: A Google-Native Playbook for Rapid, Auditable University Leave Workflows",
+            "authors": "AMUSMA Nayyar Ahmed Khan, Asif Rashid Khan, Sivaram Rajeyyagari, Mobin Akhtar",
+            "journal": "Middle East Journal of Applied Science & Technology 9 (1), 23-36, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:WJVC3Jt7v1AC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:WJVC3Jt7v1AC"
+        },
+        {
             "title": "Deep Learning Driven Automated System for Speech Emotion Recognition",
             "authors": "SW Haidar, SK Chaubey, AD Mishra, MM Akhtar, NA Khan, TA Usmani",
             "journal": "2025 IEEE 7th International Conference on Computing, Communication and …, 2025",
@@ -435,6 +462,15 @@
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:umqufdRvDiIC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:umqufdRvDiIC"
+        },
+        {
+            "title": "Enhancing Problem-Solving Skills through Modelling-Based AI and Generative Flow Networks (GFN)",
+            "authors": "SW Haidar, SK Chaubey, AD Mishra, MM Akhtar, NA Khan, M Meraj",
+            "journal": "2025 2nd Global AI Summit-International Conference on Artificial …, 2025",
+            "year": "2025",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:2VqYfGB8ITEC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:2VqYfGB8ITEC"
         },
         {
             "title": "An Application of Machine Learning, Big Data, and IoT of Enterprise Architecture: Challenges",
