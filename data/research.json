@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-03-14",
-    "totalCitations": 576,
+    "lastUpdated": "2026-03-18",
+    "totalCitations": 578,
     "hIndex": 13,
     "i10Index": 23,
     "publications": [
@@ -9,7 +9,7 @@
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 76,
+            "citations": 77,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 39,
+            "citations": 40,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -435,6 +435,24 @@
             "citations": 1,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mB3voiENLucC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mB3voiENLucC"
+        },
+        {
+            "title": "Chapter 15 - Revolutionizing drug design: the convergence of AI and quantum computing - A systematic review",
+            "authors": "SR Nayyar Ahmed Khan, Md Mobin Akhtar, Abu Sarwar Zamani, Ahmad Masih Uddin ...",
+            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, Academic Press …, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:OTTXONDVkokC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:OTTXONDVkokC"
+        },
+        {
+            "title": "Chapter 21 - Explainable AI for structure-based drug design: Concepts and case studies",
+            "authors": "KR Minghua Ren, Shalesh Gangwar, Swati Sharma, Nayyar Ahmed Khan",
+            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, Academic Press …, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mlAyqtXpCwEC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mlAyqtXpCwEC"
         },
         {
             "title": "A Cloud-Based Multi-Tier Approval System for Academic Course Registration: Design, Implementation, and Evaluations",
