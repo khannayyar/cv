@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2026-03-25",
+    "lastUpdated": "2026-03-28",
     "totalCitations": 619,
     "hIndex": 14,
     "i10Index": 26,
@@ -455,24 +455,6 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:6ZxmRoH8BuwC"
         },
         {
-            "title": "Chapter 15 - Revolutionizing drug design: the convergence of AI and quantum computing - A systematic review",
-            "authors": "SR Nayyar Ahmed Khan, Md Mobin Akhtar, Abu Sarwar Zamani, Ahmad Masih Uddin ...",
-            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, Academic Press …, 2026",
-            "year": "2026",
-            "citations": 0,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:OTTXONDVkokC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:OTTXONDVkokC"
-        },
-        {
-            "title": "Chapter 21 - Explainable AI for structure-based drug design: Concepts and case studies",
-            "authors": "KR Minghua Ren, Shalesh Gangwar, Swati Sharma, Nayyar Ahmed Khan",
-            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, Academic Press …, 2026",
-            "year": "2026",
-            "citations": 0,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mlAyqtXpCwEC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mlAyqtXpCwEC"
-        },
-        {
             "title": "A Cloud-Based Multi-Tier Approval System for Academic Course Registration: Design, Implementation, and Evaluations",
             "authors": "AMUSMA Nayyar Ahmed Khan, Asif Rashid Khan, Sivaram Rajeyyagari, Mobin Akhtar",
             "journal": "Middle East Journal of Applied Science & Technology 9 (1), 37-54, 2026",
@@ -480,6 +462,15 @@
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IRz6iEL74y4C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IRz6iEL74y4C"
+        },
+        {
+            "title": "Explainable AI for structure-based drug design: Concepts and case studies",
+            "authors": "M Ren, S Gangwar, S Sharma, NA Khan, K Raza",
+            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, 433-455, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:QYdC8u9Cj1oC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:QYdC8u9Cj1oC"
         },
         {
             "title": "Serverless Absence Management: A Google-Native Playbook for Rapid, Auditable University Leave Workflows",
