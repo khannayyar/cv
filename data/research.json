@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-04-09",
-    "totalCitations": 660,
+    "lastUpdated": "2026-04-17",
+    "totalCitations": 662,
     "hIndex": 14,
     "i10Index": 30,
     "publications": [
@@ -9,7 +9,7 @@
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 77,
+            "citations": 78,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -27,7 +27,7 @@
             "authors": "SM Alshahrani, NA Khan, J Almalki, W Al Shehri",
             "journal": "Computers, Materials & Continua 73 (3), 2022",
             "year": "2022",
-            "citations": 27,
+            "citations": 28,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mVmsd5A6BfQC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mVmsd5A6BfQC"
         },
@@ -428,7 +428,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mB3voiENLucC"
         },
         {
-            "title": "AI-driven Blockchain Framework for Digital Transformation of Academic Accreditation Process: A Saudi Arabian Perspective",
+            "title": "AI-driven blockchain framework for digital transformation of academic accreditation process: A Saudi Arabian perspective",
             "authors": "NA Khan, M Alshalaan",
             "journal": "",
             "year": "2025",
@@ -437,7 +437,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:XvxMoLDsR5gC"
         },
         {
-            "title": "Blockchain-Enabled Federated Learning Framework for Secure and Collaborative Drug Discovery: Integrating AI, Molecular Docking, and Distributed Ledger Technology",
+            "title": "Blockchain-enabled federated learning framework for secure and collaborative drug discovery: Integrating AI, molecular docking, and distributed ledger technology",
             "authors": "M Alshalaan, NA Khan",
             "journal": "",
             "year": "2025",
