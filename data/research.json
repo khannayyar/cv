@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-04-25",
-    "totalCitations": 665,
+    "lastUpdated": "2026-05-01",
+    "totalCitations": 666,
     "hIndex": 14,
     "i10Index": 30,
     "publications": [
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 42,
+            "citations": 43,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -392,8 +392,8 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:j8SEvjWlNXcC"
         },
         {
-            "title": "Network Intrusion Management of Web Form Spamming using Blockchain",
-            "authors": "N Khan, MM Akhtar, AMU Siddiqi, S Rajeyyagari, M Ahmad, N Khalid",
+            "title": "Network intrusion management of web form spamming using blockchain",
+            "authors": "NA Khan, MM Akhtar, AMU Siddiqi, S Rajeyyagari, M Ahmad, N Khalid",
             "journal": "Irish Interdisciplinary Journal of Science & Research 9 (03), 10.46759, 2025",
             "year": "2025",
             "citations": 5,
@@ -519,7 +519,7 @@
         },
         {
             "title": "Learning Three-dimensional Face recognition from Sparse views for Robust Identity verification",
-            "authors": "M Ahmad, R Hamdoui, N Khan, AMU Siddiqi, AR Khan",
+            "authors": "M Ahmad, R Hamdoui, NA Khan, AMU Siddiqi, AR Khan",
             "journal": "Available at SSRN 5428214, 2025",
             "year": "2025",
             "citations": 0,
