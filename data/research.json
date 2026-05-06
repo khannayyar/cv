@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-05-01",
-    "totalCitations": 666,
+    "lastUpdated": "2026-05-06",
+    "totalCitations": 667,
     "hIndex": 14,
     "i10Index": 30,
     "publications": [
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 43,
+            "citations": 44,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -428,7 +428,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mB3voiENLucC"
         },
         {
-            "title": "AI-driven blockchain framework for digital transformation of academic accreditation process: A Saudi Arabian perspective",
+            "title": "AI-driven Blockchain Framework for Digital Transformation of Academic Accreditation Process: A Saudi Arabian Perspective",
             "authors": "NA Khan, M Alshalaan",
             "journal": "",
             "year": "2025",
@@ -437,7 +437,7 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:XvxMoLDsR5gC"
         },
         {
-            "title": "Blockchain-enabled federated learning framework for secure and collaborative drug discovery: Integrating AI, molecular docking, and distributed ledger technology",
+            "title": "Blockchain-Enabled Federated Learning Framework for Secure and Collaborative Drug Discovery: Integrating AI, Molecular Docking, and Distributed Ledger Technology",
             "authors": "M Alshalaan, NA Khan",
             "journal": "",
             "year": "2025",
