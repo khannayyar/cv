@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-05-13",
-    "totalCitations": 668,
+    "lastUpdated": "2026-05-15",
+    "totalCitations": 669,
     "hIndex": 14,
     "i10Index": 30,
     "publications": [
@@ -212,6 +212,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4TOpqqG69KYC"
         },
         {
+            "title": "Development of Intelligent Student Information System",
+            "authors": "NA Khan",
+            "journal": "Arabian Journal of Basic Science and Research 7 (1), Arabian Journal of …, 2025",
+            "year": "2025",
+            "citations": 11,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC"
+        },
+        {
             "title": "Development of Intelligent Pick and Drop Service Manager for Small Cities",
             "authors": "NA Khan",
             "journal": "Asian Journal of Basic Science & Research 6 (3), 20-27, 2024",
@@ -246,15 +255,6 @@
             "citations": 10,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:EkHepimYqZsC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:EkHepimYqZsC"
-        },
-        {
-            "title": "Development of Intelligent Student Information System",
-            "authors": "NA Khan",
-            "journal": "Arabian Journal of Basic Science and Research 7 (1), Arabian Journal of …, 2025",
-            "year": "2025",
-            "citations": 10,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC"
         },
         {
             "title": "Security management protocols in cloud computation",
