@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-06-02",
-    "totalCitations": 677,
+    "lastUpdated": "2026-06-05",
+    "totalCitations": 682,
     "hIndex": 14,
     "i10Index": 30,
     "publications": [
@@ -9,7 +9,7 @@
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 80,
+            "citations": 82,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 47,
+            "citations": 48,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -36,7 +36,7 @@
             "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
             "journal": "PeerJ Computer Science 8, e1120, 2022",
             "year": "2022",
-            "citations": 26,
+            "citations": 27,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC"
         },
@@ -455,6 +455,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:6ZxmRoH8BuwC"
         },
         {
+            "title": "Cloud Computing: The Future of Cost Effective and Enterprise Friendly Computing",
+            "authors": "MAM Nasimuddin, NA Khan",
+            "journal": "",
+            "year": "",
+            "citations": 1,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC"
+        },
+        {
             "title": "A Cloud-Based Multi-Tier Approval System for Academic Course Registration: Design, Implementation, and Evaluations",
             "authors": "NA Khan, AR Khan, S Rajeyyagari, M Akhtar, AMU Siddiqi, M Ahmad",
             "journal": "",
@@ -606,15 +615,6 @@
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:t7zJ5fGR-2UC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:t7zJ5fGR-2UC"
-        },
-        {
-            "title": "Cloud Computing: The Future of Cost Effective and Enterprise Friendly Computing",
-            "authors": "MAM Nasimuddin, NA Khan",
-            "journal": "",
-            "year": "",
-            "citations": 0,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC"
         },
         {
             "title": "BLUEWEB SECURITY SYSTEM",
