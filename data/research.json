@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-06-20",
-    "totalCitations": 766,
+    "lastUpdated": "2026-06-27",
+    "totalCitations": 769,
     "hIndex": 16,
     "i10Index": 35,
     "publications": [
@@ -9,7 +9,7 @@
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 82,
+            "citations": 83,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 49,
+            "citations": 50,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -176,6 +176,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IWHjjKOFINEC"
         },
         {
+            "title": "Development of Intelligent Student Information System",
+            "authors": "NA Khan",
+            "journal": "Arabian Journal of Basic Science and Research 7 (1), Arabian Journal of …, 2025",
+            "year": "2025",
+            "citations": 14,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC"
+        },
+        {
             "title": "Simulation analysis of directed diffusion and SPIN routing protocol in wireless sensor network",
             "authors": "V Jain, NA Khan",
             "journal": "2014 Conference on IT in Business, Industry and Government (CSIBIG), 1-6, 2014",
@@ -183,15 +192,6 @@
             "citations": 14,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Zph67rFs4hoC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:Zph67rFs4hoC"
-        },
-        {
-            "title": "Development of Intelligent Student Information System",
-            "authors": "NA Khan",
-            "journal": "Arabian Journal of Basic Science and Research 7 (1), Arabian Journal of …, 2025",
-            "year": "2025",
-            "citations": 13,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:fEOibwPWpKIC"
         },
         {
             "title": "Development of Intelligent Pick and Drop Service Manager for Small Cities",
