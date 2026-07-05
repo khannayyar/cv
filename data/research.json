@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2026-07-01",
+    "lastUpdated": "2026-07-05",
     "totalCitations": 770,
     "hIndex": 16,
     "i10Index": 35,
@@ -534,6 +534,15 @@
             "citations": 1,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC"
+        },
+        {
+            "title": "Challenges in docking accuracy and reproducibility",
+            "authors": "AS Zamani, MM Akhtar, NA Khan, SKW Haidar",
+            "journal": "Recent Advances in Molecular Docking, 435-446, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:cWzG1nlazyYC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:cWzG1nlazyYC"
         },
         {
             "title": "A Microservices-Based Optical Mark Recognition Framework with Advanced Image Processing and Cloud-Native Architecture for Scalable Educational Assessment",
