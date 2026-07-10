@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-07-05",
-    "totalCitations": 770,
+    "lastUpdated": "2026-07-10",
+    "totalCitations": 771,
     "hIndex": 16,
     "i10Index": 35,
     "publications": [
@@ -27,7 +27,7 @@
             "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
             "journal": "PeerJ Computer Science 8, e1120, 2022",
             "year": "2022",
-            "citations": 28,
+            "citations": 29,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC"
         },
@@ -365,8 +365,8 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C"
         },
         {
-            "title": "Living smart: AI-based urban assistance systems for sustainable wellbeing in small cities",
-            "authors": "NA Khan, D Ahamad",
+            "title": "Living Smart: AI-Based Urban Assistance Systems for Sustainable Wellbeing in Small Cities",
+            "authors": "NA Khan, D Ahmad",
             "journal": "Middle East Journal of Applied Science & Technology 3 (2), 89-99, 2025",
             "year": "2025",
             "citations": 8,
