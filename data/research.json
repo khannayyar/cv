@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-07-10",
-    "totalCitations": 771,
+    "lastUpdated": "2026-07-16",
+    "totalCitations": 772,
     "hIndex": 16,
     "i10Index": 35,
     "publications": [
@@ -27,7 +27,7 @@
             "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
             "journal": "PeerJ Computer Science 8, e1120, 2022",
             "year": "2022",
-            "citations": 29,
+            "citations": 30,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:qxL8FJ1GzNcC"
         },
@@ -221,6 +221,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4DMP91E08xMC"
         },
         {
+            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ Computer Science, 8: e1120",
+            "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
+            "journal": "",
+            "year": "2022",
+            "citations": 12,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC"
+        },
+        {
             "title": "Computational intelligence",
             "authors": "A Shukla, BK Murthy, N Hasteer, JP Van Belle",
             "journal": "Lecture Notes in Electrical Engineering 968, 1876-1119, 2022",
@@ -255,15 +264,6 @@
             "citations": 11,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:_Re3VWB3Y0AC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:_Re3VWB3Y0AC"
-        },
-        {
-            "title": "Developing a blockchain-based digitally secured model for the educational sector in Saudi Arabia toward digital transformation. PeerJ Computer Science, 8: e1120",
-            "authors": "S Alangari, SM Alshahrani, NA Khan, AA Alghamdi, J Almalki, W Al Shehri",
-            "journal": "",
-            "year": "2022",
-            "citations": 11,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:LO7wyVUgiFcC"
         },
         {
             "title": "Internet of Things (IOT) Based Educational Data Mining (EDM) System",
@@ -365,8 +365,8 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C"
         },
         {
-            "title": "Living Smart: AI-Based Urban Assistance Systems for Sustainable Wellbeing in Small Cities",
-            "authors": "NA Khan, D Ahmad",
+            "title": "Living smart: AI-based urban assistance systems for sustainable wellbeing in small cities",
+            "authors": "NA Khan, D Ahamad",
             "journal": "Middle East Journal of Applied Science & Technology 3 (2), 89-99, 2025",
             "year": "2025",
             "citations": 8,
@@ -527,13 +527,22 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:6ZxmRoH8BuwC"
         },
         {
-            "title": "Cloud Computing: The Future of Cost Effective and Enterprise Friendly Computing",
-            "authors": "MAM Nasimuddin, NA Khan",
-            "journal": "",
-            "year": "",
-            "citations": 1,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC"
+            "title": "AI-Driven Signal Processing for Single-Cell Data Analysis: A Case Study in Cancer Research",
+            "authors": "S Gangwar, M Banday, Z Anjum, K Khanna, NA Khan, K Raza",
+            "journal": "Sensor Signal Processing for Intelligent Systems, 171, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:DJbcl8HfkQkC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:DJbcl8HfkQkC"
+        },
+        {
+            "title": "A Secure Data Collaboration Framework Using Differential Partial AI and Federated Learning: Architecture, Simulation, and Performance Evaluation",
+            "authors": "SW Haidar, AD Mishra, SK Chaubey, MM Akhtar, Z Mehmood, NA Khan",
+            "journal": "Procedia Computer Science 282, 1237-1242, 2026",
+            "year": "2026",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:HtS1dXgVpQUC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:HtS1dXgVpQUC"
         },
         {
             "title": "Challenges in docking accuracy and reproducibility",
@@ -642,6 +651,15 @@
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:t7zJ5fGR-2UC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:t7zJ5fGR-2UC"
+        },
+        {
+            "title": "Cloud Computing: The Future of Cost Effective and Enterprise Friendly Computing",
+            "authors": "MAM Nasimuddin, NA Khan",
+            "journal": "",
+            "year": "",
+            "citations": 0,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:z_wVstp3MssC"
         },
         {
             "title": "BLUEWEB SECURITY SYSTEM",
