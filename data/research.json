@@ -1,15 +1,15 @@
 {
-    "lastUpdated": "2026-07-16",
-    "totalCitations": 772,
+    "lastUpdated": "2026-07-21",
+    "totalCitations": 778,
     "hIndex": 16,
-    "i10Index": 35,
+    "i10Index": 36,
     "publications": [
         {
             "title": "Enabling blockchain with IoMT devices for healthcare",
             "authors": "J Almalki, W Al Shehri, R Mehmood, K Alsaif, SM Alshahrani, N Jannah, ...",
             "journal": "Information 13 (10), 448, 2022",
             "year": "2022",
-            "citations": 84,
+            "citations": 86,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
         },
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 50,
+            "citations": 51,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -212,6 +212,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uJ-U7cs_P_0C"
         },
         {
+            "title": "An Application of Machine Learning, Big Data and IoT of Enterprise Architecture: Challenges, Solutions and Open Issues",
+            "authors": "AS Zamani, MM Akhtar, NA Khan",
+            "journal": "Quality Control-Artificial Intelligence, Big Data, and New Trends, 2025",
+            "year": "2025",
+            "citations": 12,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC"
+        },
+        {
             "title": "An empirical study on the future of publication repositories and its adaptability in public universities—A Case Study of Shaqra University, Saudi Arabia",
             "authors": "NA Khan, OM Al-Omari, SM Alshahrani",
             "journal": "Computational Intelligence: Select Proceedings of InCITe 2022, 823-829, 2023",
@@ -284,15 +293,6 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:dhFuZR0502QC"
         },
         {
-            "title": "An Application of Machine Learning, Big Data and IoT of Enterprise Architecture: Challenges, Solutions and Open Issues",
-            "authors": "AS Zamani, MM Akhtar, NA Khan",
-            "journal": "Quality Control-Artificial Intelligence, Big Data, and New Trends, 2025",
-            "year": "2025",
-            "citations": 10,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:epqYDVWIO7EC"
-        },
-        {
             "title": "NAMAQ-Arabic handwriting recognition using deep learning, AI, and ML with sentiment analysis",
             "authors": "WY Aljomaee, SM Alshahrani, NA Khan",
             "journal": "2025 4th international conference on computing and information technology …, 2025",
@@ -300,6 +300,15 @@
             "citations": 10,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:EkHepimYqZsC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:EkHepimYqZsC"
+        },
+        {
+            "title": "Complexities and Challenges for Securing Digital Assets and Infrastructure in Academia: A Review on Digital Asset Security",
+            "authors": "M Alshalaan, NA Khan",
+            "journal": "Complexities and Challenges for Securing Digital Assets and Infrastructure …, 2025",
+            "year": "2025",
+            "citations": 10,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC"
         },
         {
             "title": "Security management protocols in cloud computation",
@@ -327,15 +336,6 @@
             "citations": 9,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:bz8QjSJIRt4C",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:bz8QjSJIRt4C"
-        },
-        {
-            "title": "Complexities and Challenges for Securing Digital Assets and Infrastructure in Academia: A Review on Digital Asset Security",
-            "authors": "M Alshalaan, NA Khan",
-            "journal": "Complexities and Challenges for Securing Digital Assets and Infrastructure …, 2025",
-            "year": "2025",
-            "citations": 9,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:uc_IGeMz5qoC"
         },
         {
             "title": "COVID-19 advising application development for Apple devices (iOS)",
@@ -529,7 +529,7 @@
         {
             "title": "AI-Driven Signal Processing for Single-Cell Data Analysis: A Case Study in Cancer Research",
             "authors": "S Gangwar, M Banday, Z Anjum, K Khanna, NA Khan, K Raza",
-            "journal": "Sensor Signal Processing for Intelligent Systems, 171, 2026",
+            "journal": "Sensor Signal Processing for Intelligent Systems, 171-194, 2026",
             "year": "2026",
             "citations": 0,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:DJbcl8HfkQkC",
