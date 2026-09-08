@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-09-02",
-    "totalCitations": 889,
+    "lastUpdated": "2026-09-08",
+    "totalCitations": 890,
     "hIndex": 19,
     "i10Index": 37,
     "publications": [
@@ -437,6 +437,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:BUYA1_V_uYcC"
         },
         {
+            "title": "Revolutionizing drug design: the convergence of AI and quantum computing-A systematic review",
+            "authors": "NA Khan, MM Akhtar, AS Zamani, AMU Siddiqi, AR Khan, S Rajeyyagari",
+            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, 317-326, 2026",
+            "year": "2026",
+            "citations": 3,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IUKN3-7HHlwC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IUKN3-7HHlwC"
+        },
+        {
             "title": "Learning Three-dimensional Face recognition from Sparse views for Robust Identity verification",
             "authors": "M Ahmad, R Hamdoui, NA Khan, AMU Siddiqi, AR Khan",
             "journal": "Available at SSRN 5428214, 2025",
@@ -471,15 +480,6 @@
             "citations": 2,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:9c2xU6iGI7YC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:9c2xU6iGI7YC"
-        },
-        {
-            "title": "Revolutionizing drug design: the convergence of AI and quantum computing-A systematic review",
-            "authors": "NA Khan, MM Akhtar, AS Zamani, AMU Siddiqi, AR Khan, S Rajeyyagari",
-            "journal": "Artificial Intelligence in Precision Drug Design, Volume 2, 317-326, 2026",
-            "year": "2026",
-            "citations": 2,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IUKN3-7HHlwC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IUKN3-7HHlwC"
         },
         {
             "title": "Deep learning driven automated system for speech emotion recognition",
