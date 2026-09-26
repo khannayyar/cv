@@ -1,8 +1,8 @@
 {
-    "lastUpdated": "2026-09-17",
-    "totalCitations": 895,
+    "lastUpdated": "2026-09-26",
+    "totalCitations": 897,
     "hIndex": 19,
-    "i10Index": 37,
+    "i10Index": 38,
     "publications": [
         {
             "title": "Enabling blockchain with IoMT devices for healthcare",
@@ -18,7 +18,7 @@
             "authors": "J Almalki, SM Alshahrani, NA Khan",
             "journal": "PeerJ Computer Science 10, e1778, 2024",
             "year": "2024",
-            "citations": 57,
+            "citations": 58,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
         },
@@ -338,6 +338,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:7PzlFSSx8tAC"
         },
         {
+            "title": "Statistical probability prediction model for E-Learning and realtime proctoring using IoT devices",
+            "authors": "R Alotaibi, NA Khan, MM Akhtar",
+            "journal": "Journal of King Saud University–Science 37, 2025",
+            "year": "2025",
+            "citations": 10,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C"
+        },
+        {
             "title": "Transformative Impact of Artificial Intelligence on Higher Education: A Comprehensive Analysis of Pedagogical Innovation, Institutional Transformation, and Future Learning …",
             "authors": "NA Khan, M Ahmad, MM Akhtar, S Rajeyyagari, AMU Siddiqi",
             "journal": "Asian Journal of Applied Science and Technology (AJAST) 9 (4), 57-76, 2025",
@@ -354,15 +363,6 @@
             "citations": 9,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:8d8msizDQcsC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:8d8msizDQcsC"
-        },
-        {
-            "title": "Statistical probability prediction model for E-Learning and realtime proctoring using IoT devices",
-            "authors": "R Alotaibi, NA Khan, MM Akhtar",
-            "journal": "Journal of King Saud University–Science 37, 2025",
-            "year": "2025",
-            "citations": 9,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:FAceZFleit8C"
         },
         {
             "title": "Living smart: AI-based urban assistance systems for sustainable wellbeing in small cities",
