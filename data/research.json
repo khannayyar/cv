@@ -1,6 +1,6 @@
 {
-    "lastUpdated": "2026-10-14",
-    "totalCitations": 906,
+    "lastUpdated": "2026-10-17",
+    "totalCitations": 907,
     "hIndex": 19,
     "i10Index": 39,
     "publications": [
@@ -59,6 +59,15 @@
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:mVmsd5A6BfQC"
         },
         {
+            "title": "COVIBOT-An intelligent WhatsApp based advising bot for Covid-19",
+            "authors": "NA Khan, J Albatein",
+            "journal": "2021 International conference on computational intelligence and knowledge …, 2021",
+            "year": "2021",
+            "citations": 27,
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ULOm3_A8WrAC",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ULOm3_A8WrAC"
+        },
+        {
             "title": "Development of Medidrone: a drone based emergency service system for Saudi Arabian Healthcare",
             "authors": "NA Khan, M Ahmad, S Alam, AMU Siddiqi, D Ahamad, MN Khalid",
             "journal": "2021 International Conference on Computational Intelligence and Knowledge …, 2021",
@@ -66,15 +75,6 @@
             "citations": 26,
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:YOwf2qJgpHMC",
             "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:YOwf2qJgpHMC"
-        },
-        {
-            "title": "COVIBOT-An intelligent WhatsApp based advising bot for Covid-19",
-            "authors": "NA Khan, J Albatein",
-            "journal": "2021 International conference on computational intelligence and knowledge …, 2021",
-            "year": "2021",
-            "citations": 26,
-            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ULOm3_A8WrAC",
-            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ULOm3_A8WrAC"
         },
         {
             "title": "Development of Web Based E-Cooperative Training System",
