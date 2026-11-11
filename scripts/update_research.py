@@ -53,7 +53,7 @@ def get_page(session, scholar_id, offset=0, page_size=100):
                                    params={'user': scholar_id, 'hl': 'en', 'cstart': offset, 'pagesize': page_size},
                                    headers=HEADERS, timeout=(10, 30))
             if response.status_code == 403:
-                raise ValueError('Google Scholar blocked this runner (HTTP 403). Configure SERPAPI_API_KEY for API-backed updates, or run the importer locally. Existing data is unchanged.')
+                raise ValueError('Google Scholar blocked this runner (HTTP 403). The profile ID is configured, but this network is denied access. Run the importer on an allowed network. Existing data is unchanged.')
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
             if soup.select_one('#gs_captcha_ccl, form[action*="sorry"], #captcha') or 'unusual traffic' in soup.get_text(' ', strip=True).lower():
@@ -140,64 +140,6 @@ def fetch_research(scholar_id, previous=None, page_size=100, max_pubs=2000):
     return {**previous, 'lastUpdated': utc_now().date().isoformat(), **metrics, 'publications': publications}
 
 
-def fetch_research_api(scholar_id, api_key, previous=None, max_pubs=2000):
-    """Optional SerpApi transport; no CAPTCHA handling or runner-IP workarounds."""
-    previous = previous or {}
-    known = {publication_key(p): p for p in previous.get('publications', [])}
-    publications, seen = [], set()
-    metrics = None
-    offset = 0
-    with requests.Session() as session:
-        while True:
-            # Always use the fixed provider endpoint; never forward a key to pagination URLs.
-            try:
-                response = session.get('https://serpapi.com/search.json', params={
-                    'engine': 'google_scholar_author', 'author_id': scholar_id,
-                    'hl': 'en', 'num': 100, 'start': offset, 'api_key': api_key,
-                }, timeout=(10, 60))
-                response.raise_for_status()
-                payload = response.json()
-            except (requests.RequestException, ValueError):
-                # Request exception URLs can contain the key; do not log those URLs.
-                raise ValueError('Scholar API request failed. Check SERPAPI_API_KEY, provider status and account quota.') from None
-            if not isinstance(payload, dict) or payload.get('error') or payload.get('search_metadata', {}).get('status') != 'Success':
-                raise ValueError('Scholar API did not return a successful result. Check the provider dashboard.')
-            if metrics is None:
-                try:
-                    table = payload['cited_by']['table']
-                    metrics = {key: integer(table[i][field]['all']) for i, (key, field) in enumerate([
-                        ('totalCitations', 'citations'), ('hIndex', 'h_index'), ('i10Index', 'i10_index')])}
-                except (KeyError, IndexError, TypeError):
-                    raise ValueError('Scholar API citation metrics are missing; saved data is unchanged.') from None
-            batch = payload.get('articles')
-            if not isinstance(batch, list) or not batch:
-                raise ValueError('Scholar API returned no articles on a requested page; refusing a partial update.')
-            for article in batch:
-                if not isinstance(article, dict) or not article.get('title') or not article.get('link'):
-                    raise ValueError('Scholar API returned an incomplete article.')
-                pub = {'title': article['title'], 'authors': article.get('authors', ''),
-                       'journal': article.get('publication', ''), 'year': str(article.get('year', '')),
-                       'citations': integer(article.get('cited_by', {}).get('value', 0)),
-                       'link': article['link'], 'url': article['link']}
-                key = publication_key(pub)
-                if key in seen:
-                    raise ValueError('Scholar API repeated an article; refusing an incomplete update.')
-                seen.add(key)
-                old = known.get(key, {})
-                merged = {**old, **pub}
-                if old.get('url') and 'scholar.google.' not in old['url']:
-                    merged['url'] = old['url']
-                publications.append(merged)
-            if not payload.get('serpapi_pagination', {}).get('next'):
-                break
-            if len(publications) >= max_pubs:
-                raise ValueError('Scholar API exceeded the publication safety limit.')
-            offset += len(batch)
-    if len(publications) < len(previous.get('publications', [])) * 0.8:
-        raise ValueError('API publication count fell by more than 20%; saved data is unchanged.')
-    return {**previous, 'lastUpdated': utc_now().date().isoformat(), **metrics, 'publications': publications}
-
-
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--if-due', action='store_true', help='Fetch only if 15 days have elapsed since success')
@@ -212,13 +154,8 @@ def main(argv=None):
         print('ERROR: Set SCHOLAR_ID or a valid Google Scholar profile in data/personal-info.json.', file=sys.stderr)
         return 1
     try:
-        api_key = os.environ.get('SERPAPI_API_KEY', '').strip()
-        if api_key:
-            print('Fetching Scholar profile through the configured API provider.')
-            result = fetch_research_api(scholar_id, api_key, previous)
-        else:
-            print('No API key configured; using direct Scholar access (GitHub runners may be blocked).')
-            result = fetch_research(scholar_id, previous)
+        print('Using direct Google Scholar access.')
+        result = fetch_research(scholar_id, previous)
         if args.dry_run or os.environ.get('DRY_RUN', '').lower() in ('1', 'true', 'yes'):
             print(f"Validated {len(result['publications'])} publications; dry run left all files unchanged.")
             return 0
