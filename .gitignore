@@ -34,3 +34,9 @@ ENV/
 
 # Generated static site
 dist/
+
+# Private backend development secrets and build state
+.dev.vars
+.dev.vars.*
+.wrangler/
+node_modules/

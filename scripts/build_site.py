@@ -1,8 +1,10 @@
 """Package only public website assets for GitHub Pages; no build tools required."""
 from pathlib import Path
 import shutil
+from build_search_index import write_index
 
 ROOT = Path(__file__).resolve().parents[1]
+write_index()
 output = ROOT / 'dist'
 output.mkdir(exist_ok=True)
 for page in ROOT.glob('*.html'):
