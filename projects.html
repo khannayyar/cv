@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<meta name="description" content="Dr. Nayyar Ahmed Khan: AI and machine learning research for healthcare, explainable drug discovery, blockchain, federated learning, and secure medical IoT.">
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+    
+    <section id="main-content" tabindex="-1" class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-project-diagram mr-3"></i>Research Projects
+            </h1>
+            <p class="text-xl text-white/90 mb-8" data-aos="fade-up" data-aos-delay="100">
+                Healthcare, AI/ML, and blockchain projects, alongside the complete applied-computing portfolio.
+            </p>
+            
+            <!-- Project Statistics -->
+            <div id="project-stats" class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-8" data-aos="fade-up" data-aos-delay="200">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+<section class="focus-section" aria-label="AI healthcare and blockchain research"><div data-research-focus="projects" aria-live="polite"><p>Loading research highlights…</p></div></section>
+
+    
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="projects-grid" class="grid md:grid-cols-2 gap-8">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function loadProjects() {
+            try {
+                const response = await fetch('data/projects.json');
+                const data = CVDateOrder.sortData(await response.json());
+                
+                // Category color mapping
+                const categoryColors = {
+                    'AI & Security': 'from-purple-600 to-indigo-600',
+                    'AI & NLP': 'from-blue-600 to-cyan-600',
+                    'Educational Technology': 'from-green-600 to-teal-600',
+                    'Healthcare & Mobile Development': 'from-red-600 to-pink-600',
+                    'Digital Library & Knowledge Management': 'from-yellow-600 to-orange-600',
+                    'Blockchain & Security': 'from-indigo-600 to-purple-600',
+                    'Information Systems': 'from-gray-600 to-slate-600',
+                    'AI & Healthcare': 'from-pink-600 to-rose-600',
+                    'Decision Support Systems': 'from-orange-600 to-amber-600',
+                    'Healthcare Technology & Drones': 'from-red-500 to-orange-500'
+                };
+                
+                const projectIcons = {
+                    'AI & Security': '🔒',
+                    'AI & NLP': '🤖',
+                    'Educational Technology': '🎓',
+                    'Healthcare & Mobile Development': '📱',
+                    'Digital Library & Knowledge Management': '📚',
+                    'Blockchain & Security': '⛓️',
+                    'Information Systems': '💼',
+                    'AI & Healthcare': '🏥',
+                    'Decision Support Systems': '📊',
+                    'Healthcare Technology & Drones': '🚁'
+                };
+                
+                document.getElementById('projects-grid').innerHTML = data.projects.map((project, index) => {
+                    const emoji = projectIcons[project.category] || '💡';
+                    const gradient = categoryColors[project.category] || 'from-purple-600 to-blue-600';
+                    
+                    return `
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="${index * 100}">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br ${gradient} rounded-lg flex items-center justify-center text-3xl shadow-md">
+                                ${emoji}
+                            </div>
+                            <div class="flex flex-col gap-2 items-end">
+                                ${project.duration ? `<span class="px-3 py-1 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 rounded-full text-sm font-semibold">
+                                    <i class="far fa-calendar-alt mr-1"></i>${project.duration}
+                                </span>` : ''}
+                                ${project.status ? `<span class="px-3 py-1 ${project.status === 'Completed' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'} rounded-full text-xs font-semibold">
+                                    <i class="fas ${project.status === 'Completed' ? 'fa-check-circle' : 'fa-sync-alt'} mr-1"></i>${project.status}
+                                </span>` : ''}
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 hover:text-purple-600 transition">
+                            ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.title}</a>` : project.title}
+                        </h3>
+                        
+                        ${project.category ? `<p class="text-sm text-gray-600 mb-2">
+                            <i class="fas fa-tag mr-2 text-purple-600"></i>${project.category}
+                        </p>` : ''}
+                        
+                        ${project.role ? `<p class="text-purple-600 font-medium mb-3">
+                            <i class="fas fa-user-tie mr-2"></i>${project.role}
+                        </p>` : ''}
+                        
+                        ${project.collaborators && project.collaborators.length > 0 ? `
+                            <div class="mb-3">
+                                <p class="text-sm text-gray-700">
+                                    <i class="fas fa-users mr-2 text-blue-600"></i><strong>Team:</strong> ${project.collaborators.join(', ')}
+                                </p>
+                            </div>
+                        ` : ''}
+                        
+                        ${project.institution ? `
+                            <div class="mb-3">
+                                <p class="text-sm text-gray-700">
+                                    <i class="fas fa-university mr-2 text-indigo-600"></i><strong>Institution:</strong> ${project.institution}
+                                </p>
+                            </div>
+                        ` : ''}
+                        
+                        ${project.technologies && project.technologies.length > 0 ? `
+                            <div class="mb-3 flex flex-wrap gap-2">
+                                ${project.technologies.slice(0, 5).map(tech => `
+                                    <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium">
+                                        ${tech}
+                                    </span>
+                                `).join('')}
+                                ${project.technologies.length > 5 ? `<span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">+${project.technologies.length - 5} more</span>` : ''}
+                            </div>
+                        ` : ''}
+                        
+                        ${project.funding ? `
+                            <div class="mb-3 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-3">
+                                <p class="text-gray-700 text-sm"><i class="fas fa-landmark mr-2 text-blue-600"></i><strong>Funding:</strong> ${project.funding}</p>
+                                ${project.amount ? `<p class="text-gray-700 text-sm"><i class="fas fa-dollar-sign mr-2 text-green-600"></i><strong>Amount:</strong> ${project.amount}</p>` : ''}
+                            </div>
+                        ` : ''}
+                        
+                        ${project.description ? `<p class="text-gray-700 mb-4 text-sm leading-relaxed">${project.description}</p>` : ''}
+                        
+                        ${project.outcomes && project.outcomes.length > 0 ? `
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                    <i class="fas fa-trophy text-yellow-500 mr-2"></i>Key Outcomes
+                                </h4>
+                                <ul class="space-y-2">
+                                    ${project.outcomes.map(outcome => `
+                                        <li class="flex items-start text-gray-700 text-sm">
+                                            <i class="fas fa-check-circle text-green-600 mr-2 mt-1 flex-shrink-0"></i>
+                                            <span>${outcome}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                        
+                        ${project.link ? `
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <a href="${project.link}" target="_blank" rel="noopener noreferrer" 
+                                   class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-sm transition">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Publication
+                                </a>
+                                ${project.publicationDate ? `<span class="ml-3 text-xs text-gray-500"><i class="far fa-clock mr-1"></i>${new Date(project.publicationDate).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'})}</span>` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                `}).join('');
+                
+                // Update statistics if available
+                if (data.statistics) {
+                    const statsContainer = document.getElementById('project-stats');
+                    if (statsContainer) {
+                        statsContainer.innerHTML = `
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-purple-600">${data.statistics.totalProjects}</div>
+                                <div class="text-gray-600">Total Projects</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-green-600">${data.statistics.completed}</div>
+                                <div class="text-gray-600">Completed</div>
+                            </div>
+                            ${data.statistics.ongoing > 0 ? `
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-yellow-600">${data.statistics.ongoing}</div>
+                                <div class="text-gray-600">Ongoing</div>
+                            </div>
+                            ` : ''}
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading projects:', error);
+                document.getElementById('projects-grid').innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-exclamation-triangle text-4xl text-yellow-500 mb-4"></i>
+                        <p class="text-gray-600">Unable to load projects. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+        loadProjects();
+    </script>
+<script src="js/research-focus.js?v=2026-order"></script>
+</body>
+</html>

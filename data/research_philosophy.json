@@ -1,0 +1,27 @@
+{
+    "title": "Research Philosophy",
+    "summary": "My research brings artificial intelligence and machine learning together with blockchain and secure distributed systems, with particular emphasis on healthcare applications and drug discovery. I emphasize reproducible evaluation, transparent limitations, privacy, and responsible interpretation of computational results.",
+    "pillars": [
+        {
+            "title": "AI/ML with healthcare relevance",
+            "description": "Frame computational questions around healthcare data, medical IoT, and drug discovery, linking methods to clearly defined research objectives."
+        },
+        {
+            "title": "Explainability and rigorous evaluation",
+            "description": "Assess predictive performance alongside interpretability, robustness, data quality, and reproducibility; distinguish model results from clinical benefit."
+        },
+        {
+            "title": "Privacy and distributed trust",
+            "description": "Investigate federated learning, blockchain, and security mechanisms for accountable data collaboration without assuming that any one technology guarantees privacy."
+        },
+        {
+            "title": "Interdisciplinary translation",
+            "description": "Pursue collaboration with domain specialists and appropriate validation before making claims about clinical readiness."
+        },
+        {
+            "title": "Open scholarly communication",
+            "description": "Document methods, assumptions, and limitations clearly so others can assess and extend the research."
+        }
+    ],
+    "callout": "Intelligent healthcare research needs rigorous evidence, explainable methods, and trustworthy data systems."
+}

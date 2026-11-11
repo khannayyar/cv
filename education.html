@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .timeline-line { position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #667eea, #764ba2); }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+    
+    <section id="main-content" tabindex="-1" class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-graduation-cap mr-3"></i>Education
+            </h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">
+                🎓 Academic qualifications and training
+            </p>
+        </div>
+    </section>
+    
+    <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="education-timeline" class="relative pl-12">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function loadEducation() {
+            try {
+                const response = await fetch('data/education.json');
+                const data = CVDateOrder.sortData(await response.json());
+                
+                const timeline = document.getElementById('education-timeline');
+                timeline.innerHTML = '<div class="timeline-line"></div>' + data.degrees.map((degree, index) => {
+                    const degreeIcons = {
+                        'PhD': '🎓',
+                        'Ph.D.': '🎓',
+                        'M.E.': '📚',
+                        'Master': '📚',
+                        'B.E.': '📖',
+                        'Bachelor': '📖'
+                    };
+                    const icon = Object.keys(degreeIcons).find(key => degree.degree.includes(key));
+                    const emoji = icon ? degreeIcons[icon] : '🎓';
+                    
+                    return `
+                    <div class="relative mb-12" data-aos="fade-left" data-aos-delay="${index * 100}">
+                        <div class="absolute left-[-48px] w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg p-8 ml-4 hover:shadow-xl transition duration-300 transform hover:scale-105">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-gray-800">
+                                    <span class="mr-2">${emoji}</span>${degree.degree}
+                                </h3>
+                                <span class="px-4 py-1 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 rounded-full text-sm font-semibold">
+                                    <i class="far fa-calendar-alt mr-1"></i>${degree.year}
+                                </span>
+                            </div>
+                            <p class="text-lg text-purple-600 font-medium mb-3">
+                                <i class="fas fa-university mr-2"></i>${degree.institution}
+                            </p>
+                            ${degree.specialization ? `<p class="text-gray-700 mb-2">
+                                <i class="fas fa-star mr-2 text-yellow-500"></i><strong>Specialization:</strong> ${degree.specialization}
+                            </p>` : ''}
+                            ${degree.thesis ? `<p class="text-gray-700 mb-2">
+                                <i class="fas fa-file-alt mr-2 text-blue-500"></i><strong>Thesis:</strong> ${degree.thesis}
+                            </p>` : ''}
+                            ${degree.advisor ? `<p class="text-gray-700">
+                                <i class="fas fa-user-graduate mr-2 text-green-500"></i><strong>Advisor:</strong> ${degree.advisor}
+                            </p>` : ''}
+                        </div>
+                    </div>
+                `}).join('');
+            } catch (error) {
+                console.error('Error loading education:', error);
+            }
+        }
+        loadEducation();
+    </script>
+</body>
+</html>

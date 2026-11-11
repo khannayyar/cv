@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Contributions - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timeline-item {
+            transition: all 0.3s ease;
+        }
+        .timeline-item:hover {
+            transform: translateX(10px);
+        }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+
+    <!-- Header -->
+    <section id="main-content" tabindex="-1" class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-hands-helping mr-3"></i>Community Contributions
+            </h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">
+                🌟 Workshops, training programs, and community engagement initiatives
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mt-8 text-white" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">🎯 Total Contributions</div>
+                    <div class="text-3xl font-bold" id="total-contributions">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">🎓 Workshops</div>
+                    <div class="text-3xl font-bold" id="workshops-count">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">📚 Training Programs</div>
+                    <div class="text-3xl font-bold" id="training-count">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">🏆 Competitions</div>
+                    <div class="text-3xl font-bold" id="competitions-count">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 items-center justify-between">
+                <div class="flex-1 min-w-[250px]">
+                    <input type="text" id="search-input" placeholder="🔍 Search contributions by title or description..." 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                </div>
+                <div class="flex gap-2">
+                    <select id="type-filter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        <option value="all">All Types</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="training">Training</option>
+                        <option value="competition">Competitions</option>
+                        <option value="seminar">Seminars</option>
+                        <option value="system implementation">Implementations</option>
+                        <option value="event">Events</option>
+                    </select>
+                    <button id="featured-filter" class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg hover:bg-yellow-200 transition">
+                        <i class="fas fa-star mr-2"></i>Featured
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="contributions-container" class="space-y-6">
+                <!-- Contributions will be loaded dynamically -->
+                <div class="text-center py-12">
+                    <i class="fas fa-spinner fa-spin text-4xl text-purple-600 mb-4"></i>
+                    <p class="text-gray-600">Loading contributions...</p>
+                </div>
+            </div>
+
+            <div id="no-results" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+                <p class="text-gray-600 text-xl">No contributions found matching your criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="profile-section" aria-label="Additional professional profile"><div data-professional-profile="service"><p>Loading professional profile…</p></div></section>
+<footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let allContributions = [];
+        let featuredOnly = false;
+
+        async function loadContributions() {
+            try {
+                const response = await fetch('data/community.json');
+                const data = CVDateOrder.sortData(await response.json());
+                
+                allContributions = data.contributions || [];
+                
+                // Update stats
+                document.getElementById('total-contributions').textContent = data.stats?.totalContributions || allContributions.length;
+                document.getElementById('workshops-count').textContent = data.stats?.workshops || 0;
+                document.getElementById('training-count').textContent = data.stats?.training || 0;
+                document.getElementById('competitions-count').textContent = data.stats?.competitions || 0;
+                
+                displayContributions(allContributions);
+            } catch (error) {
+                console.error('Error loading contributions:', error);
+                document.getElementById('contributions-container').innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i>
+                        <p class="text-gray-600">Failed to load contributions. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayContributions(contributions) {
+            const container = document.getElementById('contributions-container');
+            const noResults = document.getElementById('no-results');
+            
+            if (!contributions || contributions.length === 0) {
+                container.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                return;
+            }
+            
+            container.classList.remove('hidden');
+            noResults.classList.add('hidden');
+            
+            // Sort by date (newest first)
+            contributions = CVDateOrder.newestFirst(contributions);
+            
+            container.innerHTML = contributions.map((item, index) => {
+                const typeColors = {
+                    'Workshop': 'bg-blue-100 text-blue-800',
+                    'Training': 'bg-green-100 text-green-800',
+                    'Competition': 'bg-purple-100 text-purple-800',
+                    'Seminar': 'bg-yellow-100 text-yellow-800',
+                    'System Implementation': 'bg-orange-100 text-orange-800',
+                    'Event': 'bg-pink-100 text-pink-800',
+                    'Achievement': 'bg-red-100 text-red-800'
+                };
+                
+                const typeIcons = {
+                    'Workshop': '🎓',
+                    'Training': '📚',
+                    'Competition': '🏆',
+                    'Seminar': '💬',
+                    'System Implementation': '⚙️',
+                    'Event': '🎪',
+                    'Achievement': '🌟'
+                };
+                
+                return `
+                    <div class="timeline-item relative pl-8 pb-8 border-l-4 border-purple-300" data-aos="fade-up" data-aos-delay="${index * 50}">
+                        <div class="absolute left-0 top-0 w-8 h-8 -ml-4 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                            ${item.featured ? '⭐' : typeIcons[item.type] || '📌'}
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                            <div class="flex flex-wrap items-start justify-between gap-4 mb-3">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        ${item.featured ? '<span class="text-2xl">⭐</span>' : ''}
+                                        <h3 class="text-xl font-bold text-gray-800">${item.title}</h3>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mb-2">
+                                        <i class="fas fa-building mr-1"></i>${item.organization}
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-end gap-2">
+                                    <span class="px-3 py-1 ${typeColors[item.type] || 'bg-gray-100 text-gray-800'} rounded-full text-xs font-semibold">
+                                        ${typeIcons[item.type] || '📌'} ${item.type}
+                                    </span>
+                                    <span class="text-sm text-gray-600">
+                                        <i class="fas fa-calendar mr-1"></i>${item.date}
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">${item.description}</p>
+                            
+                            <a href="${item.link}" target="_blank" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:shadow-lg transition transform hover:scale-105">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter functionality
+        function filterContributions() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const typeFilter = document.getElementById('type-filter').value.toLowerCase();
+            
+            let filtered = allContributions.filter(item => {
+                const matchesSearch = !searchTerm || 
+                    item.title.toLowerCase().includes(searchTerm) ||
+                    item.description.toLowerCase().includes(searchTerm) ||
+                    item.organization.toLowerCase().includes(searchTerm);
+                
+                const matchesType = typeFilter === 'all' || item.type.toLowerCase() === typeFilter;
+                const matchesFeatured = !featuredOnly || item.featured;
+                
+                return matchesSearch && matchesType && matchesFeatured;
+            });
+            
+            displayContributions(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', filterContributions);
+        document.getElementById('type-filter').addEventListener('change', filterContributions);
+        document.getElementById('featured-filter').addEventListener('click', function() {
+            featuredOnly = !featuredOnly;
+            this.classList.toggle('bg-yellow-100');
+            this.classList.toggle('text-yellow-800');
+            this.classList.toggle('bg-yellow-400');
+            this.classList.toggle('text-yellow-900');
+            filterContributions();
+        });
+
+        // Load contributions on page load
+        loadContributions();
+    </script>
+<script src="js/professional-profile.js?v=2026-linkedin"></script>
+</body>
+</html>

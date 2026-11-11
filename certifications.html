@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Alliances & Certifications - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+
+    <!-- Header -->
+    <section id="main-content" tabindex="-1" class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-handshake mr-3"></i>Industry Alliances & Certifications
+            </h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">
+                🌐 Strategic partnerships with leading technology organizations worldwide
+            </p>
+            <!-- Featured Trainer Roles -->
+            <div id="featured-roles" class="mt-6 flex flex-wrap justify-center gap-3" data-aos="fade-up" data-aos-delay="200"></div>
+            <div class="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <div class="text-3xl font-bold" id="total-orgs">0</div>
+                    <div class="text-sm">Total Alliances</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <div class="text-3xl font-bold" id="active-orgs">0</div>
+                    <div class="text-sm">Active Partnerships</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Current Active Partnerships -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-star text-yellow-500 mr-2"></i>Current Active Partnerships
+                </h2>
+                <div id="current-orgs" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Long-term Partnerships -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-award text-purple-500 mr-2"></i>Long-term Collaborations
+                </h2>
+                <div id="longterm-orgs" class="grid md:grid-cols-2 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Past Partnerships -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text" data-aos="fade-up">
+                    <i class="fas fa-history text-blue-500 mr-2"></i>Previous Partnerships
+                </h2>
+                <div id="past-orgs" class="grid md:grid-cols-2 gap-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="profile-section" aria-label="Additional professional profile"><div data-professional-profile="credentials"><p>Loading professional profile…</p></div></section>
+<footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function loadOrganizations() {
+            try {
+                const response = await fetch('data/organizations.json');
+                const data = CVDateOrder.sortData(await response.json());
+                
+                const colorMap = {
+                    'gray': { bg: 'from-gray-700 to-gray-900', text: 'text-gray-700', border: 'border-gray-200' },
+                    'red': { bg: 'from-red-500 to-red-700', text: 'text-red-600', border: 'border-red-200' },
+                    'orange': { bg: 'from-orange-500 to-orange-700', text: 'text-orange-600', border: 'border-orange-200' },
+                    'blue': { bg: 'from-blue-500 to-blue-700', text: 'text-blue-600', border: 'border-blue-200' }
+                };
+                
+                // Count statistics
+                document.getElementById('total-orgs').textContent = data.organizations.length;
+                document.getElementById('active-orgs').textContent = data.organizations.filter(o => o.category === 'current').length;
+                
+                // Separate organizations by category
+                const current = data.organizations.filter(o => o.category === 'current');
+                const longterm = data.organizations.filter(o => o.category === 'longterm');
+                const past = data.organizations.filter(o => o.category === 'past');
+                
+                // Function to create organization card
+                function createOrgCard(org, index) {
+                    const colors = colorMap[org.color] || colorMap['blue'];
+                    return `
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 ${colors.border}" data-aos="fade-up" data-aos-delay="${Math.min(index * 50, 300)}">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-br ${colors.bg} rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="${org.icon} text-3xl text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">${org.name}</h3>
+                                <p class="${colors.text} font-semibold text-sm">${org.position}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-4">
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="far fa-calendar-alt ${colors.text} mr-2"></i>${org.date}
+                            </p>
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="fas fa-map-marker-alt ${colors.text} mr-2"></i>${org.location}
+                            </p>
+                            ${org.email ? `
+                            <p class="text-gray-600 text-sm flex items-center">
+                                <i class="fas fa-envelope ${colors.text} mr-2"></i><a href="mailto:${org.email}" class="hover:underline">${org.email}</a>
+                            </p>
+                            ` : ''}
+                        </div>
+                        
+                        <p class="text-gray-700 text-sm leading-relaxed">${org.description}</p>
+                    </div>
+                    `;
+                }
+                
+                // Populate sections
+                document.getElementById('current-orgs').innerHTML = current.map((org, i) => createOrgCard(org, i)).join('');
+                document.getElementById('longterm-orgs').innerHTML = longterm.map((org, i) => createOrgCard(org, i)).join('');
+                document.getElementById('past-orgs').innerHTML = past.map((org, i) => createOrgCard(org, i)).join('');
+                
+            } catch (error) {
+                console.error('Error loading organizations:', error);
+            }
+        }
+        
+        loadOrganizations();
+
+        // Render featured trainer roles under header
+        (async function(){
+            try {
+                const res = await fetch('data/certifications.json');
+                const data = CVDateOrder.sortData(await res.json());
+                const wrap = document.getElementById('featured-roles');
+                if (!wrap) return;
+                const roles = (data.featuredRoles || []);
+                const colorMap = {
+                    black: 'from-gray-800 to-gray-900',
+                    gray: 'from-gray-400 to-gray-600',
+                    orange: 'from-orange-500 to-amber-600',
+                    blue: 'from-blue-500 to-indigo-600',
+                    red: 'from-red-500 to-rose-600',
+                    purple: 'from-purple-500 to-fuchsia-600'
+                };
+                wrap.innerHTML = roles.map((r,i) => {
+                    const grad = colorMap[r.color] || 'from-purple-500 to-blue-600';
+                    return `<span class="px-4 py-2 bg-white/20 rounded-full text-sm font-semibold inline-flex items-center gap-2" data-aos="zoom-in" data-aos-delay="${Math.min(i*50,300)}">
+                        <span class="inline-flex w-7 h-7 items-center justify-center rounded-full bg-gradient-to-br ${grad}">
+                            <i class="${r.icon} text-white text-xs"></i>
+                        </span>
+                        ${r.role}
+                    </span>`;
+                }).join('');
+            } catch(e) { /* no-op */ }
+        })();
+    </script>
+<script src="js/professional-profile.js?v=2026-linkedin"></script>
+</body>
+</html>

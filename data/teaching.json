@@ -1,0 +1,52 @@
+{
+  "years": [
+    {
+      "academicYear": "2024-2025",
+      "courses": [
+        {"title": "Data Structures", "category": "Core CS", "tags": ["Algorithms", "Complexity"], "level": "Intermediate"},
+        {"title": "Application Programming", "category": "Software Development", "tags": ["Programming", "Design Patterns"], "level": "Intermediate"},
+        {"title": "Digital Logic Design", "category": "Hardware & Architecture", "tags": ["Logic Gates", "Circuit Design"], "level": "Intro"},
+        {"title": "Operating System", "category": "Systems", "tags": ["Processes", "Memory", "Concurrency"], "level": "Intermediate"},
+        {"title": "Simulation and Modeling", "category": "Applied Computing", "tags": ["Modeling", "Systems Analysis"], "level": "Advanced"},
+        {"title": "Web Programming", "category": "Web & Multimedia", "tags": ["Frontend", "Backend"], "level": "Intermediate"},
+        {"title": "Linux", "category": "Systems", "tags": ["Shell", "Administration"], "level": "Intro"}
+      ]
+    },
+    {
+      "academicYear": "2023-2024",
+      "courses": [
+        {"title": "Computer Graphics", "category": "Core CS", "tags": ["Rendering", "Visualization"], "level": "Advanced"},
+        {"title": "Computer Skills", "category": "Foundations", "tags": ["Productivity", "Fundamentals"], "level": "Intro"},
+        {"title": "Organizational Skills", "category": "Professional Development", "tags": ["Communication", "Management"], "level": "Intro"},
+        {"title": "Graduation Project", "category": "Capstone", "tags": ["Project Management", "Research"], "level": "Capstone"},
+        {"title": "Computer Ethics", "category": "Professional Development", "tags": ["Ethics", "Societal Impact"], "level": "Intermediate"}
+      ]
+    },
+    {
+      "academicYear": "2021-2022",
+      "courses": [
+        {"title": "Multimedia and Advance Web", "category": "Web & Multimedia", "tags": ["Web Tech", "Media"], "level": "Advanced"},
+        {"title": "Computer Vision", "category": "AI & Data", "tags": ["Image Processing", "Recognition"], "level": "Advanced"},
+        {"title": "Cyber Security", "category": "Security", "tags": ["Threats", "Defense"], "level": "Intermediate"},
+        {"title": "Basic of Programming and Algorithms", "category": "Foundations", "tags": ["Programming", "Logic"], "level": "Intro"},
+        {"title": "Analysis and Design of Algorithms", "category": "Core CS", "tags": ["Algorithm Design", "Optimization"], "level": "Advanced"},
+        {"title": "Software Engineering", "category": "Software Development", "tags": ["Lifecycle", "Design"], "level": "Intermediate"}
+      ]
+    },
+    {
+      "academicYear": "2018-2021",
+      "courses": [
+        {"title": "Linear Algebra", "category": "Mathematics", "tags": ["Vectors", "Matrices"], "level": "Intro"},
+        {"title": "Discrete Mathematics", "category": "Mathematics", "tags": ["Logic", "Combinatorics"], "level": "Intermediate"},
+        {"title": "Computer Architecture and Organization", "category": "Hardware & Architecture", "tags": ["CPU", "Memory"], "level": "Intermediate"}
+      ]
+    }
+  ],
+  "statistics": {
+    "totalCourses": 23,
+    "yearsTaught": 10,
+    "categories": [
+      "Core CS", "Software Development", "Hardware & Architecture", "Systems", "Applied Computing", "Web & Multimedia", "Foundations", "Professional Development", "Capstone", "AI & Data", "Security", "Mathematics"
+    ]
+  }
+}

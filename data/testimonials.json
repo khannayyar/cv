@@ -1,0 +1,104 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Dr. Bandar Saad Alshareef",
+      "title": "Research Collaborator",
+      "organization": "Academic Researcher",
+      "photo": "",
+      "quote": "I have had the pleasure of collaborating with Dr. Khan Ahmed Nayyar on several research projects, and I can confidently say that he is one of the most dedicated and reliable academic professionals I have worked with. His commitment to high-quality research, attention to detail, and strong analytical skills significantly strengthened our work together. Dr. Khan consistently demonstrates professionalism, integrity, and a strong work ethic. He is proactive in sharing ideas, contributes meaningfully to discussions, and always ensures that tasks are completed on time and with excellence. His ability to work collaboratively across disciplines makes him a valuable team member in any academic or research environment. I highly recommend Dr. Khan for any future scholarly, teaching, or leadership opportunities. He is an asset to any institution or research team.",
+      "category": "Research",
+      "rating": 5,
+      "date": "2025",
+      "color": "purple"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Raed Alotaibi",
+      "title": "Head of Computer Science Department",
+      "organization": "College of Computing and Information Technology, Shaqra University",
+      "photo": "",
+      "quote": "As the Head of the Computer Science Department at the College of Computing and Information Technology (CCIT), Shaqra University, it has been my pleasure to work with Dr. Nayyar for more than five years. During his tenure under my supervision, Dr. Nayyar consistently demonstrated exceptional professionalism, intellectual rigor, and an unwavering commitment to excellence in every aspect of his work. Dr. Nayyar combines deep subject-matter expertise with strong analytical and problem-solving skills. He approaches complex challenges with clarity and precision, often devising innovative and effective solutions that add measurable value to the organization. Beyond his technical proficiency, Dr. Nayyar is a natural leader — someone who inspires confidence and collaboration within his team. He communicates effectively and fosters an environment of mutual respect and continuous improvement. I have no hesitation in recommending Dr. Nayyar for any role or opportunity that values expertise, leadership, and dedication to excellence. He would undoubtedly be an asset to any institution or organization fortunate enough to have him.",
+      "category": "Leadership",
+      "rating": 5,
+      "date": "2025",
+      "color": "blue"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Atallah Alanezi",
+      "title": "Colleague",
+      "organization": "Shaqra University",
+      "photo": "",
+      "quote": "I had the distinct privilege of working alongside Dr. Nayyar, and I can unequivocally state that he is one of the most dedicated and trustworthy technical experts I have ever encountered. His profound knowledge in computer science, paired with an exceptional work ethic, positions him as an invaluable asset in any technical environment. Dr. Nayyar's skill set is complemented by his sincere commitment and unwavering diligence. He tackles every challenge with a proactive and analytical approach, consistently delivering high-quality results. What truly distinguishes him is his integrity; he is a man of his word and remains reliable in all professional commitments. Moreover, Dr. Nayyar is a humble and compassionate individual, always ready to lend support to his colleagues. Collaborating with him was a genuinely rewarding experience, and I wholeheartedly recommend him for any leadership or technical role. If you are in search of a competent, dedicated, and trustworthy professional, Dr. Nayyar is undoubtedly the right choice.",
+      "category": "Technical Excellence",
+      "rating": 5,
+      "date": "2025",
+      "color": "green"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Fahad Alshammari",
+      "title": "Colleague",
+      "organization": "Shaqra University",
+      "photo": "",
+      "quote": "It is a pleasure to work with you. I have been a colleague for more than 9 years, and I have seen nothing but the best from you. You have great experience and knowledge in software engineering. You bear the workload a lot without complaining, you are really hard working. I wish you all the best.",
+      "category": "Collaboration",
+      "rating": 5,
+      "date": "2024",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "name": "Prof. Abdulrahman Alghamdi",
+      "title": "Vice Dean & Former Chairman of Computer Science Department",
+      "organization": "Shaqra University",
+      "photo": "",
+      "quote": "As the Vice Dean and former Chairman of the Computer Science Department at Shaqra University, I've had the privilege of closely collaborating with Dr. Nayyar. His contributions, particularly in software innovation and problem-solving, have been invaluable to our department and college. Dr. Nayyar combines intellectual agility with a proactive approach to challenges, significantly enhancing our educational and technological capabilities. His involvement in upgrading our eLearning systems during the COVID-19 crisis was crucial in maintaining our educational standards. His organizational skills, dedication, and punctuality have been exemplary, greatly benefiting our project teams and academic initiatives. Dr. Nayyar's vision and dedication to institutional growth and international collaboration have made a lasting impact. In summary, Dr. Nayyar is a remarkable asset to any team, bringing a blend of intelligence, responsibility, and commitment. I wholeheartedly endorse him for his ongoing contributions and look forward to his continued success.",
+      "category": "Leadership",
+      "rating": 5,
+      "date": "2024",
+      "color": "blue"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Saeed Alshahrani",
+      "title": "Colleague",
+      "organization": "College of Computing and IT, Shaqra University",
+      "photo": "",
+      "quote": "I had the pleasure to work with Dr Nayyar for a couple of months at the College of Computing and IT. He had been an excellent worker. He is always ready to support the organization in either way he can. He had a very sharp and quick response to any situation. He had commenced with me various projects and tasks in which he had proved his worth. The avatars in which he had worked with me and associated with me are indeed very useful for organizational growth. He is a true institutional builder and a decent guy. His contributions to international connections are indeed marvellous. His software solutions and implementations were very helpful and unique. He is a true intellectual with a great ability to deal with tough situations. A perfect blend of intelligence, responsibility, punctuality, decency and dedication. I wish him luck and care always.",
+      "category": "Innovation",
+      "rating": 5,
+      "date": "2023",
+      "color": "indigo"
+    },
+    {
+      "id": 7,
+      "name": "Dr. Mofadal Alyami",
+      "title": "Laboratory, Information Technology, and Technical Support Unit",
+      "organization": "College of Computing and Information Technology, Shaqra University",
+      "photo": "",
+      "quote": "In the Laboratory, Information Technology, and Technical Support Unit, we worked together and found solutions to make the College of Computing and Information Technology Labs work efficiently in an organized way. Dr. Nayyar is a very organized person, talented, humble, and dedicated individual. He makes sure he completes tasks on time and to his utmost best.",
+      "category": "Technical Excellence",
+      "rating": 5,
+      "date": "2023",
+      "color": "green"
+    },
+    {
+      "id": 8,
+      "name": "Dr. Fahad Alruwaili",
+      "title": "Colleague",
+      "organization": "College of Computing & Information Technology, Shaqra University",
+      "photo": "",
+      "quote": "I had the pleasure of working with Dr. Nayyar for the past 5 years at Shaqra University at the College of Computing & Information Technology, collaborated on several project teams, including ongoing course review plan & also setting core quality metrics. He has introduced & piloted an education & course education system, based upon open source, back before COVID19 which was welcomed at the university level (tested for few semesters), then COVID-19 came were he is currently supporting the newly eLearning system at the university level (Shaqra Univ. has many remote colleges). I'm also impressed by Dr. Nayyar's dedication & multitasking ability to supporting the college's mission, goals, eLearning transition & research, in empowering the college, students, & community capabilities. Dr. Nayyar would be an asset to any team &/or organization indeed.",
+      "category": "Innovation",
+      "rating": 5,
+      "date": "2023",
+      "color": "indigo"
+    }
+  ],
+  "stats": {
+    "totalTestimonials": 8,
+    "categories": ["Research", "Leadership", "Technical Excellence", "Collaboration", "Innovation"]
+  }
+}

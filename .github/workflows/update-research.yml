@@ -1,0 +1,63 @@
+name: Update Google Scholar profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily eligibility check at 05:37 UTC (08:37 Riyadh); fetch only every 15 days.
+    - cron: '37 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scholar-profile-update
+  cancel-in-progress: false
+
+jobs:
+  update-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Install importer dependencies
+        run: python -m pip install -r scripts/requirements.txt
+      - name: Refresh Scholar data when due (manual runs force a refresh)
+        env:
+          SCHOLAR_ID: ${{ secrets.SCHOLAR_ID }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            python scripts/update_research.py --if-due
+          else
+            python scripts/update_research.py
+          fi
+      - name: Commit a successful update
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Scholar publications and citation metrics"
+            git pull --rebase origin "${{ github.event.repository.default_branch }}"
+            git push origin "HEAD:${{ github.event.repository.default_branch }}"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy-updated-profile:
+    needs: update-research
+    if: needs.update-research.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-pages.yml

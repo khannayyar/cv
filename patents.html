@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patents - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .patent-card {
+            transition: all 0.3s ease;
+        }
+        .patent-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+
+    <!-- Header -->
+    <section id="main-content" tabindex="-1" class="pt-32 pb-12 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                <i class="fas fa-lightbulb mr-3"></i>Patents
+            </h1>
+            <p class="text-xl text-white/90" data-aos="fade-up" data-aos-delay="100">
+                💡 Innovation and intellectual property contributions
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mt-8 text-white" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">💡 Total Patents</div>
+                    <div class="text-3xl font-bold" id="total-patents">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">✅ Granted</div>
+                    <div class="text-3xl font-bold" id="granted-patents">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">⏳ Pending</div>
+                    <div class="text-3xl font-bold" id="pending-patents">0</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 hover:bg-white/30 transition">
+                    <div class="text-sm mb-1">🌍 Countries</div>
+                    <div class="text-3xl font-bold" id="countries-count">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 items-center justify-between">
+                <div class="flex-1 min-w-[250px]">
+                    <input type="text" id="search-input" placeholder="🔍 Search patents by title, number, or keywords..." 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                </div>
+                <div class="flex gap-2">
+                    <select id="status-filter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        <option value="all">All Status</option>
+                        <option value="granted">Granted</option>
+                        <option value="pending">Pending</option>
+                        <option value="filed">Filed</option>
+                    </select>
+                    <button id="sort-btn" class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition" title="Sort by date">
+                        <i class="fas fa-sort"></i> Sort
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents List -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="patents-container" class="space-y-6">
+                <!-- Patents will be loaded dynamically -->
+                <div class="text-center py-12">
+                    <i class="fas fa-spinner fa-spin text-4xl text-purple-600 mb-4"></i>
+                    <p class="text-gray-600">Loading patents...</p>
+                </div>
+            </div>
+
+            <div id="no-results" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+                <p class="text-gray-600 text-xl">No patents found matching your criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let allPatents = [];
+        let currentSort = 'date-desc';
+
+        async function loadPatents() {
+            try {
+                const response = await fetch('data/patents.json');
+                const data = CVDateOrder.sortData(await response.json());
+                
+                allPatents = data.patents || [];
+                
+                // Update stats
+                document.getElementById('total-patents').textContent = data.stats?.totalPatents || allPatents.length;
+                document.getElementById('granted-patents').textContent = data.stats?.granted || allPatents.filter(p => p.status === 'Granted').length;
+                document.getElementById('pending-patents').textContent = data.stats?.pending || allPatents.filter(p => p.status === 'Pending').length;
+                document.getElementById('countries-count').textContent = data.stats?.countries?.length || [...new Set(allPatents.map(p => p.country))].length;
+                
+                displayPatents(allPatents);
+            } catch (error) {
+                console.error('Error loading patents:', error);
+                document.getElementById('patents-container').innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i>
+                        <p class="text-gray-600">Failed to load patents. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayPatents(patents) {
+            const container = document.getElementById('patents-container');
+            const noResults = document.getElementById('no-results');
+            
+            if (!patents || patents.length === 0) {
+                container.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                return;
+            }
+            
+            container.classList.remove('hidden');
+            noResults.classList.add('hidden');
+            
+            container.innerHTML = patents.map((patent, index) => {
+                const statusColors = {
+                    'Granted': 'bg-green-100 text-green-800',
+                    'Pending': 'bg-yellow-100 text-yellow-800',
+                    'Filed': 'bg-blue-100 text-blue-800'
+                };
+                
+                const statusIcons = {
+                    'Granted': '✅',
+                    'Pending': '⏳',
+                    'Filed': '📝'
+                };
+                
+                return `
+                    <div class="patent-card bg-white rounded-xl shadow-lg p-6 border-l-4 ${patent.featured ? 'border-purple-600' : 'border-gray-300'}" data-aos="fade-up" data-aos-delay="${index * 50}">
+                        <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+                            <div class="flex-1">
+                                <div class="flex items-start gap-2 mb-2">
+                                    ${patent.featured ? '<span class="text-2xl">⭐</span>' : ''}
+                                    <h3 class="text-2xl font-bold text-gray-800">${patent.title}</h3>
+                                </div>
+                                <div class="flex flex-wrap gap-2 mb-2">
+                                    <span class="px-3 py-1 ${statusColors[patent.status] || 'bg-gray-100 text-gray-800'} rounded-full text-sm font-medium">
+                                        ${statusIcons[patent.status] || '📄'} ${patent.status}
+                                    </span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                                        ${patent.patentNumber}
+                                    </span>
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">
+                                        🌍 ${patent.country}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 mb-4 leading-relaxed">${patent.abstract}</p>
+                        
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 mb-1"><strong>Inventors:</strong></p>
+                            <p class="text-gray-700">${patent.inventors.join(', ')}</p>
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            ${patent.tags ? patent.tags.map(tag => `
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">${tag}</span>
+                            `).join('') : ''}
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-2 text-sm text-gray-600 mb-4">
+                            ${patent.filingDate ? `<span><i class="fas fa-calendar mr-1"></i>Filed: ${new Date(patent.filingDate).toLocaleDateString()}</span>` : ''}
+                            ${patent.grantDate ? `<span><i class="fas fa-check-circle mr-1 text-green-600"></i>Granted: ${new Date(patent.grantDate).toLocaleDateString()}</span>` : ''}
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            ${patent.links.patent ? `
+                                <a href="${patent.links.patent}" target="_blank" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:shadow-lg transition">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Patent
+                                </a>
+                            ` : ''}
+                            ${patent.links.pdf ? `
+                                <a href="${patent.links.pdf}" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                                    <i class="fas fa-file-pdf mr-2"></i>PDF
+                                </a>
+                            ` : ''}
+                            ${patent.links.certificate ? `
+                                <a href="${patent.links.certificate}" target="_blank" class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                                    <i class="fas fa-certificate mr-2"></i>Certificate
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Search and filter functionality
+        function filterPatents() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const statusFilter = document.getElementById('status-filter').value;
+            
+            let filtered = allPatents.filter(patent => {
+                const matchesSearch = !searchTerm || 
+                    patent.title.toLowerCase().includes(searchTerm) ||
+                    patent.patentNumber.toLowerCase().includes(searchTerm) ||
+                    patent.abstract.toLowerCase().includes(searchTerm) ||
+                    (patent.tags && patent.tags.some(tag => tag.toLowerCase().includes(searchTerm)));
+                
+                const matchesStatus = statusFilter === 'all' || patent.status.toLowerCase() === statusFilter.toLowerCase();
+                
+                return matchesSearch && matchesStatus;
+            });
+            
+            // Apply sorting
+            filtered = sortPatents(filtered);
+            displayPatents(filtered);
+        }
+
+        function sortPatents(patents) {
+            return patents.sort((a, b) => {
+                const dateA = new Date(a.grantDate || a.filingDate || '1900-01-01');
+                const dateB = new Date(b.grantDate || b.filingDate || '1900-01-01');
+                
+                if (currentSort === 'date-desc') {
+                    return dateB - dateA;
+                } else {
+                    return dateA - dateB;
+                }
+            });
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', filterPatents);
+        document.getElementById('status-filter').addEventListener('change', filterPatents);
+        document.getElementById('sort-btn').addEventListener('click', () => {
+            currentSort = currentSort === 'date-desc' ? 'date-asc' : 'date-desc';
+            document.getElementById('sort-btn').innerHTML = `<i class="fas fa-sort"></i> ${currentSort === 'date-desc' ? 'Newest First' : 'Oldest First'}`;
+            filterPatents();
+        });
+
+        // Load patents on page load
+        loadPatents();
+    </script>
+</body>
+</html>

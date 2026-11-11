@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teaching Portfolio - Dr. Nayyar Ahmed Khan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg,#7e22ce,#2563eb); -webkit-background-clip:text; color:transparent; }
+        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes float {0%{transform:translateY(0)}50%{transform:translateY(-12px)}100%{transform:translateY(0)}}
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<meta name="description" content="Dr. Nayyar Ahmed Khan: AI and machine learning research for healthcare, explainable drug discovery, blockchain, federated learning, and secure medical IoT.">
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar (reuses existing structure) -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+
+    <!-- Hero -->
+    <section id="main-content" tabindex="-1" class="pt-32 pb-16 bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6" data-aos="fade-up">Teaching Portfolio</h1>
+            <p class="text-xl text-white/90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Empowering learners across computer science domains: algorithms, systems, software engineering, AI, security, mathematics, and professional development.</p>
+            <div id="teaching-stats" class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="200">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold gradient-text">Teaching Philosophy</h2>
+                <p class="mt-3 text-gray-600" id="philosophy-summary"></p>
+            </div>
+            <div id="philosophy-pillars" class="grid sm:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="100"></div>
+            <div id="philosophy-callout" class="mt-10"></div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="flex flex-wrap gap-3" id="year-filters"></div>
+            <div class="flex flex-wrap gap-3" id="category-filters"></div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div id="courses-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <section class="profile-section" aria-label="Additional professional profile"><div data-professional-profile="courses"><p>Loading professional profile…</p></div></section>
+<footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    async function loadTeaching() {
+        try {
+            const res = await fetch('data/teaching.json');
+            const data = CVDateOrder.sortData(await res.json());
+            const statsEl = document.getElementById('teaching-stats');
+            const yearFiltersEl = document.getElementById('year-filters');
+            const categoryFiltersEl = document.getElementById('category-filters');
+            const gridEl = document.getElementById('courses-grid');
+
+            const allYears = data.years.map(y => y.academicYear);
+            const allCourses = data.years.flatMap(y => y.courses.map(c => ({...c, academicYear: y.academicYear})));
+            
+            // Stats
+            statsEl.innerHTML = `
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-white">${data.statistics.totalCourses}</div>
+                    <div class="text-sm text-white/80 mt-1">Total Courses</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-white">${data.statistics.yearsTaught}</div>
+                    <div class="text-sm text-white/80 mt-1">Academic Years</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-white">${data.statistics.categories.length}</div>
+                    <div class="text-sm text-white/80 mt-1">Domains Covered</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-white">${allCourses.filter(c => c.level === 'Advanced').length}</div>
+                    <div class="text-sm text-white/80 mt-1">Advanced Modules</div>
+                </div>
+            `;
+
+            // Filters - Years
+            yearFiltersEl.innerHTML = ['All', ...allYears].map(y => `
+                <button data-year="${y}" class="year-btn px-4 py-2 rounded-full text-sm font-medium ${y==='All' ? 'bg-purple-600 text-white' : 'bg-purple-50 text-purple-700 hover:bg-purple-100'} transition">${y}</button>
+            `).join('');
+
+            // Filters - Categories
+            categoryFiltersEl.innerHTML = ['All', ...data.statistics.categories].map(cat => `
+                <button data-category="${cat}" class="cat-btn px-4 py-2 rounded-full text-sm font-medium ${cat==='All' ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-700 hover:bg-blue-100'} transition">${cat}</button>
+            `).join('');
+
+            function renderCourses(yearFilter='All', catFilter='All') {
+                const filtered = allCourses.filter(c => (yearFilter==='All' || c.academicYear===yearFilter) && (catFilter==='All' || c.category===catFilter));
+                if (!filtered.length) {
+                    gridEl.innerHTML = `<div class='col-span-full text-center py-12 bg-gray-50 rounded-xl'>
+                        <i class='fas fa-search text-4xl text-gray-300 mb-4'></i>
+                        <p class='text-gray-600'>No courses match the selected filters.</p>
+                    </div>`;
+                    return;
+                }
+                gridEl.innerHTML = filtered.map((c,i) => `
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 border border-gray-100" data-aos="fade-up" data-aos-delay="${i*50}">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow">${c.category}</span>
+                            <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">${c.academicYear}</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-gray-800">${c.title}</h3>
+                        <p class="text-sm text-gray-600 mb-3">Level: <span class="font-medium text-purple-600">${c.level}</span></p>
+                        ${c.tags && c.tags.length ? `<div class='flex flex-wrap gap-2 mb-2'>${c.tags.map(t => `<span class='px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs'>${t}</span>`).join('')}</div>`:''}
+                        <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+                            <span><i class='fas fa-layer-group mr-1 text-purple-500'></i>${c.tags.length} key topics</span>
+                            ${c.level==='Advanced' ? `<span class='text-red-600 font-medium'><i class='fas fa-fire mr-1'></i>Advanced</span>`:''}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Initial render
+            renderCourses();
+
+            // Event listeners
+            yearFiltersEl.querySelectorAll('.year-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    yearFiltersEl.querySelectorAll('.year-btn').forEach(b => b.classList.remove('bg-purple-600','text-white'));
+                    yearFiltersEl.querySelectorAll('.year-btn').forEach(b => b.classList.add('bg-purple-50','text-purple-700'));
+                    btn.classList.remove('bg-purple-50','text-purple-700');
+                    btn.classList.add('bg-purple-600','text-white');
+                    const year = btn.getAttribute('data-year');
+                    const activeCatBtn = categoryFiltersEl.querySelector('.cat-btn.bg-blue-600');
+                    const cat = activeCatBtn ? activeCatBtn.getAttribute('data-category') : 'All';
+                    renderCourses(year, cat);
+                });
+            });
+            categoryFiltersEl.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    categoryFiltersEl.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('bg-blue-600','text-white'));
+                    categoryFiltersEl.querySelectorAll('.cat-btn').forEach(b => b.classList.add('bg-blue-50','text-blue-700'));
+                    btn.classList.remove('bg-blue-50','text-blue-700');
+                    btn.classList.add('bg-blue-600','text-white');
+                    const cat = btn.getAttribute('data-category');
+                    const activeYearBtn = yearFiltersEl.querySelector('.year-btn.bg-purple-600');
+                    const year = activeYearBtn ? activeYearBtn.getAttribute('data-year') : 'All';
+                    renderCourses(year, cat);
+                });
+            });
+        } catch (e) {
+            console.error('Failed to load teaching data', e);
+        }
+    }
+    loadTeaching();
+
+    async function loadPhilosophy() {
+        try {
+            const res = await fetch('data/philosophy.json');
+            const data = CVDateOrder.sortData(await res.json());
+            const summaryEl = document.getElementById('philosophy-summary');
+            const pillarsEl = document.getElementById('philosophy-pillars');
+            const calloutEl = document.getElementById('philosophy-callout');
+
+            if (data.summary) {
+                summaryEl.textContent = data.summary;
+            }
+
+            if (Array.isArray(data.pillars)) {
+                pillarsEl.innerHTML = data.pillars.map((p, i) => {
+                    const title = p.title || p.name || 'Pillar';
+                    const desc = p.description || p.text || '';
+                    return `
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="${i*80}">
+                        <div class="flex items-start gap-3">
+                            <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 text-white flex items-center justify-center shadow"><i class="fas fa-star"></i></span>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">${title}</h3>
+                                <p class="mt-1 text-gray-600">${desc}</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            }
+
+            const calloutText = typeof data.callout === 'string' ? data.callout : (data.callout && data.callout.text);
+            if (calloutText) {
+                calloutEl.innerHTML = `
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-2xl p-8 shadow-lg" data-aos="zoom-in">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-quote-left text-2xl opacity-80"></i>
+                            <p class="text-lg">${calloutText}</p>
+                        </div>
+                    </div>
+                `;
+            }
+        } catch (e) {
+            console.error('Failed to load philosophy', e);
+        }
+    }
+    loadPhilosophy();
+    </script>
+<script src="js/professional-profile.js?v=2026-linkedin"></script>
+</body>
+</html>

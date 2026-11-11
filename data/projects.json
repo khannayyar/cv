@@ -1,0 +1,456 @@
+{
+    "projects": [
+        {
+            "title": "COVID-19 Advising Application for Apple Devices (iOS)",
+            "role": "Principal Investigator",
+            "duration": "Nov 2022 - Feb 2023",
+            "status": "Completed",
+            "category": "Healthcare & Mobile Development",
+            "technologies": [
+                "iOS Development",
+                "NLP",
+                "AI",
+                "Healthcare Technology"
+            ],
+            "description": "Powerful NLP-based iOS application to advise COVID-19 patients. Helps users identify critical situations and make necessary decisions when infected. Focuses on security and safety advantages of iOS platform.",
+            "outcomes": [
+                "Developed secure iOS healthcare application",
+                "Implemented NLP for patient symptom analysis",
+                "Provided real-time COVID-19 medical advice",
+                "Enhanced security compared to Android/web alternatives"
+            ],
+            "link": "https://peerj.com/articles/cs-1274/",
+            "publicationDate": "2023-03-13",
+            "linkedinTimeline": "Nov 2022 - Feb 2023",
+            "timelineDate": "Nov 2022 - Feb 2023"
+        },
+        {
+            "title": "Blockchain-Based Digitally Secured Model for Educational Sector",
+            "role": "Principal Investigator",
+            "duration": "Jul 2022 - Nov 2022",
+            "status": "Completed",
+            "category": "Blockchain & Security",
+            "technologies": [
+                "Blockchain",
+                "Cryptography",
+                "Digital Transformation",
+                "Security"
+            ],
+            "description": "Secure, fast, and transparent model for academic certificate verification in Saudi Arabia's education sector. Uses blockchain technology to prevent document fraud and facilitate digital transformation in academic document verification.",
+            "outcomes": [
+                "Developed blockchain-based certificate verification system",
+                "Prevented academic document fraud and forgery",
+                "Enabled fast and transparent verification process",
+                "Supported Saudi Arabia's digital transformation goals"
+            ],
+            "link": "https://peerj.com/articles/cs-1120/",
+            "publicationDate": "2022-09-29",
+            "linkedinTimeline": "Jul 2022 - Nov 2022",
+            "timelineDate": "Jul 2022 - Nov 2022"
+        },
+        {
+            "title": "COVIBOT - Intelligent WhatsApp Based Advising Bot for COVID-19",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "AI & Healthcare",
+            "technologies": [
+                "AI",
+                "NLP",
+                "WhatsApp Integration",
+                "Chatbot Development"
+            ],
+            "description": "WhatsApp messenger integrated bot using AI and NLP to advise COVID-19 patients about first aid and immediate treatment. Provides symptom-based medical attention guidance and nearest hospital information.",
+            "outcomes": [
+                "Developed AI-powered COVID-19 advisory chatbot",
+                "Integrated with WhatsApp for wide accessibility",
+                "Provided symptom-based medical advice",
+                "Directed patients to nearest medical facilities"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410801",
+            "publicationDate": "2021-03-17",
+            "timelineDate": "2020 - 2021"
+        },
+        {
+            "title": "Medidrone - Drone Based Emergency Service System for Saudi Healthcare",
+            "role": "Principal Investigator",
+            "duration": "Jan 2018 - May 2018",
+            "status": "Completed",
+            "category": "Healthcare Technology & Drones",
+            "technologies": [
+                "Drone Technology",
+                "Mobile App Development",
+                "Emergency Systems",
+                "IoT"
+            ],
+            "description": "Emergency service system using drones to provide first aid at accident locations in Saudi Arabia. Addresses traffic delays in ambulance services through mobile app integration and drone deployment.",
+            "outcomes": [
+                "Developed drone-based emergency response system",
+                "Reduced emergency response time in traffic conditions",
+                "Integrated mobile app for accident reporting",
+                "Provided rapid first aid delivery mechanism"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410685/",
+            "publicationDate": "2021-03-17",
+            "linkedinTimeline": "Jan 2018 - May 2018",
+            "timelineDate": "Jan 2018 - May 2018"
+        },
+        {
+            "title": "Realtime Proctoring Using IoT Devices",
+            "role": "Principal Investigator",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "AI & Security",
+            "technologies": [
+                "IoT",
+                "AI",
+                "Machine Learning",
+                "Video Processing",
+                "Markov Chain",
+                "Probability Analysis"
+            ],
+            "description": "Statistical validation model using explainable AI to distinguish suspicious activities during proctoring at higher education institutions. Framework trained with probabilistic prediction function based on Markov Chain for real-time instructor-free proctoring.",
+            "outcomes": [
+                "Developed intelligent surveillance system for exam proctoring",
+                "Achieved high-performance real-time prediction using IoT devices",
+                "Published research with considerable outcomes for e-learning proctoring"
+            ],
+            "link": "https://jksus.org/statistical-probability-prediction-model-for-e-learning-and-realtime-proctoring-using-iot-devices/",
+            "publicationDate": "2025-07-23",
+            "timelineDate": "2024 - 2025"
+        },
+        {
+            "title": "NAMAQ - Arabic Handwriting Recognition Using Deep Learning",
+            "role": "Co-Investigator",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "AI & NLP",
+            "collaborators": [
+                "Wareef Yousuf Aljomaee",
+                "Saeed M Alshahrani"
+            ],
+            "technologies": [
+                "Deep Learning",
+                "CNN",
+                "Machine Learning",
+                "NLP",
+                "Sentiment Analysis"
+            ],
+            "description": "Recognition system for Arabic handwritten scripts using CNN for feature extraction. Addresses complexity of Arabic language characters and variations in handwriting styles with machine learning classifiers.",
+            "outcomes": [
+                "Achieved 96.4% recognition rate for 29 Arabic character classes",
+                "Developed robust feature extraction using CNN",
+                "Tested with large-scale Arabic handwriting datasets"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/10989445",
+            "publicationDate": "2025-04-13",
+            "timelineDate": "2024 - 2025"
+        },
+        {
+            "title": "Intelligent Student Information System",
+            "role": "Principal Investigator",
+            "duration": "2024 - 2025",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": [
+                "Database Systems",
+                "Web Development",
+                "Information Management"
+            ],
+            "description": "Digital system providing administration and students easy access to necessary information and forms. Reduces paperwork, minimizes errors, and facilitates systematic information management with complete student statistics.",
+            "outcomes": [
+                "Eliminated paper-based form processing",
+                "Automated student information collection and management",
+                "Provided real-time statistics to administration",
+                "Reduced processing time and resource wastage"
+            ],
+            "publicationDate": "2025-02",
+            "timelineDate": "2024 - 2025"
+        },
+        {
+            "title": "DSpace Publication Repository System in University Environment",
+            "role": "Principal Investigator",
+            "duration": "Jan 2021 - Jan 2023",
+            "status": "Completed",
+            "category": "Digital Library & Knowledge Management",
+            "technologies": [
+                "DSpace",
+                "Repository Systems",
+                "Database Management",
+                "Web Technologies"
+            ],
+            "description": "Survey-based study for deploying publication repository systems in Saudi Arabian government universities. Provides data on academic intentions to maintain university-level research information.",
+            "outcomes": [
+                "Assessed academic publication repository needs",
+                "Provided deployment guidelines for universities",
+                "Facilitated research information management",
+                "Published framework for university repository systems"
+            ],
+            "link": "https://link.springer.com/chapter/10.1007/978-981-19-7346-8_71",
+            "publicationDate": "2023-02-16",
+            "linkedinTimeline": "Jan 2021 - Jan 2023",
+            "timelineDate": "Jan 2021 - Jan 2023"
+        },
+        {
+            "title": "Project Management System (PMS) at College of Computing and IT",
+            "role": "Principal Investigator",
+            "duration": "Jan 2019 - Feb 2020",
+            "status": "Completed",
+            "category": "Information Systems",
+            "institution": "Shaqra University",
+            "technologies": [
+                "Project Management",
+                "Database Systems",
+                "Quality Assurance",
+                "TAM Model",
+                "DOI Model"
+            ],
+            "description": "Application to manage complete datasets for quality assurance projects in academic domain. Blends DOI model with TAM Model to measure academics' intentions to use the Project Management System.",
+            "outcomes": [
+                "Deployed PMS at College of Computing and IT, Shaqra University",
+                "Managed quality assurance project datasets",
+                "Positive relationship found between perceived usefulness and usage intentions",
+                "Improved academic information management efficiency"
+            ],
+            "link": "https://www.benthamdirect.com/content/books/9789814998451.chapter-6",
+            "publicationDate": "2021-10-11",
+            "linkedinTimeline": "Jan 2019 - Feb 2020",
+            "timelineDate": "Jan 2019 - Feb 2020"
+        },
+        {
+            "title": "Intelligent Alumni Management System for Universities",
+            "role": "Principal Investigator",
+            "duration": "2020 - 2021",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": [
+                "Database Management",
+                "Web Development",
+                "Communication Systems"
+            ],
+            "description": "Alumni information management system enabling communications between colleges and graduates. Provides platform for job opportunities, announcements, and professional networking. Focuses on security, usability, and accessibility.",
+            "outcomes": [
+                "Facilitated university-alumni communication",
+                "Created job opportunity discovery platform",
+                "Collected graduate working experience data",
+                "Improved teaching process through graduate feedback"
+            ],
+            "link": "https://ajbsr.net/data/uploads/77626(1).pdf",
+            "publicationDate": "2021-04",
+            "timelineDate": "2020 - 2021"
+        },
+        {
+            "title": "Mubadarah System - Intelligent System for Proposals at University",
+            "role": "Principal Investigator",
+            "duration": "Jan 2019 - Jan 2020",
+            "status": "Completed",
+            "category": "Decision Support Systems",
+            "technologies": [
+                "Web Development",
+                "Voting Systems",
+                "Database Management"
+            ],
+            "description": "Interactive system for proposing and voting on ideas at university level. Creates transparent communication between decision-makers and stakeholders. 'Mubadarah' (meaning 'Idea' in Arabic) enables online proposal submission and democratic voting.",
+            "outcomes": [
+                "Enabled transparent idea proposal mechanism",
+                "Implemented democratic voting system",
+                "Facilitated stakeholder-administration communication",
+                "Streamlined university decision-making process"
+            ],
+            "link": "https://ieeexplore.ieee.org/abstract/document/9410773",
+            "publicationDate": "2021-03-17",
+            "linkedinTimeline": "Jan 2019 - Jan 2020",
+            "timelineDate": "Jan 2019 - Jan 2020"
+        },
+        {
+            "title": "Course Add/Drop Management System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": [
+                "Web Development",
+                "Workflow Management",
+                "Email Notifications",
+                "PDF Generation",
+                "Database Systems"
+            ],
+            "description": "Web-based platform that simplifies academic course registration and modification. Allows students to view available courses and submit add or drop requests online with ease. The system follows a structured multi-level approval process involving academic advisors, department heads, and registrars to ensure accuracy and compliance with university policies. Users receive real-time status updates and email notifications throughout the workflow. Once approved, the system generates a downloadable PDF record of the request.",
+            "outcomes": [
+                "Simplified course registration and modification process for students",
+                "Implemented multi-level approval workflow for compliance and accuracy",
+                "Provided real-time status updates and email notifications",
+                "Generated downloadable PDF records of approved requests",
+                "Reduced paperwork and improved transparency in academic operations",
+                "Enhanced efficiency for students and academic administrators"
+            ],
+            "link": "https://ccitsu.github.io/dac/",
+            "publicationDate": "2026-01-28",
+            "linkedinTimeline": "Nov 2025 - Jan 2026",
+            "duration": "Nov 2025 - Jan 2026",
+            "timelineDate": "Nov 2025 - Jan 2026"
+        },
+        {
+            "title": "Student Absence Management System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": [
+                "Web Development",
+                "Workflow Management",
+                "Role-Based Access Control",
+                "Authentication Systems",
+                "Dashboard Development",
+                "Database Systems"
+            ],
+            "description": "Web-based application that streamlines leave requests and approvals within an academic workflow. Enables students to register, submit absence/leave applications, and track real-time status through a three-level hierarchical approval pipeline involving Advisors, Heads of Department (HODs), and Vice Deans. The system provides role-based access, unified authentication for staff, and dashboard interfaces for each user category. Requests traverse sequential approval stages, capturing decision states and timestamps to ensure auditability. Its UI guides users through application submission, progress monitoring, and administrative review.",
+            "outcomes": [
+                "Streamlined leave request and approval process for students",
+                "Implemented three-level hierarchical approval pipeline",
+                "Provided role-based access control for different user categories",
+                "Enabled real-time status tracking and monitoring",
+                "Captured comprehensive decision states and timestamps for auditability",
+                "Enhanced efficiency and transparency in academic absence management",
+                "Unified authentication system for staff members"
+            ],
+            "link": "https://suedusa.github.io/ams/",
+            "publicationDate": "2026-01-28",
+            "linkedinTimeline": "Oct 2025 - Dec 2025",
+            "duration": "Oct 2025 - Dec 2025",
+            "timelineDate": "Oct 2025 - Dec 2025"
+        },
+        {
+            "title": "Field (Cooperative) Education Program",
+            "role": "Principal Investigator",
+            "institution": "CCIT, Shaqra University",
+            "status": "Ongoing",
+            "category": "Educational Technology",
+            "technologies": [
+                "Web Development",
+                "Interactive Handbook",
+                "Educational Documentation",
+                "Educational Platform",
+                "Database Systems"
+            ],
+            "description": "Structured experiential learning initiative that bridges academic theory with real-world industry practice. Hosted as an interactive online handbook, this project outlines program goals, stakeholder responsibilities, procedures, assessment methods, and essential forms to support students, faculty, and host organizations. It aims to guide undergraduate trainees through every stage of their professional field training, ensuring clarity, compliance, and measurable outcomes. By integrating curriculum requirements with workplace expectations, this platform enhances student preparedness and strengthens university-industry collaboration for computing and IT disciplines.",
+            "outcomes": [
+                "Created comprehensive interactive online handbook for field education program",
+                "Documented program goals, stakeholder responsibilities, and procedures",
+                "Established clear assessment methods and compliance frameworks",
+                "Provided essential forms and resources for students, faculty, and host organizations",
+                "Enhanced student preparedness through structured guidance",
+                "Strengthened university-industry collaboration",
+                "Integrated curriculum requirements with workplace expectations",
+                "Supported all stages of professional field training"
+            ],
+            "link": "https://ccitsu.github.io/coop/",
+            "publicationDate": "2026-01-28",
+            "linkedinTimeline": "Sep 2025 - Present",
+            "duration": "Sep 2025 - Present",
+            "timelineDate": "Sep 2025 - Present"
+        },
+        {
+            "title": "Field Training Permission System",
+            "role": "Principal Investigator",
+            "status": "Completed",
+            "category": "Educational Technology",
+            "technologies": [
+                "Web Development",
+                "User Authentication",
+                "Secure Login",
+                "Registration Systems",
+                "Form Management",
+                "Database Systems",
+                "Industry Collaboration"
+            ],
+            "description": "Web platform that simplifies how students register and apply for cooperative/field training. It allows secure login and registration, captures essential student details, and streamlines permission requests for field training in partnership with industry organizations. This tool supports academic units in managing training records and helps students connect with practical work opportunities, enhancing their readiness for future careers.",
+            "outcomes": [
+                "Simplified student registration and field training application process",
+                "Implemented secure login and authentication mechanisms",
+                "Captured and managed essential student details efficiently",
+                "Streamlined permission requests for field training partnerships",
+                "Enabled academic units to manage training records effectively",
+                "Facilitated student-industry organization connections",
+                "Enhanced student career readiness through practical opportunities",
+                "Improved accessibility to cooperative training programs"
+            ],
+            "link": "https://suedusa.github.io/coop/",
+            "publicationDate": "2026-01-28",
+            "linkedinTimeline": "Aug 2025 - Nov 2025",
+            "duration": "Aug 2025 - Nov 2025",
+            "timelineDate": "Aug 2025 - Nov 2025"
+        },
+        {
+            "title": "Development of Web Based E-Cooperative Training System",
+            "role": "Contributor (role not specified in export)",
+            "duration": "Jan 2016 - Apr 2017",
+            "status": "Completed",
+            "category": "Professional Projects",
+            "technologies": [],
+            "description": "Project listed in the professional profile.",
+            "outcomes": [],
+            "link": "https://ieeexplore.ieee.org/document/8538367",
+            "source": "LinkedIn export",
+            "linkedinTimeline": "Jan 2016 - Apr 2017",
+            "timelineDate": "Jan 2016 - Apr 2017"
+        },
+        {
+            "title": "Robotics based COVID-19 Mask Tracker Security Drone",
+            "role": "Contributor (role not specified in export)",
+            "duration": "Jun 2021 - Jan 2022",
+            "status": "Completed",
+            "category": "Professional Projects",
+            "technologies": [],
+            "description": "Project listed in the professional profile.",
+            "outcomes": [],
+            "link": "",
+            "source": "LinkedIn export",
+            "linkedinTimeline": "Jun 2021 - Jan 2022",
+            "timelineDate": "Jun 2021 - Jan 2022"
+        },
+        {
+            "title": "Assets Tracker",
+            "role": "Contributor (role not specified in export)",
+            "duration": "Oct 2021 - Feb 2022",
+            "status": "Completed",
+            "category": "Professional Projects",
+            "technologies": [],
+            "description": "Complete tracking of assets at College of Computing and IT. The system works on Laraval Framework and is taken care by the IT Unit at CCIT, Shaqra University",
+            "outcomes": [],
+            "link": "",
+            "source": "LinkedIn export",
+            "linkedinTimeline": "Oct 2021 - Feb 2022",
+            "timelineDate": "Oct 2021 - Feb 2022"
+        },
+        {
+            "title": "ChatGPT Text Detector",
+            "role": "Contributor (role not specified in export)",
+            "duration": "Jul 2023 - Mar 2024",
+            "status": "Completed",
+            "category": "Professional Projects",
+            "technologies": [],
+            "description": "Anti-ChatGPT",
+            "outcomes": [],
+            "link": "https://youtu.be/FxikLm-4UhM",
+            "source": "LinkedIn export",
+            "linkedinTimeline": "Jul 2023 - Mar 2024",
+            "timelineDate": "Jul 2023 - Mar 2024"
+        }
+    ],
+    "statistics": {
+        "totalProjects": 14,
+        "completed": 14,
+        "ongoing": 0,
+        "categories": [
+            "AI & Security",
+            "AI & NLP",
+            "Educational Technology",
+            "Healthcare & Mobile Development",
+            "Digital Library & Knowledge Management",
+            "Blockchain & Security",
+            "Information Systems",
+            "AI & Healthcare",
+            "Decision Support Systems",
+            "Healthcare Technology & Drones"
+        ]
+    }
+}

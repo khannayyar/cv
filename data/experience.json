@@ -1,0 +1,67 @@
+{
+    "positions": [
+        {
+            "title": "Faculty of Computer Science",
+            "institution": "Shaqra University",
+            "department": "Faculty of Computer Science",
+            "duration": "August 2015 - Present",
+            "location": "Riyadh Province, Kingdom of Saudi Arabia",
+            "description": "Serving in the Faculty of Computer Science with extensive administrative and training responsibilities. Managing multiple international technology academy partnerships including Apple, Huawei, AWS, IBM, Oracle, Microsoft, and others. Leading educational technology initiatives, conducting research in network security and cloud computing, and mentoring students.",
+            "responsibilities": [
+                "Apple Authorised Training Center for Education - Administrator and Trainer",
+                "Huawei ICT Academy Administrator and Trainer",
+                "AWS Academy Administrator",
+                "IBM Skills Academy Administrator (Middle East, KSA)",
+                "Oracle Academy Administrator",
+                "Microsoft Imagine Academy Administrator",
+                "VMware Academy Administrator",
+                "EC Council Academy Administrator and Proctor",
+                "RedHat Academy Administrator and Instructor",
+                "Open EDG Academy Administrator",
+                "LMS Project Designer and Administrator",
+                "Researcher in Network Security, Cloud Computing, and Intrusion Detection",
+                "Project Designer and Developer",
+                "Teaching undergraduate and graduate courses in Computer Science",
+                "Supervising graduate students and research projects",
+                "Publishing research papers in reputed international journals and conferences"
+            ]
+        },
+        {
+            "title": "Associate Professor",
+            "institution": "Acropolis Institute of Technology and Research",
+            "department": "Computer Science and Engineering",
+            "duration": "August 2010 - August 2015",
+            "location": "Indore, Madhya Pradesh, India",
+            "description": "Served as Associate Professor with extensive administrative and research responsibilities. Led ERP implementation across the organization, served as Exam Controller for three years, and managed multiple technology partnerships with EMC and IBM. Coordinated national-level conferences and managed research projects at M.Tech and B.Tech levels.",
+            "responsibilities": [
+                "ERP Manager for the entire organisation",
+                "Exam Controller for 3 Years",
+                "Research Analyst for CSI, IEEE, IE and research organisations",
+                "Technology Analyst",
+                "Project Designer for Department of Computer Science and Engineering",
+                "Project Management for M.Tech and B.Tech Level Students",
+                "Event Manager for National Level Conferences",
+                "Academic Associate to EMC and IBM",
+                "Government of India : Exam Coordinator"
+            ]
+        },
+        {
+            "title": "Assistant Professor",
+            "institution": "MIT Group",
+            "department": "Computer Science and Engineering",
+            "duration": "2004 - 2008",
+            "location": "Ujjain, Madhya Pradesh, India",
+            "description": "Started academic career as Assistant Professor with comprehensive administrative responsibilities. Managed training and placement operations for the entire organization, served as Exam Controller for three years, and coordinated technology partnerships with TCS and Infosys. Led website development, managed national-level conferences, and supervised student projects.",
+            "responsibilities": [
+                "Training and Placement Manager for the entire organisation",
+                "Exam Controller for 3 Years",
+                "Research Analyst for CSI, IEEE, IE and research organisations",
+                "Technology Analyst",
+                "Website Designer for Department of Computer Science and Engineering",
+                "Project Management for B.Tech Level Students",
+                "Event Manager for National Level Conferences",
+                "Academic Associate to TCS and Infosys"
+            ]
+        }
+    ]
+}

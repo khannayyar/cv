@@ -1,0 +1,145 @@
+{
+    "organizations": [
+        {
+            "name": "Apple Authorised Training Centre (AATCe)",
+            "date": "March 2022 - Present",
+            "location": "Saudi Arabia",
+            "position": "Administrator and Supervisor",
+            "description": "The first alliance with the AATCe was done under my supervision and as an administrator for the APPLE MOBILE APP DEVELOPER Academy.",
+            "icon": "fab fa-apple",
+            "color": "gray",
+            "category": "current"
+        },
+        {
+            "name": "Huawei ICT Academy",
+            "date": "2019 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Administrator and Trainer",
+            "description": "Huawei ICT Academy Administrator and Trainer for HCIA and HCIP certifications.",
+            "icon": "fas fa-network-wired",
+            "color": "red",
+            "category": "current"
+        },
+        {
+            "name": "Amazon Web Services (AWS) Academy",
+            "date": "August 2020 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Administrator and Accredited Instructor",
+            "description": "The first alliance with the AWS was done under my supervision and as an administrator for the AWS Academy. I am also an accredited instructor for AWS Cloud curriculum.",
+            "icon": "fab fa-aws",
+            "color": "orange",
+            "category": "current"
+        },
+        {
+            "name": "EC Council",
+            "date": "August 2020 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Official Training Partner",
+            "description": "EC Council Official training partner for Cyber Security Training and Ethical Hacking.",
+            "icon": "fas fa-shield-alt",
+            "color": "red",
+            "category": "current"
+        },
+        {
+            "name": "Open EDG Academy (Python Institute)",
+            "date": "December 2020 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Administrator",
+            "description": "Python Institute and its allied courses for Python development at various levels.",
+            "icon": "fab fa-python",
+            "color": "blue",
+            "category": "current"
+        },
+        {
+            "name": "Cisco Academy",
+            "date": "August 2019 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Academy Administrator and Trainer",
+            "description": "CISCO ACADEMY ADMINISTRATOR and Trainer for CISCO Certified Examination.",
+            "icon": "fas fa-server",
+            "color": "blue",
+            "category": "current"
+        },
+        {
+            "name": "Oracle Academy",
+            "date": "August 2018 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Academy Administrator and Trainer",
+            "description": "ORACLE ACADEMY ADMINISTRATOR and Trainer for Oracle Certified Examination.",
+            "icon": "fas fa-database",
+            "color": "red",
+            "category": "current"
+        },
+        {
+            "name": "UiPath RPA Academy",
+            "date": "August 2019 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Academy Administrator and Trainer",
+            "description": "UiPATH RPA ACADEMY ADMINISTRATOR and Trainer for Robot Process Automation Examination. One of only two organizations in Saudi Arabia under this alliance (Shaqra University and King Saud University).",
+            "icon": "fas fa-robot",
+            "color": "orange",
+            "category": "current"
+        },
+        {
+            "name": "Microsoft Imagine Academy (MIA)",
+            "date": "October 2017 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Academy Administrator and Trainer",
+            "description": "MICROSOFT IMAGINE ACADEMY ADMINISTRATOR and Trainer for MTA / MOAC Examination.",
+            "email": "nayyar@shaqrau.onmicrosoft.com",
+            "icon": "fab fa-microsoft",
+            "color": "blue",
+            "category": "current"
+        },
+        {
+            "name": "IBM Skills Academy (MEIA)",
+            "date": "October 2017 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Proctor, Coordinator and Trainer",
+            "description": "IBM PROCTOR for Cloud Application Development. IBM Skill Academy Coordinator and Trainer for Cloud Application Development.",
+            "icon": "fab fa-ibm",
+            "color": "blue",
+            "category": "current"
+        },
+        {
+            "name": "VMware Academy",
+            "date": "October 2017 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Academy Coordinator and Trainer",
+            "description": "VMware Academy Coordinator and Trainer for virtualization and cloud infrastructure technologies.",
+            "icon": "fas fa-cloud",
+            "color": "blue",
+            "category": "current"
+        },
+        {
+            "name": "RedHat Academy",
+            "date": "2018 - Present",
+            "location": "Middle East, Saudi Arabia",
+            "position": "Administrator and Instructor",
+            "description": "RedHat Academy Administrator and Instructor for Linux and open source technologies.",
+            "icon": "fab fa-redhat",
+            "color": "red",
+            "category": "current"
+        },
+        {
+            "name": "EMC Academic Alliance",
+            "date": "August 2012 - Present",
+            "location": "India & Saudi Arabia",
+            "position": "Academic Coordinator",
+            "description": "Academic Coordinator for EMC, managing curriculum and certification programs.",
+            "icon": "fas fa-hdd",
+            "color": "blue",
+            "category": "longterm"
+        },
+        {
+            "name": "IBM Academic Initiative",
+            "date": "May 2010 - June 2011",
+            "location": "Indian Subcontinent",
+            "position": "Academic Coordinator",
+            "description": "Academic Coordinator for IBM in the Indian Subcontinent region.",
+            "icon": "fab fa-ibm",
+            "color": "blue",
+            "category": "past"
+        }
+    ]
+}

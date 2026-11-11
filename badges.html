@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Badges - Dr. Nayyar Ahmed Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+        .badge-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .badge-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+        .badge-card:hover::before {
+            left: 100%;
+        }
+    </style>
+    <meta name="theme-color" content="#102a4c">
+    <link rel="stylesheet" href="css/site.css?v=2026-type">
+    <script src="js/site.js?v=2026-type" defer></script>
+<script src="js/date-order.js?v=2026-timelines"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-purple-50 to-blue-50">
+    <!-- Unified Navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation" id="navbar"><div class="nav-inner"><a href="index.html" class="brand"><span class="brand-mark">NK<span>.</span></span><span class="brand-name">Nayyar Ahmed Khan<small>AI · HEALTHCARE · BLOCKCHAIN</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">☰</button><div class="site-menu" id="site-menu"><a href="index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><details class="nav-dropdown"><summary>Academics</summary><div class="nav-panel"><a href="education.html" data-nav>Education</a><a href="experience.html" data-nav>Experience</a><a href="teaching.html" data-nav>Teaching</a></div></details><details class="nav-dropdown"><summary>Research</summary><div class="nav-panel"><a href="research.html" data-nav>Research overview</a><a href="publications.html" data-nav>Publications</a><a href="patents.html" data-nav>Patents</a><a href="projects.html" data-nav>Projects</a></div></details><details class="nav-dropdown"><summary>Recognition</summary><div class="nav-panel"><a href="awards.html" data-nav>Awards</a><a href="certifications.html" data-nav>Certifications</a><a href="badges.html" data-nav>Digital badges</a><a href="community.html" data-nav>Community</a><a href="testimonials.html" data-nav>Testimonials</a></div></details><a href="skills.html" data-nav>Expertise</a><a href="contact.html" data-nav class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></div></div></nav>
+
+    <!-- Header -->
+    <section id="main-content" tabindex="-1" class="pt-32 pb-16 bg-gradient-to-br from-purple-600 via-purple-700 to-blue-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute transform rotate-45 -left-20 top-20 w-96 h-96 bg-white rounded-full"></div>
+            <div class="absolute transform -rotate-45 -right-20 bottom-20 w-96 h-96 bg-white rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6" data-aos="fade-up">
+                <i class="fas fa-certificate mr-4 text-yellow-300"></i>Digital Badges
+            </h1>
+            <p class="text-2xl text-white/90 mb-8" data-aos="fade-up" data-aos-delay="100">
+                🎖️ Professional Certifications Verified by Leading Technology Organizations
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl px-8 py-4 shadow-2xl">
+                    <div class="text-5xl font-bold text-white" id="total-badges">37</div>
+                    <div class="text-sm text-white/90 mt-1">Total Badges</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl px-8 py-4 shadow-2xl">
+                    <div class="text-5xl font-bold text-white">8</div>
+                    <div class="text-sm text-white/90 mt-1">Categories</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl px-8 py-4 shadow-2xl">
+                    <div class="text-5xl font-bold text-white">5</div>
+                    <div class="text-sm text-white/90 mt-1">Providers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white shadow-md sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button onclick="filterBadges('all')" class="filter-badge active px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-medium hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-th mr-2"></i>All Badges (37)
+                </button>
+                <button onclick="filterBadges('Data Science')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-green-100 to-green-200 text-green-700 rounded-full font-medium hover:from-green-500 hover:to-green-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-chart-bar mr-2"></i>Data Science (10)
+                </button>
+                <button onclick="filterBadges('Cloud Computing')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 rounded-full font-medium hover:from-blue-500 hover:to-blue-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-cloud mr-2"></i>Cloud (8)
+                </button>
+                <button onclick="filterBadges('Machine Learning')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 rounded-full font-medium hover:from-purple-500 hover:to-purple-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-robot mr-2"></i>Machine Learning (3)
+                </button>
+                <button onclick="filterBadges('Cybersecurity')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-red-100 to-red-200 text-red-700 rounded-full font-medium hover:from-red-500 hover:to-red-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-shield-alt mr-2"></i>Cybersecurity (5)
+                </button>
+                <button onclick="filterBadges('Big Data')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-700 rounded-full font-medium hover:from-yellow-500 hover:to-yellow-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-database mr-2"></i>Big Data (5)
+                </button>
+                <button onclick="filterBadges('DevOps')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-700 rounded-full font-medium hover:from-indigo-500 hover:to-indigo-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fab fa-docker mr-2"></i>DevOps (2)
+                </button>
+                <button onclick="filterBadges('Blockchain')" class="filter-badge px-5 py-2.5 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-700 rounded-full font-medium hover:from-pink-500 hover:to-pink-600 hover:text-white transition transform hover:scale-105">
+                    <i class="fas fa-link mr-2"></i>Blockchain (2)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="badges-grid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer"><div class="footer-top"><div><a href="index.html" class="footer-name">Dr. Nayyar Ahmed Khan<span>.</span></a><p>AI for healthcare. Blockchain for digital trust.</p><p class="footer-affiliation">Computer Science · Shaqra University · Saudi Arabia</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></div></div><div class="footer-bottom"><span>© <span data-current-year>2026</span> Dr. Nayyar Ahmed Khan</span><div><a href="https://scholar.google.com/citations?user=A0nTCiwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0000-0003-3642-2830" target="_blank" rel="noopener noreferrer">ORCID ↗</a></div><a href="#main-content">Back to top ↑</a></div></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let allBadges = [];
+        
+        async function loadBadges() {
+            try {
+                const response = await fetch('data/badges.json');
+                const data = CVDateOrder.sortData(await response.json());
+                allBadges = data.badges;
+                
+                document.getElementById('total-badges').textContent = allBadges.length;
+                displayBadges(allBadges);
+                
+            } catch (error) {
+                console.error('Error loading badges:', error);
+                document.getElementById('badges-grid').innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-exclamation-circle text-6xl text-gray-300 mb-4"></i>
+                        <p class="text-gray-600">Error loading badges data.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function displayBadges(badges) {
+            const colorMap = {
+                'blue': { gradient: 'from-blue-500 to-blue-700', bg: 'bg-blue-50', text: 'text-blue-600' },
+                'purple': { gradient: 'from-purple-500 to-purple-700', bg: 'bg-purple-50', text: 'text-purple-600' },
+                'orange': { gradient: 'from-orange-500 to-orange-700', bg: 'bg-orange-50', text: 'text-orange-600' },
+                'yellow': { gradient: 'from-yellow-400 to-orange-500', bg: 'bg-yellow-50', text: 'text-yellow-600' },
+                'green': { gradient: 'from-green-500 to-green-700', bg: 'bg-green-50', text: 'text-green-600' },
+                'red': { gradient: 'from-red-500 to-red-700', bg: 'bg-red-50', text: 'text-red-600' }
+            };
+            
+            const badgesGrid = document.getElementById('badges-grid');
+            badgesGrid.innerHTML = badges.map((badge, index) => {
+                const colors = colorMap[badge.color] || colorMap['blue'];
+                return `
+                <a href="${badge.url}" target="_blank" class="block bg-white rounded-2xl shadow-lg p-6 card-hover badge-card group relative overflow-hidden" data-aos="zoom-in" data-aos-delay="${Math.min(index * 30, 400)}">
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br ${colors.gradient} rounded-full flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
+                            <i class="${badge.icon} text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-gray-800 mb-3 text-center leading-tight min-h-[42px] group-hover:text-purple-600 transition">${badge.title}</h3>
+                        <div class="text-center mb-2">
+                            <span class="inline-block px-4 py-1.5 bg-gradient-to-r ${colors.gradient} text-white text-xs rounded-full font-semibold shadow-md">${badge.issuer}</span>
+                        </div>
+                        <div class="text-center mb-3">
+                            <span class="text-xs ${colors.text} ${colors.bg} px-3 py-1 rounded-full font-medium">${badge.category}</span>
+                        </div>
+                        <div class="text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+                            <div class="inline-flex items-center text-xs text-purple-600 font-semibold">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                View Badge
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                `;
+            }).join('');
+        }
+        
+        function filterBadges(category) {
+            // Update active button
+            document.querySelectorAll('.filter-badge').forEach(btn => {
+                if (btn.textContent.toLowerCase().includes(category.toLowerCase()) || (category === 'all' && btn.textContent.includes('All'))) {
+                    btn.classList.add('active', 'bg-gradient-to-r', 'from-purple-600', 'to-blue-600', 'text-white', 'shadow-lg', 'scale-105');
+                    btn.classList.remove('from-green-100', 'to-green-200', 'text-green-700',
+                                        'from-blue-100', 'to-blue-200', 'text-blue-700',
+                                        'from-purple-100', 'to-purple-200', 'text-purple-700',
+                                        'from-red-100', 'to-red-200', 'text-red-700',
+                                        'from-yellow-100', 'to-yellow-200', 'text-yellow-700',
+                                        'from-indigo-100', 'to-indigo-200', 'text-indigo-700',
+                                        'from-pink-100', 'to-pink-200', 'text-pink-700');
+                } else {
+                    btn.classList.remove('active', 'bg-gradient-to-r', 'from-purple-600', 'to-blue-600', 'text-white', 'shadow-lg', 'scale-105');
+                }
+            });
+            
+            // Filter badges
+            if (category === 'all') {
+                displayBadges(allBadges);
+            } else {
+                const filtered = allBadges.filter(badge => badge.category === category);
+                displayBadges(filtered);
+            }
+        }
+        
+        loadBadges();
+    </script>
+</body>
+</html>

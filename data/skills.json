@@ -1,0 +1,166 @@
+{
+    "categories": [
+        {
+            "name": "Research Applications: AI, Healthcare & Blockchain",
+            "skills": [
+                "Federated learning for healthcare research",
+                "Explainable AI and computational drug discovery",
+                "Blockchain-enabled medical IoT",
+                "Secure collaborative learning",
+                "AI-based health advisory applications"
+            ]
+        },
+        {
+            "name": "Academic Writing & Publishing",
+            "skills": [
+                "Scholarly Article Writing",
+                "Research Paper Composition",
+                "Grant Proposal Development",
+                "Technical Documentation",
+                "Peer Review Expertise",
+                "Conference Proceedings"
+            ]
+        },
+        {
+            "name": "LaTeX & Typesetting Mastery",
+            "skills": [
+                "Advanced LaTeX Document Preparation",
+                "Overleaf Collaboration",
+                "IEEE & ACM Templates",
+                "Mathematical Typesetting",
+                "Bibliography Management (BibTeX)",
+                "Complex Table & Figure Design"
+            ]
+        },
+        {
+            "name": "AI & Machine Learning Expertise",
+            "skills": [
+                "Deep Learning Model Design",
+                "Neural Network Architecture",
+                "Natural Language Processing",
+                "Computer Vision Applications",
+                "Predictive Analytics",
+                "Algorithm Optimization"
+            ]
+        },
+        {
+            "name": "Research Methodology & Tools",
+            "skills": [
+                "Systematic Literature Review",
+                "Experimental Design",
+                "Statistical Analysis (SPSS, R)",
+                "Qualitative & Quantitative Research",
+                "Meta-Analysis",
+                "Research Ethics"
+            ]
+        },
+        {
+            "name": "Programming & Development",
+            "skills": [
+                "Python (Expert)",
+                "Java",
+                "C++",
+                "MATLAB",
+                "R Programming",
+                "SQL & Database Management"
+            ]
+        },
+        {
+            "name": "AI/ML Frameworks & Platforms",
+            "skills": [
+                "TensorFlow & Keras",
+                "PyTorch",
+                "Scikit-learn",
+                "OpenCV",
+                "Hugging Face Transformers",
+                "Google Colab & Jupyter"
+            ]
+        },
+        {
+            "name": "Scholarly Research Tools",
+            "skills": [
+                "Zotero & Mendeley",
+                "SCOPUS & Web of Science",
+                "VOSviewer & Bibliometric Analysis",
+                "Grammarly & Turnitin",
+                "Reference Management",
+                "Citation Analysis"
+            ]
+        },
+        {
+            "name": "Data Science & Visualization",
+            "skills": [
+                "Data Mining & Preprocessing",
+                "Statistical Modeling",
+                "Tableau & Power BI",
+                "Matplotlib & Seaborn",
+                "Interactive Dashboards",
+                "Big Data Analytics"
+            ]
+        },
+        {
+            "name": "Cloud & DevOps",
+            "skills": [
+                "AWS & Azure",
+                "Docker & Kubernetes",
+                "Git & GitHub",
+                "CI/CD Pipelines",
+                "Cloud Security",
+                "Microservices Architecture"
+            ]
+        },
+        {
+            "name": "Cybersecurity & Network Security",
+            "skills": [
+                "Intrusion Detection Systems",
+                "Penetration Testing",
+                "Cryptography",
+                "Security Auditing",
+                "Firewall Configuration",
+                "Threat Analysis"
+            ]
+        },
+        {
+            "name": "Additional Professional Skills",
+            "skills": [
+                "Research and Development (R&D)",
+                "Higher Education",
+                "Claude Skills",
+                "Anthropic Claude",
+                "Prompt Engineering",
+                "ML",
+                "Large Language Models (LLM)",
+                "IEEE",
+                "iOS",
+                "Research Skills",
+                "Publication Writing",
+                "Technical Publication",
+                "Digital Asset Management",
+                "Cloud Computing",
+                "Intrusion Detection",
+                "Artificial Intelligence (AI)",
+                "Machine Learning",
+                "Microsoft Power Automate",
+                "SharePoint",
+                "Microsoft Power BI",
+                "Huawei",
+                "Oracle Academy",
+                "CISCO Academy",
+                "RedHat Academy",
+                "Apple Training",
+                "APLS",
+                "Apple Teacher",
+                "Apple Curriculum",
+                "Teaching",
+                "Microsoft Azure",
+                "Amazon Web Services (AWS)",
+                "Swift (Programming Language)",
+                "iOS Development",
+                "SwiftUI",
+                "UIKit",
+                "iPad Development",
+                "Playgrounds"
+            ]
+        }
+    ]
+}

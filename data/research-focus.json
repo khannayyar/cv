@@ -1,0 +1,95 @@
+{
+    "title": "AI, Healthcare & Blockchain",
+    "summary": "My research brings artificial intelligence and machine learning together with blockchain and secure distributed systems, with particular emphasis on healthcare applications and drug discovery.",
+    "themes": [
+        {
+            "id": "healthcare-ai",
+            "title": "AI & machine learning for healthcare",
+            "summary": "Research spanning federated learning for heart-disease detection, AI-supported health information, medical transcription, and healthcare forecasting.",
+            "evidence": [
+                {
+                    "title": "An iomt enabled iterative artificial bee colony approach using federated learning for detection of heart disease",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C"
+                },
+                {
+                    "title": "COVIBOT-An intelligent WhatsApp based advising bot for Covid-19",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:ULOm3_A8WrAC"
+                },
+                {
+                    "title": "LSTM neural networks in healthcare disruption forecasting: A comprehensive review and implementation framework",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:yMeIxYmEMEAC"
+                }
+            ]
+        },
+        {
+            "id": "drug-discovery",
+            "title": "Explainable AI & drug discovery",
+            "summary": "Published work explores explainable AI for structure-based drug design, collaborative drug discovery, and the convergence of AI and quantum computing.",
+            "evidence": [
+                {
+                    "title": "Explainable AI for structure-based drug design: Concepts and case studies",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:QYdC8u9Cj1oC"
+                },
+                {
+                    "title": "Blockchain-enabled federated learning framework for secure and collaborative drug discovery: Integrating AI, molecular docking, and distributed ledger technology",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4hFrxpcac9AC"
+                },
+                {
+                    "title": "Revolutionizing drug design: the convergence of AI and quantum computing-A systematic review",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:IUKN3-7HHlwC"
+                }
+            ]
+        },
+        {
+            "id": "blockchain-health",
+            "title": "Blockchain, federated learning & medical IoT",
+            "summary": "Research connects blockchain, Internet of Medical Things, federated learning, and intrusion detection to study secure healthcare data collaboration.",
+            "evidence": [
+                {
+                    "title": "Enabling blockchain with IoMT devices for healthcare",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:M3ejUd6NZC8C"
+                },
+                {
+                    "title": "A comprehensive secure system enabling healthcare 5.0 using federated learning, intrusion detection and blockchain",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
+                },
+                {
+                    "title": "Blockchain-enabled federated learning framework for secure and collaborative drug discovery: Integrating AI, molecular docking, and distributed ledger technology",
+                    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4hFrxpcac9AC"
+                }
+            ]
+        }
+    ],
+    "featuredPublications": [
+        {
+            "title": "A comprehensive secure system enabling healthcare 5.0 using federated learning, intrusion detection and blockchain",
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:35r97b3x0nAC"
+        },
+        {
+            "title": "Blockchain-enabled federated learning framework for secure and collaborative drug discovery: Integrating AI, molecular docking, and distributed ledger technology",
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:4hFrxpcac9AC"
+        },
+        {
+            "title": "Explainable AI for structure-based drug design: Concepts and case studies",
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:QYdC8u9Cj1oC"
+        },
+        {
+            "title": "An iomt enabled iterative artificial bee colony approach using federated learning for detection of heart disease",
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:URolC5Kub84C"
+        }
+    ],
+    "futureDirections": [
+        {
+            "title": "Trustworthy healthcare AI",
+            "description": "Extend research toward explainability, robustness, bias assessment, and evaluation across diverse health datasets."
+        },
+        {
+            "title": "Privacy-aware collaboration",
+            "description": "Explore how federated learning and blockchain-based auditability can support accountable collaboration across healthcare organizations."
+        },
+        {
+            "title": "Translational evaluation",
+            "description": "Seek interdisciplinary collaborations to evaluate research prototypes on appropriate datasets and clarify the evidence needed before clinical use."
+        }
+    ]
+}
