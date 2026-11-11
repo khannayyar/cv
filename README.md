@@ -98,3 +98,13 @@ Run `python3 scripts/import_linkedin.py /absolute/path/to/export.zip` to import 
 User-confirmed institutions take precedence over future LinkedIn education imports. LinkedIn project timelines overwrite matching project durations; chronological project display uses the project timeline ahead of the publication date.
 
 Typography uses Manrope for headings and Source Sans 3 for body text, with responsive heading sizes, larger reading text and consistent metadata sizes. The font files load from Google Fonts with system fallbacks and font-display swap.
+
+## Scholar HTTP 403 on GitHub runners
+
+Google Scholar can deny direct requests from GitHub-hosted runner IPs. A missing `SCHOLAR_ID` secret is not a failure when the public profile URL is configured; the importer reads its ID from that URL.
+
+For an alternative unattended transport, create a SerpApi account and add its private key as the repository Actions secret `SERPAPI_API_KEY`. The importer automatically uses the Google Scholar Author API when this secret is present. No provider account is created and no paid plan is purchased by this code change; review provider quotas and pricing before enabling it. Each profile page consumes a provider request. Credentials remain in Actions secrets and are never written into website JSON.
+
+Without a key, direct access is retained and may still fail with HTTP 403. Adding `SCHOLAR_ID` alone does not resolve an IP block. API errors, missing metrics, repeated/empty pages or a large publication-count drop preserve the last good snapshot and fail visibly; the next daily eligibility check can retry. The 15-day interval still uses the last successful update. Manual runs force an attempt. This provider is independent of Google and does not guarantee future availability.
+
+Setup: upload the revised `scripts/update_research.py` and `.github/workflows/update-research.yml`, add the API secret under Settings → Secrets and variables → Actions, then start a new manual Scholar workflow run. See https://serpapi.com/google-scholar-author-api for the provider contract. A free alternative is running the importer locally on a network where Scholar permits access, then committing the resulting `data/research.json`.
