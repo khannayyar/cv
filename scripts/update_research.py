@@ -46,12 +46,15 @@ def integer(text):
 
 
 def get_page(session, scholar_id, offset=0, page_size=100):
-    """Bounded retries for transient server/rate errors; never retry CAPTCHA pages."""
+    """Bounded retries for transient server errors; never retry traffic blocks."""
     for attempt in range(3):
         try:
             response = session.get('https://scholar.google.com/citations',
                                    params={'user': scholar_id, 'hl': 'en', 'cstart': offset, 'pagesize': page_size},
                                    headers=HEADERS, timeout=(10, 30))
+            final_url = getattr(response, 'url', '')
+            if response.status_code == 429 or (isinstance(final_url, str) and urlparse(final_url).path.startswith('/sorry/')):
+                raise ValueError('Google Scholar rate-limited or challenged this network (HTTP 429 / traffic-block page). No further requests will be made in this run. Keep the saved data and try later from a permitted network; repeated manual runs will not resolve the block.')
             if response.status_code == 403:
                 raise ValueError('Google Scholar blocked this runner (HTTP 403). The profile ID is configured, but this network is denied access. Run the importer on an allowed network. Existing data is unchanged.')
             response.raise_for_status()
@@ -62,7 +65,7 @@ def get_page(session, scholar_id, offset=0, page_size=100):
                 raise ValueError('Scholar returned an unrecognized or incomplete profile page.')
             return soup
         except (requests.Timeout, requests.ConnectionError, requests.HTTPError) as exc:
-            if isinstance(exc, requests.HTTPError) and exc.response.status_code not in (429, 500, 502, 503, 504):
+            if isinstance(exc, requests.HTTPError) and exc.response.status_code not in (500, 502, 503, 504):
                 raise
             if attempt == 2:
                 raise

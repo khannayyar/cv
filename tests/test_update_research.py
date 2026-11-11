@@ -67,6 +67,22 @@ class ImporterTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'CAPTCHA'):
             u.get_page(session,'TEST')
 
+    @patch.object(u.time, 'sleep')
+    def test_rate_limit_stops_without_retry(self, sleep):
+        session = Mock()
+        session.get.return_value = Mock(status_code=429, url='https://www.google.com/sorry/index')
+        with self.assertRaisesRegex(ValueError, 'rate-limited'):
+            u.get_page(session, 'TEST')
+        self.assertEqual(session.get.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_redirected_challenge_is_rejected_even_with_http_200(self):
+        session = Mock()
+        session.get.return_value = Mock(status_code=200, url='https://www.google.com/sorry/index')
+        with self.assertRaisesRegex(ValueError, 'traffic-block'):
+            u.get_page(session, 'TEST')
+        self.assertEqual(session.get.call_count, 1)
+
     @patch.object(u.time,'sleep')
     def test_transient_failure_retried(self, sleep):
         session=Mock()
