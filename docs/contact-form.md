@@ -25,3 +25,18 @@ prove inbox delivery; check Junk/Spam as well.
 The browser now sends one text/plain JSON request without a preflight. It does
 not silently resend after a timeout or report success for an unreadable response.
 A saved message with a failed email notification is reported separately.
+
+## Message saved, notification failed
+
+This response means Sheets accepted the message but MailApp threw an exception.
+Open **Executions**, select the corresponding `doPost`, and expand its logs to
+read `Message saved; notification failed:` followed by the exact Google error.
+Because the script catches this exception, the execution may appear completed.
+
+For a direct test, paste the latest script into Apps Script, select
+**testNotificationEmail**, and click **Run**. This sends one test email to
+`NOTIFY_TO` and lets errors appear directly. Grant the send-email permission if
+requested. A zero remaining quota requires waiting for the quota to reset;
+permission or organization-policy errors must be resolved in that Google account.
+After correcting authorization, update the web app deployment to a new version
+with **Execute as: Me**, then test the website again.

@@ -69,3 +69,19 @@ function authorizeContactForm() {
   Logger.log('Spreadsheet available: ' + getTargetSheet_().getName());
   Logger.log('Remaining email quota: ' + MailApp.getRemainingDailyQuota());
 }
+
+// Run manually in the Apps Script editor. Sends one diagnostic email to NOTIFY_TO.
+// Errors intentionally propagate so the execution log shows the exact cause.
+function testNotificationEmail() {
+  var quota = MailApp.getRemainingDailyQuota();
+  Logger.log('Notification recipient: ' + NOTIFY_TO);
+  Logger.log('Remaining email quota: ' + quota);
+  if (quota < 1) throw new Error('Daily email quota exhausted. Try after the quota resets.');
+  MailApp.sendEmail({
+    to: NOTIFY_TO,
+    subject: 'Portfolio contact notification test',
+    body: 'This is a diagnostic email from your portfolio Google Apps Script. If received, email sending works for this account.',
+    name: 'Portfolio Contact'
+  });
+  Logger.log('Google accepted the test email. Check the recipient inbox and Junk folder.');
+}
