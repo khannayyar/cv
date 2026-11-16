@@ -23,14 +23,15 @@ async function exportToPDF(mode = 'application') {
     overlay.innerHTML = '<div class="bg-white rounded-lg p-8 text-center">Preparing your CV…</div>';
     document.body.appendChild(overlay);
     try {
-        const names = ['personal-info','education','experience','research','projects','certifications','patents','skills','awards','teaching','professional-profile','case-studies','community','books'];
+        const names = ['personal-info','education','experience','research','projects','certifications','patents','skills','awards','teaching','professional-profile','case-studies','community','books','badges'];
         const data = await Promise.all(names.map(async name => {
-            const response = await fetch(`data/${name}.json`);
+            const response = await fetch(`data/${name}.json`, {cache: 'no-store'});
             if (!response.ok) throw new Error(`Unable to load ${name}`);
             return CVDateOrder.sortData(await response.json());
         }));
-        const [person,education,experience,research,projects,credentials,patents,skills,awards,teaching,profile,cases,community,books] = data;
+        const [person,education,experience,research,projects,credentials,patents,skills,awards,teaching,profile,cases,community,books,badges] = data;
         const full = mode === 'full';
+        const generatedOn = new Date().toISOString().slice(0,10);
         const {jsPDF} = await loadJsPDF();
         const doc = new jsPDF({unit:'mm',format:'a4',compress:true});
         doc.setProperties({title:`${person.name} | ${full?'Academic CV':'Application CV'}`,author:person.name,subject:person.researchHeadline,keywords:'Computer Science, AI, Healthcare, Blockchain, Curriculum Vitae'});
@@ -51,68 +52,89 @@ async function exportToPDF(mode = 'application') {
             y+=gap;
         }
         function section(title){sectionName=title;ensure(23);y+=5;font(10,'bold',blue);doc.text(clean(title.toUpperCase()),left,y);y+=3;rule(y);y+=7;}
-        function entry(title,meta,body='',url=''){
+        // Only use explicit verification fields, never URLs found inside prose.
+        function recordUrls(record) {
+            if (typeof record === 'string') return /^https?:\/\/\S+$/i.test(record) ? [record] : [];
+            if (!record || typeof record !== 'object') return [];
+            const candidates=[record.url,record.link,record.website,record.verificationUrl,record.credentialUrl,...Object.values(record.links||{})];
+            return [...new Set(candidates.filter(value=>typeof value==='string' && /^https?:\/\/\S+$/i.test(value)))];
+        }
+        function verificationLinks(record) {
+            for(const url of recordUrls(record)){
+                const wrapped=lines(url,8);
+                ensure(Math.min(wrapped.length*4+2,240));
+                for(const line of wrapped){ensure(4);font(8,'normal',blue);doc.textWithLink(line,left,y,{url});y+=4;}
+                y+=2;
+            }
+        }
+        function entry(title,meta,body='',record={}){
             const titleLines=lines(title,11,0,'bold'),metaLines=lines(meta,9);
-            const height=titleLines.length*5.2+metaLines.length*4.3+(body?lines(body,9.8).length*4.606+2:0)+(url?5:0)+8;
+            const height=titleLines.length*5.2+metaLines.length*4.3+(body?lines(body,9.8).length*4.606+2:0)+recordUrls(record).reduce((height,url)=>height+lines(url,8).length*4+2,0)+8;
             ensure(Math.min(height,240));
             paragraph(title,{size:11,weight:'bold',gap:1});
             if(meta)paragraph(meta,{size:9,color:grey,gap:2});
             if(body)paragraph(body,{size:9.8,gap:2});
-            if(/^https?:\/\//.test(url)){ensure(5);font(8.5,'normal',blue);doc.textWithLink('View supporting record',left,y,{url});y+=5;}
+            verificationLinks(record);
             y+=3;
         }
-        function bullet(text){paragraph('- '+text,{size:9.8,indent:2,gap:1.5});}
+        function bullet(text,record={}){ensure(Math.min(lines('- '+text,9.8,2).length*4.606+recordUrls(record).reduce((height,url)=>height+lines(url,8).length*4+2,0)+2,240));paragraph('- '+text,{size:9.8,indent:2,gap:1.5});verificationLinks(record);}
         // Quiet, print-friendly header with a restrained US-inspired accent.
         doc.setFillColor(...navy);doc.rect(left,12,22,1.2,'F');doc.setFillColor(179,41,61);doc.rect(left+24,12,6,1.2,'F');
         paragraph(person.name,{size:25,weight:'bold',gap:3});
         paragraph(person.title+' | '+person.university,{size:12,color:blue,gap:2});
         paragraph(person.researchHeadline,{size:10,color:grey,gap:3});
         paragraph([person.email,person.phone,'Shaqra, Saudi Arabia'].filter(Boolean).join('  |  '),{size:9,color:grey,gap:1});
-        paragraph(person.website,{size:9,color:blue,gap:3});
+        verificationLinks(person.website);
         section('Professional profile');
         paragraph(full?person.bio:person.bio.split(/(?<=\.)\s+/).slice(0,4).join(' '));
         section('Professional experience');
         for(const job of experience.positions){
-            entry(job.title,[job.institution,job.duration,job.location].filter(Boolean).join(' | '),job.description);
+            entry(job.title,[job.institution,job.duration,job.location].filter(Boolean).join(' | '),job.description,job);
             if(full)for(const item of job.responsibilities||[])bullet(item);
         }
         section('Education');
-        for(const degree of education.degrees)entry(degree.degree,[degree.institution,degree.year].filter(Boolean).join(' | '),degree.specialization?`Specialization: ${degree.specialization}`:'');
+        for(const degree of education.degrees)entry(degree.degree,[degree.institution,degree.year].filter(Boolean).join(' | '),degree.specialization?`Specialization: ${degree.specialization}`:'',degree);
         section('Research and technical expertise');
         const selectedSkills=full?skills.categories:skills.categories.filter(item=>/AI & Machine|Programming &|AI\/ML Frameworks|Cybersecurity|Research Applications/.test(item.name));
-        for(const category of selectedSkills)entry(category.name,'',category.skills.join(' · '));
+        for(const category of selectedSkills)entry(category.name,'',category.skills.join(' · '),category);
         section(full?'Research projects':'Selected research projects');
-        if(full){for(const project of projects.projects)entry(project.title,[project.role,project.duration].filter(Boolean).join(' | '),project.description,project.link);}
-        else for(const study of cases.caseStudies){
-            const project=projects.projects.find(item=>item.title===study.projectTitle)||{};
-            entry(study.title,[project.role,project.duration].filter(Boolean).join(' | '),study.contribution+' '+study.outcome,project.link);
+        if(full){for(const project of projects.projects)entry(project.title,[project.role,project.duration].filter(Boolean).join(' | '),project.description,project);}
+        else for(const project of projects.projects.slice(0,3)){
+            entry(project.title,[project.role,project.duration].filter(Boolean).join(' | '),project.description,project);
         }
         section(full?'Publications':'Selected recent publications');
         const publications=full?research.publications:research.publications.slice(0,6);
         if(!full)paragraph('Six most recent publications from the website record. The complete publication list is available in the online CV.',{size:9,color:grey});
-        for(const pub of publications)entry(pub.title,[pub.authors,pub.journal||pub.venue,pub.year].filter(Boolean).join(' | '),'',pub.url||pub.link);
+        for(const pub of publications)entry(pub.title,[pub.authors,pub.journal||pub.venue,pub.year].filter(Boolean).join(' | '),'',pub);
         section('Teaching and academic leadership');
         const courses=[...new Set(teaching.years.flatMap(year=>year.courses.map(course=>course.title)))];
         paragraph((full?'Courses taught: ':'Selected courses taught: ')+(full?courses:courses.slice(0,12)).join('; ')+'.');
-        if(full){for(const role of credentials.featuredRoles)entry(role.role,role.organization,role.description);}
+        if(full){for(const role of credentials.featuredRoles)entry(role.role,role.organization,role.description,role);}
         else paragraph('Training and academy roles: '+credentials.featuredRoles.map(role=>role.role).join('; ')+'.',{size:9.5});
         section(full?'Professional credentials':'Selected professional credentials');
         for(const cert of (full?credentials.certifications:credentials.certifications.slice(0,6))){
-            if(full)entry(cert.name,[cert.issuer,cert.year].filter(Boolean).join(' | '));
-            else bullet([cert.name,cert.issuer,cert.year].filter(Boolean).join(' | '));
+            if(full)entry(cert.name,[cert.issuer,cert.year].filter(Boolean).join(' | '),'',cert);
+            else bullet([cert.name,cert.issuer,cert.year].filter(Boolean).join(' | '),cert);
         }
-        if(patents.patents.length){section(full?'Patents':'Selected patents');for(const patent of (full?patents.patents:patents.patents.slice(0,3))){const meta=[patent.patentNumber,patent.country,patent.status,patent.grantDate||patent.filingDate].filter(Boolean).join(' | ');if(full)entry(patent.title,meta);else bullet(patent.title+' | '+meta);}}
-        if(awards.awards.length){section(full?'Honours and recognition':'Selected honours and recognition');for(const award of (full?awards.awards:awards.awards.slice(0,3))){const meta=[award.issuer,award.date].filter(Boolean).join(' | ');if(full)entry(award.title,meta,award.description);else bullet(award.title+' | '+meta);}}
+        if(full){
+            const credentialUrls=new Set(credentials.certifications.flatMap(recordUrls));
+            const additionalBadges=badges.badges.filter(badge=>!credentialUrls.has(badge.url));
+            if(additionalBadges.length){section('Additional verified badges');for(const badge of additionalBadges)entry(badge.title,[badge.issuer,badge.date].filter(Boolean).join(' | '),'',badge);}
+        }
+        if(patents.patents.length){section(full?'Patents':'Selected patents');for(const patent of (full?patents.patents:patents.patents.slice(0,3))){const meta=[patent.patentNumber,patent.country,patent.status,patent.grantDate||patent.filingDate].filter(Boolean).join(' | ');if(full)entry(patent.title,meta,'',patent);else bullet(patent.title+' | '+meta,patent);}}
+        if(awards.awards.length){section(full?'Honours and recognition':'Selected honours and recognition');for(const award of (full?awards.awards:awards.awards.slice(0,3))){const meta=[award.issuer,award.date].filter(Boolean).join(' | ');if(full)entry(award.title,meta,award.description,award);else bullet(award.title+' | '+meta,award);}}
         if(full){
             for(const [title,items] of [['Academic service',profile.service],['Professional affiliations',profile.affiliations],['Community contributions',community.contributions],['Books',books.books]]){
-                if(items?.length){section(title);for(const item of items)entry(item.title||item.name,[item.role,item.organization,item.date].filter(Boolean).join(' | '),item.description||'');}
+                if(items?.length){section(title);for(const item of items)entry(item.title||item.name,[item.role,item.organization,item.date].filter(Boolean).join(' | '),item.description||'',item);}
             }
         }
+        section('Online profiles and verification');
+        for(const [label,url] of Object.entries(person.socialMedia||{})){if(recordUrls(url).length){ensure(14);paragraph(label.replace(/([A-Z])/g,' $1'),{size:9,weight:'bold',gap:1});verificationLinks(url);}}
         if(profile.languages.length){section('Languages');paragraph(profile.languages.map(item=>`${item.name} (${item.proficiency})`).join('; '),{size:9.5});}
         const total=doc.getNumberOfPages();
         for(let page=1;page<=total;page++){
             doc.setPage(page);rule(282);font(8,'normal',grey);
-            doc.text(full?'ACADEMIC CURRICULUM VITAE':'APPLICATION CURRICULUM VITAE',left,288);
+            doc.text((full?'ACADEMIC CV':'APPLICATION CV')+' | Generated '+generatedOn,left,288);
             doc.text(`${page} / ${total}`,191,288,{align:'right'});
         }
         doc.save(`${person.name.replace(/\s+/g,'_')}_${full?'Academic':'Application'}_CV.pdf`);
