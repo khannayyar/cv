@@ -4,7 +4,7 @@
 //  - Script expects JSON POST with fields: name, email, phone, subject, message, timestamp, userAgent, referrer
 //  - Honeypot field 'website' must remain empty (if filled -> treat as spam and abort)
 
-const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxfWzwM-8Mc7-AQQcXTT8s8X9KA1IzVR1c1jXVHNSjDzc42WiaTzGyYj7BlBay3lrU2Hg/exec';
+const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbzvtC6PFD6nOXDicLQnOTTj48lNCB91jZEWTYbzhWIGkcCH5qsKUWjGPHzmd6PpmYU3Lw/exec';
 
 (function initContactForm() {
   const form = document.getElementById('contactForm');
