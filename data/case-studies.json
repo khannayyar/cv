@@ -1,0 +1,93 @@
+{
+    "caseStudies": [
+        {
+            "id": "namaq",
+            "title": "Recognizing Arabic handwriting with deep learning",
+            "projectTitle": "NAMAQ - Arabic Handwriting Recognition Using Deep Learning",
+            "theme": "AI & machine learning",
+            "summary": "A character-recognition study addressing the variation and complexity of Arabic handwriting.",
+            "problem": "Arabic handwritten characters vary in shape and writing style, making automated recognition a challenging classification problem.",
+            "approach": [
+                "Use convolutional neural networks to extract handwriting features.",
+                "Apply machine-learning classifiers to distinguish Arabic character classes.",
+                "Evaluate the recognition approach using the handwriting datasets described in the project record."
+            ],
+            "contribution": "The project record lists me as Co-Investigator, alongside Wareef Yousuf Aljomaee and Saeed M Alshahrani. The recorded work focuses on CNN feature extraction and Arabic character classification.",
+            "outcome": "The CV project record reports a 96.4% recognition rate across 29 Arabic character classes.",
+            "evidenceNote": "This figure is a reported project result, not a guarantee of performance on other datasets, writing styles, or real-world deployments. The website does not provide a reproducible benchmark package or a full error analysis.",
+            "nextQuestion": "How well would the approach generalize to handwriting collected from different writers and settings?",
+            "keywords": [
+                "Arabic handwriting",
+                "CNN",
+                "deep learning",
+                "classification"
+            ]
+        },
+        {
+            "id": "healthcare-ios",
+            "title": "Making health information accessible through an iOS advisory application",
+            "projectTitle": "COVID-19 Advising Application for Apple Devices (iOS)",
+            "theme": "Healthcare computing",
+            "summary": "An NLP-based mobile application explored in the context of COVID-19 health information and symptom-related guidance.",
+            "problem": "People seeking COVID-19 information need accessible digital interfaces that can interpret their questions and present relevant guidance.",
+            "approach": [
+                "Develop an iOS application focused on health-related advisory interactions.",
+                "Use natural-language processing for symptom-related input.",
+                "Consider the security and safety characteristics of the mobile platform as part of the application design."
+            ],
+            "contribution": "The project record lists me as Principal Investigator. It describes the development of an NLP-based iOS advisory application and links to the associated research publication.",
+            "outcome": "The documented output is a mobile healthcare advisory application and a supporting publication in PeerJ Computer Science.",
+            "evidenceNote": "The website record does not establish clinical validation, diagnostic accuracy, comparative patient outcomes, or current availability of the application. This is presented as computing research, not a replacement for medical care.",
+            "nextQuestion": "How can advisory interfaces communicate uncertainty and be evaluated with appropriate healthcare-domain expertise?",
+            "keywords": [
+                "healthcare",
+                "iOS",
+                "NLP",
+                "health advisory systems"
+            ]
+        },
+        {
+            "id": "blockchain-verification",
+            "title": "Building digital trust into academic credential verification",
+            "projectTitle": "Blockchain-Based Digitally Secured Model for Educational Sector",
+            "theme": "Blockchain & digital trust",
+            "summary": "A blockchain-based model for academic certificate verification in the Saudi education context.",
+            "problem": "Verifying academic documents requires trustworthy records and a way to address document fraud without making verification unnecessarily difficult.",
+            "approach": [
+                "Apply blockchain and cryptographic mechanisms to certificate verification.",
+                "Design a digitally secured verification model for the education sector.",
+                "Study how transparent verification can support digital transformation in academic administration."
+            ],
+            "contribution": "The project record lists me as Principal Investigator. The recorded contribution is the development of a blockchain-based academic certificate verification system and model.",
+            "outcome": "The documented output is a credential-verification model with a supporting PeerJ Computer Science publication.",
+            "evidenceNote": "The website does not provide transaction throughput, operating cost, independent security audit results, or institution-wide deployment measurements. Claims about scale and effectiveness should be assessed against the supporting publication.",
+            "nextQuestion": "Which parts of this verification approach could inform accountable data provenance in other sectors, including healthcare?",
+            "keywords": [
+                "blockchain",
+                "cryptography",
+                "credential verification",
+                "data provenance"
+            ]
+        }
+    ],
+    "collaboration": [
+        {
+            "title": "Explainable AI & healthcare computing",
+            "question": "How can intelligent health-information and prediction systems become more interpretable and rigorously evaluated?",
+            "foundation": "Build on published work in healthcare AI, medical IoT, federated learning, and computational drug discovery.",
+            "proposal": "Potential joint work: define a focused research question, choose an appropriate dataset, and agree on an evaluation protocol."
+        },
+        {
+            "title": "Federated learning & blockchain",
+            "question": "How can distributed learning and auditable records support collaboration while respecting data ownership?",
+            "foundation": "Connect the existing publication record in blockchain-enabled healthcare, distributed trust, and collaborative drug discovery.",
+            "proposal": "Potential joint work: compare architectures, make threat assumptions explicit, and evaluate privacy and performance trade-offs."
+        },
+        {
+            "title": "Applied AI & research mentorship",
+            "question": "How can research prototypes become reproducible learning and experimentation resources?",
+            "foundation": "Draw on work in Arabic handwriting recognition, applied computing projects, and computer science teaching.",
+            "proposal": "Potential joint work: scope a student or research project with clear contributions, reproducible methods, and realistic milestones."
+        }
+    ]
+}

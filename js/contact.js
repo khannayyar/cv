@@ -36,7 +36,7 @@ const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com
     if (!submitBtn) return;
     submitBtn.disabled = isLoading;
     if (btnSpinner) btnSpinner.classList.toggle('hidden', !isLoading);
-    if (btnText) btnText.textContent = isLoading ? 'Sending...' : 'Send Message 🚀';
+    if (btnText) btnText.textContent = isLoading ? 'Sending...' : 'Send Message';
   }
 
   form.addEventListener('submit', async (e) => {
@@ -81,12 +81,12 @@ const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com
 
     let requestTimeout;
     try {
-      // Primary attempt: CORS-friendly JSON POST with timeout
+      // A simple text/plain POST avoids an unsupported Apps Script CORS preflight.
       const controller = new AbortController();
       requestTimeout = setTimeout(() => controller.abort(), 12000);
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        headers: { 'Content-Type': 'text/plain;charset=utf-8', 'Accept': 'application/json' },
         body: JSON.stringify(data),
         signal: controller.signal,
         mode: 'cors',
@@ -100,6 +100,10 @@ const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com
       try {
         const resultJson = await response.json();
         ok = response.ok && resultJson.status === 'success';
+        if (response.ok && resultJson.status === 'partial') {
+          showMessage('info', 'Your message was saved, but the email notification failed. Please email nayyar@su.edu.sa directly for urgent enquiries.');
+          return;
+        }
         resultText = resultJson.message || '';
       } catch (_) {
         // If no-cors or invalid JSON, fall back
@@ -114,33 +118,9 @@ const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || 'https://script.google.com
       }
     } catch (err) {
       clearTimeout(requestTimeout);
-      console.warn('Contact form primary attempt failed, trying no-cors fallback:', err);
-      // Fallback: Send as x-www-form-urlencoded with no-cors (Apps Script will still receive it)
-      try {
-        const params = new URLSearchParams();
-        Object.entries(data).forEach(([k, v]) => params.append(k, String(v ?? '')));
-        const fallbackController = new AbortController();
-        requestTimeout = setTimeout(() => fallbackController.abort(), 12000);
-        await fetch(GOOGLE_SCRIPT_URL, {
-          method: 'POST',
-          body: params,
-          mode: 'no-cors',
-          signal: fallbackController.signal
-        });
-        clearTimeout(requestTimeout);
-        showMessage(
-          'info',
-          'Your message was submitted, but delivery could not be confirmed. Please email nayyar@su.edu.sa if you need confirmation.'
-        );
-      } catch (fallbackErr) {
-        console.error('Contact form fallback failed:', fallbackErr);
-        const mailto = buildMailto(data);
-        showMessage(
-          'error',
-          `Error sending message. Please email me directly at <a class="underline" href="${mailto}">nayyar@su.edu.sa</a>.`,
-          { html: true }
-        );
-      }
+      // Do not retry automatically: the server may already have saved the message.
+      const mailto = buildMailto(data);
+      showMessage('error', `Delivery could not be confirmed. Your message is still in the form. Please <a class="underline" href="${mailto}">send it by email to nayyar@su.edu.sa</a>.`, { html: true });
     } finally {
       clearTimeout(requestTimeout);
       setLoading(false);

@@ -41,6 +41,13 @@ def build_index():
         for item in load(name).get(key,[]):
             title=item.get('title') or item.get('degree') or item.get('name') or item.get('role') or name
             add(title,plain(item),page)
+    projects={project['title']:project for project in load('projects')['projects']}
+    studies=load('case-studies')
+    for study in studies['caseStudies']:
+        project=projects.get(study['projectTitle'],{})
+        add(study['title'],plain({**study,'recordedRole':project.get('role',''),'projectTimeline':project.get('duration','')}),'case-studies.html')
+    for topic in studies['collaboration']:
+        add('Proposed collaboration: '+topic['title'],plain(topic),'case-studies.html')
     for group in load('teaching').get('years',[]):
         for course in group.get('courses',[]):add(course['title']+' — '+group['academicYear'],plain(course)+'; academic year: '+group['academicYear'],'teaching.html')
     for name,page in [('philosophy','teaching.html'),('research_philosophy','research.html')]:
