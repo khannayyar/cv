@@ -23,10 +23,11 @@
             title='Academic affiliations & scholarly service';intro='Additional professional affiliations and responsibilities alongside my employment history.';
             items=[...profile.affiliations.map(x=>({...x,title:x.role,organization:x.name})),...profile.service.filter(x=>/editor/i.test(x.title))];items=CVDateOrder.newestFirst(items);
         } else if (mode === 'courses') {
-            title='Professional learning & trainer development';intro='Courses and development activities completed by me, separate from the university courses I teach.';items=profile.courses.map(x=>({title:x.name,organization:x.provider}));
+            title='Professional learning & trainer development';intro='Courses and development activities completed by me, separate from the university courses I teach.';items=profile.courses.map(x=>({title:x.name,organization:x.provider,date:x.date,url:x.url}));
         } else if (mode === 'skills') {
             title='Additional professional capabilities';intro='Skills listed in my professional profile, complementing the research and technical expertise above.';
             items=(skills.categories.find(x=>x.name==='Additional Professional Skills')?.skills || []).map(x=>({title:x}));
+            items.push(...(profile.skillEndorsements||[]).map(x=>({title:x.name,description:`${x.count} accepted LinkedIn endorsement${x.count===1?'':'s'} in the export dated ${x.asOf}.`})));
         } else if (mode === 'publications') {
             title='Publication descriptions & publisher links';intro='Publication descriptions supplied in the professional profile. LinkedIn dates are shown separately from Scholar years where they differ. This catalog supplements the Scholar record; it does not change citation totals.';
             items=profile.publicationDetails;type='details';

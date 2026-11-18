@@ -61,8 +61,8 @@
                     <div class="text-sm">Testimonials</div>
                 </div>
                 <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                    <div class="text-3xl font-bold">⭐⭐⭐⭐⭐</div>
-                    <div class="text-sm">Professional Excellence</div>
+                    <div class="text-xl font-bold">LinkedIn</div>
+                    <div class="text-sm">Visible recommendations</div>
                 </div>
             </div>
         </div>
@@ -110,6 +110,7 @@
     <script src="js/main.js"></script>
     <script>
         let allTestimonials = [];
+        const escapeRecommendation = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
         
         const colorMap = {
             'purple': { gradient: 'from-purple-500 to-purple-700', border: 'border-purple-300', bg: 'bg-purple-50' },
@@ -140,7 +141,8 @@
 
         function displayTestimonials(testimonials) {
             const grid = document.getElementById('testimonials-grid');
-            grid.innerHTML = testimonials.map((t, index) => {
+            grid.innerHTML = testimonials.map((record, index) => {
+                const t=Object.fromEntries(Object.entries(record).map(([key,value])=>[key,escapeRecommendation(value)]));
                 const colors = colorMap[t.color] || colorMap['purple'];
                 const initials = t.name.split(' ').map(n => n[0]).join('').substring(0, 2);
                 
@@ -168,10 +170,9 @@
                         <span class="inline-block px-3 py-1 ${colors.bg} text-gray-700 rounded-full text-xs font-medium">
                             ${t.category}
                         </span>
-                        <div class="text-yellow-500">
-                            ${'★'.repeat(t.rating)}
-                        </div>
+                        <span class="text-gray-500 text-xs">${t.date}</span>
                     </div>
+                    <a class="text-link" href="https://www.linkedin.com/in/khannayyar/" target="_blank" rel="noopener noreferrer">LinkedIn recommendation ↗</a>
                 </div>
                 `;
             }).join('');

@@ -1,5 +1,5 @@
 {
-    "source": "LinkedIn data export supplied 2026-11-11",
+    "source": "LinkedIn data export supplied 2026-11-17",
     "languages": [
         {
             "name": "English",
@@ -34,6 +34,24 @@
         {
             "name": "Apple Professional Learning Specialist",
             "provider": "Apple EMEA"
+        },
+        {
+            "name": "Writing a Resume",
+            "provider": "LinkedIn Learning",
+            "date": "2022-07-25",
+            "source": "LinkedIn completed learning record"
+        },
+        {
+            "name": "Succeeding in Web Development: Full Stack and Front End",
+            "provider": "LinkedIn Learning",
+            "date": "2021-10-09",
+            "source": "LinkedIn completed learning record"
+        },
+        {
+            "name": "Learning Python (2020)",
+            "provider": "LinkedIn Learning",
+            "date": "2021-09-16",
+            "source": "LinkedIn completed learning record"
         }
     ],
     "affiliations": [
@@ -676,6 +694,93 @@
             "description": "This paper defines a four-stage assessment protocol for bounded large language model (LLM) assistance, with initial work, optional feedback, checked revision, and explanation. A weighted rubric and independent critical-error gate were tested on six constructed evidence vectors. Identical vectors receiving artificial intelligence (AI) and peer feedback both scored 90.0, while a trace with a critical source error scored 62.5 and was held for review. The arithmetic test verifies scoring behavior, not marker reliability or learning. The paper specifies anchors, calibration, accessibility routes, and a future transfer evaluation.",
             "url": "https://doi.org/10.46759/iijsr.2026.10309",
             "matchedScholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=A0nTCiwAAAAJ&pagesize=100&citation_for_view=A0nTCiwAAAAJ:OP4eGU-M3BUC"
+        }
+    ],
+    "skillEndorsements": [
+        {
+            "name": "Amazon Web Services (AWS)",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Analytics",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Blockchain",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Computer Science",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Data Visualization",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Deep Learning",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Engineering",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Front-End Development",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Full-Stack Development",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "IEEE",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Machine Learning",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Microsoft Azure",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Oracle Academy",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Python (Programming Language)",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Research",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Swift (Programming Language)",
+            "count": 1,
+            "asOf": "2026-11-17"
+        },
+        {
+            "name": "Teaching",
+            "count": 1,
+            "asOf": "2026-11-17"
         }
     ]
 }

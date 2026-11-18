@@ -1,12 +1,15 @@
-# LinkedIn professional-data import
+# LinkedIn professional-data import (2026-11-17)
 
-Only professional CSV fields were imported. Private account, contact, messaging, invitation and job-search records were excluded. The archive is not copied into the website. Profile name, research positioning and existing job history were retained. Credential identifiers were omitted; public verification URLs were retained. Blank end dates in dated service and affiliation records are displayed as Present, as listed in the supplied profile; no independent status verification was performed.
+Only professional CSV fields were imported. Private account, contact, messaging, invitation and job-search records were excluded. The archive is not copied into the website. Only completed courses and visible received recommendations are published; endorsement counts are aggregated without identifying endorsers. Incomplete learning, recommendation drafts, notes, browsing and activity histories are excluded. Profile name, research positioning and existing job history were retained. Credential identifiers were omitted; public verification URLs were retained. Blank end dates in dated service and affiliation records are displayed as Present, as listed in the supplied profile; no independent status verification was performed.
 
 - Certifications added: 0
 - Skills added: 0
 - Honors and service recognitions added: 0
 - Projects added: 0
 - IP records added: 0
+- Completed learning activities added: 3
+- Skills with accepted endorsements: 17
+- Recommendations updated or added: 8
 - Publication records enriched: 61
 - Supplementary publication records: 1
 - Languages: 5
@@ -30,6 +33,24 @@ Only professional CSV fields were imported. Private account, contact, messaging,
 
 ## User-confirmed resolutions
 
-- Ph.D. institution: Himalayan University.
-- Bachelor’s institution: Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore.
-- LinkedIn timelines take precedence for all 14 matching projects. Projects absent from the export keep their existing timelines. Project status follows the supplied end date; publication dates remain separate.
+- Ph.D.: Himalayan University.
+- Bachelor’s: Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore.
+- Existing employment history is retained; the export contains only one position.
+- LinkedIn project dates take precedence for matching projects.
+
+## Pages and exports
+
+- Teaching: three completed LinkedIn Learning courses, including completion dates.
+- Skills: accepted endorsement counts for 17 skills, without endorser identities.
+- Testimonials: eight visible recommendations with original text, author details and exact dates; unsourced star ratings removed.
+- Runtime PDF: completed learning in both versions; recommendations and endorsement snapshots in the full academic CV.
+- LaTeX and website search: new professional records included.
+
+## Repeat import
+
+```sh
+python3 scripts/import_linkedin.py /path/to/export.zip --source-date 2026-11-17
+python3 scripts/build_site.py
+```
+
+Existing records are merged by their professional identity; repeat imports do not duplicate completed courses or recommendations. Missing records in a later export do not erase the existing CV.

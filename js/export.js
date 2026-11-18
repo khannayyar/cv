@@ -23,13 +23,13 @@ async function exportToPDF(mode = 'application') {
     overlay.innerHTML = '<div class="bg-white rounded-lg p-8 text-center">Preparing your CV…</div>';
     document.body.appendChild(overlay);
     try {
-        const names = ['personal-info','education','experience','research','projects','certifications','patents','skills','awards','teaching','professional-profile','case-studies','community','books','badges'];
+        const names = ['personal-info','education','experience','research','projects','certifications','patents','skills','awards','teaching','professional-profile','case-studies','community','books','badges','testimonials'];
         const data = await Promise.all(names.map(async name => {
             const response = await fetch(`data/${name}.json`, {cache: 'no-store'});
             if (!response.ok) throw new Error(`Unable to load ${name}`);
             return CVDateOrder.sortData(await response.json());
         }));
-        const [person,education,experience,research,projects,credentials,patents,skills,awards,teaching,profile,cases,community,books,badges] = data;
+        const [person,education,experience,research,projects,credentials,patents,skills,awards,teaching,profile,cases,community,books,badges,testimonials] = data;
         const full = mode === 'full';
         const generatedOn = new Date().toISOString().slice(0,10);
         const {jsPDF} = await loadJsPDF();
@@ -111,6 +111,10 @@ async function exportToPDF(mode = 'application') {
         paragraph((full?'Courses taught: ':'Selected courses taught: ')+(full?courses:courses.slice(0,12)).join('; ')+'.');
         if(full){for(const role of credentials.featuredRoles)entry(role.role,role.organization,role.description,role);}
         else paragraph('Training and academy roles: '+credentials.featuredRoles.map(role=>role.role).join('; ')+'.',{size:9.5});
+        if(profile.courses?.length){
+            section('Professional development');
+            for(const course of profile.courses)bullet([course.name,course.provider,course.date].filter(Boolean).join(' | '),course);
+        }
         section(full?'Professional credentials':'Selected professional credentials');
         for(const cert of (full?credentials.certifications:credentials.certifications.slice(0,6))){
             if(full)entry(cert.name,[cert.issuer,cert.year].filter(Boolean).join(' | '),'',cert);
@@ -127,6 +131,15 @@ async function exportToPDF(mode = 'application') {
             for(const [title,items] of [['Academic service',profile.service],['Professional affiliations',profile.affiliations],['Community contributions',community.contributions],['Books',books.books]]){
                 if(items?.length){section(title);for(const item of items)entry(item.title||item.name,[item.role,item.organization,item.date].filter(Boolean).join(' | '),item.description||'',item);}
             }
+        }
+        if(full && profile.skillEndorsements?.length){
+            section('LinkedIn skill endorsements');
+            paragraph('Accepted endorsement counts from the supplied LinkedIn export; these are peer endorsements, separate from certifications.',{size:9,color:grey});
+            for(const skill of profile.skillEndorsements)bullet(`${skill.name}: ${skill.count} endorsement${skill.count===1?'':'s'} | Snapshot: ${skill.asOf}`);
+        }
+        if(full && testimonials.testimonials?.length){
+            section('Professional recommendations');
+            for(const recommendation of testimonials.testimonials)entry(recommendation.name,[recommendation.title,recommendation.organization,recommendation.date].filter(Boolean).join(' | '),recommendation.quote,recommendation);
         }
         section('Online profiles and verification');
         for(const [label,url] of Object.entries(person.socialMedia||{})){if(recordUrls(url).length){ensure(14);paragraph(label.replace(/([A-Z])/g,' $1'),{size:9,weight:'bold',gap:1});verificationLinks(url);}}
@@ -179,6 +192,7 @@ async function exportToLaTeX() {
         const awards = await safeFetch('data/awards.json', { awards: [] });
     const community = await safeFetch('data/community.json', { contributions: [] });
         const teaching = await safeFetch('data/teaching.json', { years: [], statistics: {} });
+        const recommendations = await safeFetch('data/testimonials.json', {testimonials:[]});
         const professionalProfile = await safeFetch('data/professional-profile.json', { languages: [], service: [], affiliations: [] });
         const researchPhilosophy = await safeFetch('data/research_philosophy.json', { summary: '', pillars: [] });
 
@@ -381,6 +395,9 @@ ${personalInfo.researchInterests.map(interest => `  \\item ${interest}`).join('\
         }
 
         for (const [heading, entries] of [
+            ['Professional Development', (professionalProfile.courses || []).map(item => `${item.name} | ${item.provider || ''} | ${item.date || ''}`)],
+            ['LinkedIn Skill Endorsements', (professionalProfile.skillEndorsements || []).map(item => `${item.name}: ${item.count} accepted endorsements | ${item.asOf}`)],
+            ['Professional Recommendations', (recommendations.testimonials || []).map(item => `${item.name} | ${item.title} | ${item.organization} | ${item.date}: ${item.quote}`)],
             ['Languages', (professionalProfile.languages || []).map(item => `${item.name}: ${item.proficiency}`)],
             ['Professional Service', (professionalProfile.service || []).map(item => `${item.title} | ${item.organization || ''} | ${item.date || 'Date not listed'}`)]
         ]) {
